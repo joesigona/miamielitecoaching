@@ -162,69 +162,78 @@ export const ARTICLES: Article[] = [
 <p>Ready to explore what private coaching in Brickell looks like? <a href="/brickell">Apply for the 90-Day Executive Transformation</a> and receive a call within the hour.</p>`,
   },
   {
-    slug: "weight-loss-miami-guide",
-    title: "Weight Loss in Miami: A Practical Guide for Busy Professionals",
-    metaTitle: "Weight Loss Miami — A Practical Guide for Busy Professionals",
+    slug: "eating-healthy-miami-restaurants",
+    title: "Eating Healthy in Miami: What Places Are Actually Going to Help You Lose Weight",
+    metaTitle: "Eating Healthy in Miami — Restaurants That Actually Help You Lose Weight",
     metaDescription:
-      "Struggling to lose weight in Miami? This guide covers the most effective strategies for busy professionals — from nutrition to training to lifestyle adjustments.",
+      "Want to eat healthy in Miami without giving up the restaurant scene? We break down the best spots across Brickell, Coconut Grove, and South Beach for clean, high-protein meals.",
     excerpt:
-      "Miami's lifestyle is beautiful but not always conducive to fat loss. Late nights, restaurant meals, and packed schedules make weight management genuinely difficult. Here's what actually works.",
-    category: "training",
-    readTime: 10,
+      "Miami's restaurant scene is world-class — but navigating it while trying to lose weight is a different story. Here's the honest guide to eating out in Miami without derailing your goals.",
+    category: "nutrition",
+    readTime: 9,
     publishDate: "2025-04-01",
     image:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-eiFCghreTCfWfN9GcBNCSM.webp",
-    tags: ["weight loss miami", "fat loss", "miami fitness", "personal trainer"],
-    content: `<p>Weight loss in Miami presents a unique set of challenges. The city's culture revolves around dining out, late nights, and social events — all of which make maintaining a caloric deficit genuinely difficult. Add a demanding professional schedule, and it's easy to see why so many people struggle.</p>
+    tags: ["eating healthy miami", "miami restaurants weight loss", "healthy food miami", "miami nutrition"],
+    content: `<p>Miami has one of the most vibrant restaurant scenes in the country. The problem? Most of it isn't built with your body composition goals in mind. Between the late-night spots in Wynwood, the steakhouses in Brickell, and the beach clubs on South Beach, eating out in Miami can quietly derail even the most disciplined fitness plan.</p>
 
-<p>This guide is written specifically for Miami professionals who want to lose body fat without overhauling their entire lifestyle.</p>
+<p>But here's the truth: you don't have to choose between enjoying Miami's food culture and reaching your body goals. You just need to know where to go — and what to order when you get there.</p>
 
-<h2>Why Most Weight Loss Attempts Fail in Miami</h2>
+<h2>Why Restaurant Eating Derails Most Miami Fitness Plans</h2>
 
-<p>The standard advice — eat less, move more — is technically correct but practically useless for most busy professionals. Here's why:</p>
+<p>The average restaurant meal in Miami contains significantly more calories, sodium, and refined carbohydrates than most people realize. Sauces, dressings, cooking oils, and oversized portions can turn what looks like a healthy choice into a 1,200-calorie meal before you've touched dessert.</p>
+
+<p>Add alcohol — a staple of Miami's social culture — and you have a recipe for a caloric surplus that makes fat loss nearly impossible, no matter how hard you train.</p>
+
+<p>The solution isn't to stop eating out. It's to build a system for navigating the Miami restaurant scene intelligently.</p>
+
+<h2>The Best Neighborhoods for Healthy Eating in Miami</h2>
+
+<h3>Brickell</h3>
+<p>Brickell's dining scene has evolved significantly in recent years, and there are now several genuinely solid options for high-protein, lower-calorie meals. Look for restaurants with Mediterranean, Japanese, or Latin-inspired menus — these cuisines tend to feature lean proteins, fresh vegetables, and lighter cooking methods.</p>
+
+<p>When eating in Brickell, prioritize: grilled fish or chicken as your protein base, vegetable-forward sides over rice and beans, and water or sparkling water over cocktails. The Brickell City Centre food hall has several options that make clean eating easy even on a tight schedule.</p>
+
+<h3>Coconut Grove</h3>
+<p>The Grove is arguably Miami's best neighborhood for health-conscious eating. The area has a strong culture of organic, locally sourced food, and several restaurants cater specifically to the active, health-oriented community that lives there.</p>
+
+<p>Farmers markets in the Grove (held regularly at Peacock Park) are an excellent source of fresh produce, lean proteins, and prepared foods that align with fat loss goals. For sit-down meals, look for spots with extensive fish and seafood menus — the Grove's proximity to the bay means fresh catches are common.</p>
+
+<h3>South Beach</h3>
+<p>South Beach is a mixed bag. The tourist-facing restaurants on Ocean Drive are generally poor choices — oversized portions, heavy sauces, and mediocre quality. But venture a few blocks west to the residential streets of South Beach and you'll find a different scene entirely: health-focused cafes, juice bars, and restaurants that cater to the fitness-oriented locals who actually live there.</p>
+
+<h3>Wynwood</h3>
+<p>Wynwood's food scene is creative and eclectic, which cuts both ways. There are excellent healthy options — particularly plant-forward restaurants and spots with strong Mediterranean influences — but also plenty of indulgent choices that will set your goals back. Navigate Wynwood with intention: scan menus online before you go and identify your protein-and-vegetable anchor before you sit down.</p>
+
+<h2>What to Order at Any Miami Restaurant</h2>
+
+<p>Regardless of where you're eating, these ordering principles will keep you on track:</p>
 
 <ul>
-<li><strong>Restaurant meals are unavoidable</strong> — business lunches, client dinners, and social events mean you're eating food you didn't prepare</li>
-<li><strong>Inconsistent schedules</strong> — travel, early meetings, and late nights make meal timing and workout consistency nearly impossible</li>
-<li><strong>Stress-driven eating</strong> — high-pressure careers create cortisol patterns that promote fat storage, especially around the midsection</li>
-<li><strong>All-or-nothing thinking</strong> — missing one workout or eating one bad meal leads to abandoning the plan entirely</li>
+<li><strong>Protein anchor first</strong> — identify the highest-quality protein on the menu (grilled fish, chicken, steak, shrimp) and build your meal around it</li>
+<li><strong>Sauces on the side</strong> — most restaurant sauces are calorie-dense; controlling the amount you use makes a significant difference</li>
+<li><strong>Swap starches for vegetables</strong> — most Miami restaurants will substitute rice, plantains, or fries for a side salad or steamed vegetables if you ask</li>
+<li><strong>One drink maximum</strong> — alcohol is the single biggest dietary saboteur in Miami's social culture; limiting to one drink per meal keeps calories in check</li>
+<li><strong>Skip the bread basket</strong> — it arrives automatically at most Miami restaurants; simply ask the server not to bring it</li>
 </ul>
 
-<h2>The Framework That Actually Works</h2>
+<h2>The Cuisines That Work Best for Fat Loss in Miami</h2>
 
-<h3>1. Protein First, Always</h3>
-<p>The single most effective dietary change for fat loss is prioritizing protein at every meal. Protein is the most satiating macronutrient, it preserves muscle mass during a caloric deficit, and it has the highest thermic effect — meaning your body burns more calories digesting it.</p>
+<p>Not all cuisines are created equal when it comes to supporting body composition goals. In Miami's diverse food scene, these tend to be the most diet-friendly options:</p>
 
-<p>For a 180-pound professional, aim for 150-180 grams of protein per day. This is achievable even when eating out: grilled fish, chicken, steak, eggs, and Greek yogurt are available at virtually every Miami restaurant.</p>
+<p><strong>Japanese and sushi restaurants</strong> are among the best choices in Miami. Sashimi is pure protein with minimal calories, and most Japanese menus feature light, clean preparations. Avoid rolls with tempura or cream cheese, and go easy on the soy sauce (sodium).</p>
 
-<h3>2. Strength Training Over Cardio</h3>
-<p>Cardio burns calories during the session. Strength training builds muscle, which burns calories 24/7. For busy professionals with limited time, three 45-60 minute strength sessions per week will produce far better body composition results than daily cardio.</p>
+<p><strong>Mediterranean restaurants</strong> — Greek, Lebanese, Turkish — tend to feature lean proteins, olive oil-based cooking, and abundant vegetables. Grilled fish, chicken kebabs, and mezze plates are all solid choices.</p>
 
-<p>The goal isn't just to lose weight — it's to lose fat while preserving (or building) muscle. This is what creates the lean, athletic look most people are after.</p>
+<p><strong>Peruvian cuisine</strong> is a hidden gem for healthy eating in Miami. Ceviche is one of the leanest, most protein-dense dishes you can order anywhere, and Peruvian restaurants typically feature fresh, light preparations that don't rely on heavy sauces.</p>
 
-<h3>3. Navigate Restaurant Meals Strategically</h3>
-<p>You don't need to avoid restaurants — you need a system for navigating them. A few rules that work in practice:</p>
+<p><strong>Traditional Cuban and Latin food</strong> requires more navigation. The proteins — roast pork, chicken, fish — are excellent, but the traditional accompaniments (white rice, black beans, fried plantains) are calorie-dense. Order the protein and ask for a salad or vegetables on the side instead.</p>
 
-<ul>
-<li>Order protein and vegetables as the base of every meal</li>
-<li>Ask for sauces and dressings on the side</li>
-<li>Skip the bread basket</li>
-<li>Choose sparkling water or a single drink over multiple cocktails</li>
-<li>Eat slowly — it takes 20 minutes for satiety signals to reach your brain</li>
-</ul>
+<h2>The Bottom Line</h2>
 
-<h3>4. Sleep Is Non-Negotiable</h3>
-<p>Poor sleep is one of the most underrated drivers of weight gain. When you're sleep-deprived, your body produces more ghrelin (the hunger hormone) and less leptin (the satiety hormone). The result: you eat more and feel less satisfied.</p>
+<p>Eating healthy in Miami is entirely possible — it just requires a framework. Know which neighborhoods offer the best options, know what to order when you get there, and build the habit of making one smart swap per meal rather than trying to eat perfectly.</p>
 
-<p>Aim for 7-8 hours. If Miami's nightlife makes this difficult on weekends, prioritize weeknight sleep quality.</p>
-
-<h2>The Role of a Personal Trainer in Weight Loss</h2>
-
-<p>The biggest advantage of working with a personal trainer isn't the workouts — it's the accountability and the system. A good trainer removes the guesswork, keeps you consistent, and adjusts the plan when life gets in the way.</p>
-
-<p>For Miami professionals, this means having someone who can design travel workouts for hotel stays, provide practical nutrition guidance for business dinners, and track your body composition data so you know exactly what's working.</p>
-
-<p>If you're ready to stop guessing and start seeing results, <a href="/brickell">explore our 90-Day Executive Transformation program</a> — built specifically for Miami professionals.</p>`,
+<p>If you want a nutrition protocol that's specifically designed around Miami's restaurant scene — one that tells you exactly what to order at business dinners, client lunches, and social events — that's exactly what we build for every client in our <a href="/brickell">90-Day Executive Transformation program</a>.</p>`,
   },
   {
     slug: "miami-personal-trainer-cost",

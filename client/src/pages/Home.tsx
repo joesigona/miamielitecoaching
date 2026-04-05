@@ -46,13 +46,14 @@ export default function Home() {
               Miami's Premier Private Training
             </div>
             <h1 className="font-['Barlow_Condensed'] font-800 text-6xl sm:text-7xl lg:text-8xl text-white leading-[0.9] mb-6">
-              Your Body Is Your{" "}
-              <span className="text-gold">Last Unfair Advantage.</span>
+              Turn Back the Clock.{" "}
+              <span className="text-gold">Your Best Body Starts Now.</span>
             </h1>
             <p className="text-[oklch(0.72_0.12_75)] text-lg leading-relaxed mb-10 max-w-xl">
-              Private personal training for Miami professionals. Results
-              guaranteed in 90 days — or you don't pay. Serving Brickell,
-              Coconut Grove, and across Miami.
+              Private personal training that comes to you — or meet one of our
+              expert coaches in your neighborhood. Serving Brickell, Coconut
+              Grove, and across Miami. Results guaranteed in 90 days or you
+              don't pay.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/brickell#apply">

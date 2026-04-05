@@ -76,9 +76,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog/weight-loss-miami-guide">
+                <Link href="/blog/eating-healthy-miami-restaurants">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
-                    Weight Loss in Miami
+                    Eating Healthy in Miami
                   </span>
                 </Link>
               </li>
