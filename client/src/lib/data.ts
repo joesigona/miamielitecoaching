@@ -504,6 +504,259 @@ export const ARTICLES: Article[] = [
 
 <p><a href="/ceo-performance-protocol">Learn more about the CEO Performance Protocol</a> or <a href="https://q5lhjxf6lyg.typeform.com/to/CqpamnE1" target="_blank" rel="noopener noreferrer">apply directly here</a>. Spots for Q2 2026 are limited to 4 remaining.</p>`,
   },
+  {
+    slug: "dexa-scan-miami-what-to-expect",
+    title: "DEXA Scan in Miami: What to Expect, Where to Go, and Why It Matters",
+    metaTitle: "DEXA Scan Miami — What to Expect, Cost, and Best Locations (2025)",
+    metaDescription:
+      "Everything you need to know about getting a DEXA body composition scan in Miami. Cost, locations, what to expect, and how to use the results to transform your body.",
+    excerpt:
+      "A DEXA scan gives you the most accurate picture of your body composition available today. Here's what Miami residents need to know before booking one.",
+    category: "longevity",
+    readTime: 9,
+    publishDate: "2025-04-18",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
+    tags: ["DEXA scan miami", "body composition scan miami", "DEXA cost miami", "body fat testing miami", "longevity testing miami"],
+    content: `<p>If you've ever wondered what's really going on inside your body — not the number on the scale, but the actual breakdown of fat, muscle, and bone — a DEXA scan is the answer. And in Miami, where fitness culture is as much about looking good on the beach as it is about long-term health, DEXA scanning has become one of the most sought-after diagnostic tools available.</p>
+
+<p>But most people don't know what a DEXA scan actually measures, how much it costs, or how to use the results. This guide covers everything you need to know as a Miami resident considering your first — or next — DEXA scan.</p>
+
+<h2>What Is a DEXA Scan?</h2>
+
+<p><strong>DEXA (Dual-Energy X-ray Absorptiometry)</strong> is a medical imaging technology that uses two low-dose X-ray beams to differentiate between bone mineral content, lean tissue (muscle, organs, water), and fat tissue throughout your entire body. Originally developed for measuring bone density and diagnosing osteoporosis, DEXA has become the gold standard for body composition analysis.</p>
+
+<p>Unlike a bathroom scale, bioelectrical impedance device, or even a skinfold caliper test, DEXA provides a <strong>regional breakdown</strong> of your body. You'll see exactly how much fat and muscle is in your left arm versus your right, your trunk versus your legs, and critically — how much <strong>visceral fat</strong> you're carrying around your organs.</p>
+
+<p>Visceral fat is the metabolically dangerous fat that drives insulin resistance, cardiovascular disease, and systemic inflammation. You can look lean and still carry dangerous levels of visceral fat. DEXA is one of the only non-invasive tools that quantifies it precisely.</p>
+
+<h2>What to Expect During the Scan</h2>
+
+<p>A DEXA scan is one of the simplest medical procedures you'll ever experience. Here's the process:</p>
+
+<ul>
+<li><strong>Duration:</strong> The actual scan takes 6–12 minutes. With check-in and results review, expect 30–45 minutes total.</li>
+<li><strong>Preparation:</strong> Wear lightweight clothing without metal (athletic wear is ideal). Avoid eating a large meal or exercising heavily 2–3 hours before the scan for the most consistent results.</li>
+<li><strong>The scan itself:</strong> You lie flat on a padded table while a scanning arm passes slowly over your body. It's painless, non-invasive, and the radiation exposure is extremely low — roughly 1/10th of a standard chest X-ray.</li>
+<li><strong>Results:</strong> You'll receive a detailed report showing total body fat percentage, lean mass by region, bone mineral density, visceral fat area, and comparison to age/gender norms.</li>
+</ul>
+
+<h2>How Much Does a DEXA Scan Cost in Miami?</h2>
+
+<p>Pricing varies depending on the facility and what's included:</p>
+
+<ul>
+<li><strong>Standalone DEXA scan:</strong> $100–$200 at most clinical facilities in Brickell, Coral Gables, and South Beach</li>
+<li><strong>DEXA + VO2 Max bundle:</strong> $250–$400 at performance-focused facilities</li>
+<li><strong>Free with program enrollment:</strong> At <a href="/data-first-drop-in">Miami Elite Coaching's Data-First Drop-In</a>, a full DEXA scan is included in the $0 introductory assessment, normally valued at $350</li>
+</ul>
+
+<p>If you're serious about using DEXA as a tracking tool (which you should be), plan on scanning every 8–12 weeks. This gives your body enough time to show meaningful changes while keeping you accountable to your program.</p>
+
+<h2>How to Use Your DEXA Results</h2>
+
+<p>Getting a DEXA scan is only valuable if you know what to do with the data. Here are the key metrics to focus on:</p>
+
+<p><strong>Body fat percentage</strong> is the headline number, but context matters. For men, 10–20% is generally considered healthy depending on age and goals. For women, 18–28% is the typical healthy range. Elite athletes may be lower, but sustainable health is more important than extreme leanness.</p>
+
+<p><strong>Lean mass distribution</strong> reveals muscle imbalances between your left and right sides. A difference of more than 5–10% between limbs may indicate injury risk or compensatory movement patterns that need to be addressed in training.</p>
+
+<p><strong>Visceral adipose tissue (VAT)</strong> is measured in square centimeters. A VAT area under 100 cm² is considered healthy. Above 160 cm² is associated with significantly elevated metabolic risk — regardless of how you look externally.</p>
+
+<p><strong>Bone mineral density</strong> is especially important for women over 40 and men over 50. DEXA is the clinical standard for diagnosing osteopenia and osteoporosis, and resistance training is one of the most effective interventions for improving bone density over time.</p>
+
+<h2>Best Places to Get a DEXA Scan in Miami</h2>
+
+<p>Several facilities across Miami offer DEXA scanning. Here are the most reputable options by neighborhood:</p>
+
+<p><strong>Brickell:</strong> RETO Brickell (home of Miami Elite Coaching's diagnostic programs) offers clinical-grade DEXA scanning as part of their <a href="/longevity-blueprint">Longevity Blueprint</a> and <a href="/data-first-drop-in">Data-First Drop-In</a> programs. The advantage here is that your scan is interpreted by a performance coach who builds an actionable plan around the results — not just handed to you as a PDF.</p>
+
+<p><strong>Coral Gables:</strong> Several sports medicine and radiology clinics offer standalone DEXA scans, typically in the $150–$200 range.</p>
+
+<p><strong>South Beach:</strong> Boutique wellness clinics on Lincoln Road and Collins Avenue offer DEXA as part of broader wellness packages, often bundled with blood panels and metabolic testing.</p>
+
+<h2>DEXA vs. Other Body Composition Methods</h2>
+
+<p>How does DEXA compare to other popular body composition tools?</p>
+
+<ul>
+<li><strong>Bioelectrical impedance (InBody, Tanita):</strong> Convenient and fast, but accuracy varies significantly based on hydration, meal timing, and the specific device. Error margins of 3–5% are common. DEXA's error margin is under 1%.</li>
+<li><strong>Skinfold calipers:</strong> Highly dependent on the skill of the person measuring. Useful for tracking trends if the same technician measures you each time, but not reliable for absolute values.</li>
+<li><strong>Hydrostatic weighing:</strong> Accurate but inconvenient — you have to be submerged in water and exhale completely. Few facilities in Miami still offer it.</li>
+<li><strong>Bod Pod:</strong> Uses air displacement to estimate body composition. Reasonably accurate but doesn't provide the regional breakdown or visceral fat data that DEXA offers.</li>
+</ul>
+
+<h2>Who Should Get a DEXA Scan?</h2>
+
+<p>Virtually anyone who takes their health seriously can benefit from a DEXA scan. But it's especially valuable for:</p>
+
+<ul>
+<li><strong>Professionals starting a new fitness program</strong> — establishing a true baseline before investing time and money in training</li>
+<li><strong>Anyone over 40</strong> — tracking bone density and visceral fat becomes increasingly important with age</li>
+<li><strong>People who've hit a plateau</strong> — the scale might not be moving, but DEXA can reveal that you're losing fat and gaining muscle simultaneously</li>
+<li><strong>Couples or training partners</strong> — the <a href="/longevity-duo">Longevity Duo program</a> includes DEXA scans for both partners, making it a shared accountability tool</li>
+</ul>
+
+<h2>Take the First Step</h2>
+
+<p>If you've never had a DEXA scan, there's no better time to start. The <a href="/data-first-drop-in">Data-First Drop-In</a> at Miami Elite Coaching includes a full DEXA scan, VO2 Max test, and 30-minute consultation — all at no cost for first-time clients. It's the most comprehensive diagnostic session available in Miami, and it gives you the data foundation to make every future health decision with confidence.</p>
+
+<p><a href="https://q5lhjxf6lyg.typeform.com/to/fKybxD1d" target="_blank" rel="noopener noreferrer">Book your free Data-First Drop-In here</a> — limited spots available each week.</p>`,
+  },
+  {
+    slug: "couples-fitness-miami-train-together",
+    title: "Couples Fitness in Miami: Why Training Together Changes Everything",
+    metaTitle: "Couples Fitness Miami — Why Training Together Transforms Relationships and Results",
+    metaDescription:
+      "Discover why Miami couples who train together see better results, stronger relationships, and lasting lifestyle changes. Plus: the best couples fitness programs in Miami.",
+    excerpt:
+      "Research shows that couples who exercise together are 34% more likely to stick with their program. In Miami, a new breed of couples fitness is making it easier — and more effective — than ever.",
+    category: "training",
+    readTime: 8,
+    publishDate: "2025-04-20",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-2-5TLYCBLiEGvGhFUPLQS2Qw.webp",
+    tags: ["couples fitness miami", "couples personal training miami", "partner workout miami", "train together miami", "longevity duo miami"],
+    content: `<p>There's a reason most New Year's resolutions fail by February: accountability. When you're training alone, it's easy to skip a session, push back a workout, or quietly abandon a nutrition plan. But when your partner is standing next to you — expecting you to show up — everything changes.</p>
+
+<p>Research from Indiana University found that couples who exercised together had a <strong>dropout rate of just 6.3%</strong>, compared to 43% for those who trained alone. That's not a marginal difference. That's a fundamentally different outcome. And in Miami, where social calendars, work travel, and late-night dinners constantly compete with fitness goals, having a built-in training partner isn't just nice — it's a strategic advantage.</p>
+
+<h2>The Science Behind Training Together</h2>
+
+<p>The benefits of couples fitness go far beyond accountability. Multiple studies have identified specific mechanisms that make partner training more effective:</p>
+
+<p><strong>The Köhler Effect:</strong> Research published in the <em>Journal of Sport and Exercise Psychology</em> found that people work harder when exercising with a partner — particularly when that partner is slightly more capable. This "motivation gain" effect means both partners push each other to higher performance levels without even trying.</p>
+
+<p><strong>Emotional synchrony:</strong> A study from the University of Oxford found that exercising in synchrony with another person increases pain tolerance and releases higher levels of endorphins than solo exercise. Training together literally makes the workout feel better.</p>
+
+<p><strong>Relationship quality:</strong> Research from the <em>Journal of Personality and Social Psychology</em> shows that couples who engage in novel, challenging activities together report higher relationship satisfaction. Shared physical challenges create a sense of teamwork and mutual accomplishment that strengthens the bond outside the gym.</p>
+
+<h2>Why Most Couples Fitness Programs Don't Work</h2>
+
+<p>The concept of training together sounds great in theory. In practice, most couples fitness experiences fall flat for three reasons:</p>
+
+<p><strong>Different fitness levels:</strong> One partner may be significantly stronger, more experienced, or more motivated than the other. A generic group class doesn't account for this — one person is bored while the other is overwhelmed.</p>
+
+<p><strong>Different goals:</strong> He wants to build muscle. She wants to improve mobility and lose body fat. A one-size-fits-all program forces compromise that leaves both partners unsatisfied.</p>
+
+<p><strong>No personalization:</strong> Boot camps and group classes treat every couple the same. There's no assessment, no individualized programming, and no tracking of individual progress.</p>
+
+<h2>A Better Approach: Data-Driven Couples Training</h2>
+
+<p>The most effective couples fitness programs solve these problems by starting with individual assessments and building personalized programs that happen to be delivered in a shared training environment.</p>
+
+<p>At <a href="/longevity-duo">Miami Elite Coaching's Longevity Duo</a>, each partner receives their own DEXA body composition scan, VO2 Max test, and movement assessment. The coach then designs two individualized programs that are structured to run simultaneously — so you're training together in the same space, at the same time, but each doing exactly what your body needs.</p>
+
+<p>This approach means:</p>
+
+<ul>
+<li>Both partners get results tailored to their specific body composition and goals</li>
+<li>Sessions feel collaborative rather than competitive</li>
+<li>Progress is tracked individually with objective data (not just how you feel)</li>
+<li>The coach manages both programs in real time, adjusting intensity and volume for each person</li>
+</ul>
+
+<h2>What Makes Miami Ideal for Couples Fitness</h2>
+
+<p>Miami's fitness infrastructure is uniquely suited to couples training. The city offers:</p>
+
+<p><strong>Outdoor training environments:</strong> From Bayfront Park to the Coconut Grove waterfront, Miami's year-round weather means couples can train outdoors in beautiful settings that make the experience feel like a lifestyle upgrade rather than a chore.</p>
+
+<p><strong>Premium private facilities:</strong> Studios like RETO Brickell and OM Movement in Coconut Grove offer private or semi-private training spaces where couples can work with a dedicated coach without the distractions of a crowded gym.</p>
+
+<p><strong>Integrated wellness:</strong> Many Miami facilities combine training with recovery services — infrared sauna, cold plunge, massage — that couples can enjoy together after their session. It turns a workout into a shared wellness experience.</p>
+
+<h2>The Longevity Angle</h2>
+
+<p>For couples in their 40s, 50s, and beyond, training together takes on an additional dimension: longevity. The goal isn't just to look good at the beach — it's to ensure that both partners maintain the physical capacity to enjoy life together for decades to come.</p>
+
+<p>This means focusing on metrics that matter for long-term health: VO2 Max (the strongest predictor of all-cause mortality), lean muscle mass (which declines 3–8% per decade after 30), bone mineral density (critical for preventing fractures), and visceral fat (the metabolically dangerous fat that drives chronic disease).</p>
+
+<p>The <a href="/longevity-duo">Longevity Duo program</a> is specifically designed around these metrics. Both partners receive baseline DEXA and VO2 Max testing, and progress is measured against these objective markers every 8–12 weeks. It's not about who can lift more or run faster — it's about both partners building the physical foundation for a long, active life together.</p>
+
+<h2>Getting Started</h2>
+
+<p>If you and your partner are ready to train together with a program that's actually designed for two people with different bodies and different goals, the <a href="/longevity-duo">Longevity Duo</a> is the most comprehensive option available in Miami. It includes dual DEXA scans, dual VO2 Max tests, individualized programming, and shared coaching sessions — all at a per-person rate that's lower than most solo personal training programs in Brickell.</p>
+
+<p><a href="https://q5lhjxf6lyg.typeform.com/to/fe89pL85" target="_blank" rel="noopener noreferrer">Apply for the Longevity Duo here</a> — the next cohort starts soon and spots are limited to 5 couples per quarter.</p>`,
+  },
+  {
+    slug: "women-over-40-fitness-miami",
+    title: "Fitness After 40 for Women in Miami: What Actually Works",
+    metaTitle: "Women Over 40 Fitness Miami — What Actually Works for Body Composition and Energy",
+    metaDescription:
+      "A science-backed guide to fitness for women over 40 in Miami. Learn what changes in your body, what training methods actually work, and where to find programs designed for your needs.",
+    excerpt:
+      "Your body changes after 40 — but that doesn't mean your best years are behind you. Here's what Miami women need to know about training, nutrition, and recovery in their 40s and beyond.",
+    category: "training",
+    readTime: 10,
+    publishDate: "2025-04-22",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-coconut-grove-5gCHpDXMEFXfxZiXSKRqkT.webp",
+    tags: ["women over 40 fitness miami", "female personal trainer miami", "menopause fitness miami", "strength training women miami", "vitality reset miami"],
+    content: `<p>Something shifts after 40. The workouts that used to work stop producing results. The weight that used to come off easily now clings stubbornly to your midsection. Your energy dips in the afternoon. Recovery takes longer. And the advice you find online — written mostly by 25-year-old fitness influencers — feels increasingly irrelevant to your reality.</p>
+
+<p>If this sounds familiar, you're not alone. And more importantly, you're not broken. Your body is going through a well-documented set of hormonal and metabolic changes that require a fundamentally different approach to training, nutrition, and recovery. The good news: when you match your program to your biology, the results can be extraordinary.</p>
+
+<h2>What Changes After 40</h2>
+
+<p>Understanding what's happening physiologically is the first step toward training smarter:</p>
+
+<p><strong>Hormonal shifts:</strong> Estrogen and progesterone begin declining in your late 30s and early 40s (perimenopause), with more dramatic drops during menopause. These hormones play critical roles in muscle protein synthesis, fat metabolism, bone density, sleep quality, and mood regulation. Their decline doesn't mean you can't build muscle or lose fat — it means the <em>methods</em> need to change.</p>
+
+<p><strong>Muscle loss (sarcopenia):</strong> Without intervention, women lose 3–8% of their muscle mass per decade after 30, accelerating after menopause. Since muscle is the primary driver of your resting metabolic rate, losing muscle means burning fewer calories at rest — which is why the scale creeps up even when your diet hasn't changed.</p>
+
+<p><strong>Bone density decline:</strong> Women can lose up to 20% of their bone density in the 5–7 years following menopause. This dramatically increases fracture risk and is one of the leading causes of disability in older women. Resistance training is one of the most effective interventions — more effective than calcium supplements alone.</p>
+
+<p><strong>Insulin sensitivity:</strong> Declining estrogen reduces insulin sensitivity, making your body more likely to store carbohydrates as fat rather than using them for energy. This is why many women over 40 notice increased belly fat even without dietary changes.</p>
+
+<h2>What Doesn't Work Anymore</h2>
+
+<p>The training approaches that worked in your 20s and 30s often become counterproductive after 40:</p>
+
+<p><strong>Excessive cardio:</strong> Long-duration, moderate-intensity cardio (the "treadmill for an hour" approach) elevates cortisol, which promotes muscle breakdown and fat storage — exactly the opposite of what you need. Some cardio is important, but the type and amount need to be strategic.</p>
+
+<p><strong>Extreme calorie restriction:</strong> Crash diets and severe calorie deficits further suppress an already-declining metabolism, accelerate muscle loss, and disrupt thyroid function. The result: you lose weight initially, then gain it all back (plus more) when you inevitably return to normal eating.</p>
+
+<p><strong>High-impact HIIT:</strong> While high-intensity interval training has its place, the joint stress and recovery demands of aggressive HIIT programs often exceed what a 40+ body can handle — leading to injuries, chronic fatigue, and burnout.</p>
+
+<h2>What Actually Works</h2>
+
+<p>The evidence is clear on what produces the best results for women over 40:</p>
+
+<p><strong>Progressive resistance training</strong> is the single most important intervention. Lifting weights — and progressively increasing the load over time — stimulates muscle protein synthesis, improves bone density, enhances insulin sensitivity, and boosts resting metabolic rate. Aim for 3–4 sessions per week with a focus on compound movements (squats, deadlifts, presses, rows).</p>
+
+<p><strong>Zone 2 cardiovascular training</strong> — sustained, low-to-moderate intensity cardio where you can still hold a conversation — builds your aerobic base without the cortisol spike of intense cardio. It improves mitochondrial function, fat oxidation, and cardiovascular health. 150+ minutes per week is the target.</p>
+
+<p><strong>Protein prioritization:</strong> Women over 40 need more protein than younger women to maintain muscle mass — research suggests 1.0–1.2 grams per kilogram of body weight daily, distributed across 3–4 meals. Most women are significantly under-consuming protein.</p>
+
+<p><strong>Sleep and stress management:</strong> Cortisol management becomes critical after 40. Chronic stress and poor sleep accelerate every negative hormonal change. Prioritizing 7–8 hours of quality sleep and incorporating stress-reduction practices (meditation, breathwork, nature exposure) isn't optional — it's foundational.</p>
+
+<h2>Why Miami Women Need a Different Approach</h2>
+
+<p>Miami's lifestyle creates unique challenges for women over 40:</p>
+
+<ul>
+<li><strong>Social pressure:</strong> Miami's appearance-focused culture can drive women toward extreme approaches (crash diets, excessive cardio, cosmetic procedures) rather than sustainable, health-first strategies</li>
+<li><strong>Heat and humidity:</strong> Training in Miami's climate requires careful attention to hydration, recovery, and session timing — outdoor workouts in July at 2 PM are a recipe for exhaustion, not progress</li>
+<li><strong>Dining culture:</strong> Miami's restaurant scene is incredible but challenging for nutrition goals. Learning to navigate menus at Mandolin, Cecconi's, or Lido without derailing your progress is a skill that needs to be built</li>
+<li><strong>Travel and social calendars:</strong> Many Miami women juggle careers, families, and active social lives. A program that requires 6 days a week in the gym isn't sustainable — the program needs to fit the life, not the other way around</li>
+</ul>
+
+<h2>Programs Designed for Women Over 40 in Miami</h2>
+
+<p>The <a href="/vitality-reset">Vitality Reset</a> at Miami Elite Coaching was designed specifically for women in their 40s, 50s, and 60s who want to take a science-based approach to fitness and longevity. It starts with a full diagnostic assessment — DEXA body composition scan, VO2 Max test, and movement screening — so your program is built on data, not guesswork.</p>
+
+<p>The 90-day program includes progressive resistance training, Zone 2 cardio programming, nutrition coaching tailored to hormonal changes, and recovery protocols including infrared therapy at RETO Brickell. Every 8 weeks, you rescan to measure objective progress in body composition, cardiovascular fitness, and bone density.</p>
+
+<p>For women who want to train with their partner, the <a href="/longevity-duo">Longevity Duo</a> offers the same individualized approach in a shared training environment — so both partners get programs designed for their specific bodies and goals.</p>
+
+<h2>Getting Started</h2>
+
+<p>The first step is understanding where your body is right now. A DEXA scan and VO2 Max test give you the objective baseline that makes everything else possible. The <a href="/vitality-reset">Vitality Reset</a> includes both assessments as part of the program, and the initial consultation is designed to understand your specific goals, challenges, and lifestyle.</p>
+
+<p><a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">Apply for the Vitality Reset here</a> — the program accepts a limited number of women per quarter to maintain coaching quality and attention.</p>`,
+  },
 ];
 
 // ---- Neighborhood Pages ----

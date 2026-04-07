@@ -271,6 +271,33 @@ export default function CoconutGrovePage() {
         </div>
       </section>
 
+      {/* Vitality Reset Promo */}
+      <section className="py-16 border-t border-white/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[oklch(0.12_0.005_285)] border border-[#993556]/25 p-8 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-[#993556]/12 border border-[#993556]/25 text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-3 py-1 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#993556] animate-pulse inline-block" />
+                8 Weeks — Founding Rate $1,200
+              </div>
+              <h3 className="font-['Barlow_Condensed'] font-800 text-2xl text-white mb-2">
+                The Vitality Reset — Hormone-Aware Fitness for Women 40+
+              </h3>
+              <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed max-w-xl">
+                An 8-week program designed for women in peri and post-menopause. DEXA testing, hormone-aware training, infrared recovery, and a nutrition framework built for your body's new biology.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              <Link href="/vitality-reset">
+                <span className="inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#72243E] transition-colors cursor-pointer whitespace-nowrap">
+                  Learn More →
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 bg-[oklch(0.10_0.005_285)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

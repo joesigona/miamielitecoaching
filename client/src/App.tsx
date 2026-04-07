@@ -15,6 +15,9 @@ import BlogPage from "./pages/Blog";
 import ArticlePage from "./pages/Article";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import CeoProtocolPage from "./pages/CeoProtocol";
+import VitalityResetPage from "./pages/VitalityReset";
+import LongevityDuoPage from "./pages/LongevityDuo";
+import DataFirstDropInPage from "./pages/DataFirstDropIn";
 import NotFound from "./pages/NotFound";
 
 function Router() {
@@ -28,6 +31,9 @@ function Router() {
       <Route path="/blog/:slug" component={ArticlePage} />
       <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
       <Route path="/ceo-performance-protocol" component={CeoProtocolPage} />
+      <Route path="/vitality-reset" component={VitalityResetPage} />
+      <Route path="/longevity-duo" component={LongevityDuoPage} />
+      <Route path="/data-first-dropin" component={DataFirstDropInPage} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

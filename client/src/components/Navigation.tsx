@@ -11,9 +11,10 @@ const NAV_LINKS = [
   { href: "/miami-personal-trainer", label: "Programs" },
   { href: "/longevity-blueprint", label: "Longevity Blueprint" },
   { href: "/ceo-performance-protocol", label: "CEO Protocol" },
+  { href: "/vitality-reset", label: "Vitality Reset" },
+  { href: "/longevity-duo", label: "Longevity Duo" },
+  { href: "/data-first-dropin", label: "Drop-In" },
   { href: "/blog", label: "Articles" },
-  { href: "/brickell", label: "Brickell" },
-  { href: "/coconut-grove", label: "Coconut Grove" },
 ];
 
 export default function Navigation() {

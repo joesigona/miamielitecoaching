@@ -66,6 +66,27 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/vitality-reset">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#C05A7E] transition-colors cursor-pointer">
+                    Vitality Reset
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/longevity-duo">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#3DC49A] transition-colors cursor-pointer">
+                    Longevity Duo
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/data-first-dropin">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#7B73D1] transition-colors cursor-pointer">
+                    Data-First Drop-In
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
 

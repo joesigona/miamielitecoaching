@@ -305,6 +305,33 @@ export default function BrickellPage() {
         </div>
       </section>
 
+      {/* Data-First Drop-In Promo */}
+      <section className="py-16 border-t border-white/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[oklch(0.12_0.005_285)] border border-[#534AB7]/25 p-8 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-[#534AB7]/12 border border-[#534AB7]/25 text-[#7B73D1] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-3 py-1 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#534AB7] animate-pulse inline-block" />
+                No Commitment — $350 Single Session
+              </div>
+              <h3 className="font-['Barlow_Condensed'] font-800 text-2xl text-white mb-2">
+                Not Ready to Commit? Start With the Data.
+              </h3>
+              <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed max-w-xl">
+                The Data-First Drop-In is a single 90-minute health assessment — DEXA scan, VO2 Max test, consultation, and printed Biomarker Report. No program, no pressure. Just your numbers.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              <Link href="/data-first-dropin">
+                <span className="inline-flex items-center gap-2 bg-[#534AB7] text-[#EEEDFE] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#3C3489] transition-colors cursor-pointer whitespace-nowrap">
+                  Book Drop-In →
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
