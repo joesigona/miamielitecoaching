@@ -13,6 +13,7 @@ import CoconutGrovePage from "./pages/CoconutGrove";
 import MiamiPersonalTrainerPage from "./pages/MiamiPersonalTrainer";
 import BlogPage from "./pages/Blog";
 import ArticlePage from "./pages/Article";
+import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import NotFound from "./pages/NotFound";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/miami-personal-trainer" component={MiamiPersonalTrainerPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={ArticlePage} />
+      <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

@@ -248,6 +248,31 @@ export default function BrickellPage() {
         </div>
       </section>
 
+      {/* Longevity Blueprint Promo */}
+      <section className="py-16 border-t border-white/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[oklch(0.12_0.005_285)] border border-[#1D9E75]/25 p-8 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-[#1D9E75]/12 border border-[#1D9E75]/25 text-[#4ECBA0] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-3 py-1 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1D9E75] animate-pulse inline-block" />
+                Free — $600 Value
+              </div>
+              <h3 className="font-['Barlow_Condensed'] font-700 text-2xl sm:text-3xl text-white mb-2">
+                Not ready for the full program? Start with your Longevity Blueprint.
+              </h3>
+              <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed max-w-xl">
+                Find out your real biological age — completely free. DEXA body scan, VO2 Max test, and a 1-on-1 consultation at RETO Brickell. A $600 assessment, on us, for qualifying Brickell applicants.
+              </p>
+            </div>
+            <Link href="/longevity-blueprint">
+              <span className="inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer whitespace-nowrap flex-shrink-0">
+                Claim Free Blueprint →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

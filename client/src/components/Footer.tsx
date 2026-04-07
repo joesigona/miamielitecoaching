@@ -52,6 +52,13 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/longevity-blueprint">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#4ECBA0] transition-colors cursor-pointer">
+                    Longevity Blueprint (Free)
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
 
