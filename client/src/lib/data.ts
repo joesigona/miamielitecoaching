@@ -45,6 +45,178 @@ export const CATEGORIES = [
 // ---- Placeholder Articles (populated via SEO content) ----
 export const ARTICLES: Article[] = [
   {
+    slug: "best-healthy-restaurants-miami-2026",
+    title: "Miami's Best Healthy Restaurants in 2026, Ranked by a Fitness Coach",
+    metaTitle: "Best Healthy Restaurants in Miami 2026 — Ranked by a Fitness Coach | Miami Elite Coaching",
+    metaDescription:
+      "Miami's top 11 healthy restaurants ranked for 2026 by a local fitness coach. From Naked Farmer to JaJaJa — where to eat clean, build muscle, and actually enjoy your food.",
+    excerpt:
+      "11 spots. Every one tested, tasted, and judged on flavor, macros, ingredient quality, and whether your body will actually thank you tomorrow. Updated for 2026 with 3 new additions.",
+    category: "nutrition",
+    readTime: 14,
+    publishDate: "2026-04-07",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
+    tags: ["healthy restaurants miami", "best healthy food miami 2026", "clean eating miami", "seed oil free restaurants miami", "macro friendly restaurants miami", "vegan restaurants miami", "fitness coach restaurant guide"],
+    content: `<p><em>Updated for 2026 — includes 3 new additions to Miami's health food scene + current rankings refresh.</em></p>
+
+<p>Miami in 2026 has officially entered its health food golden era. Between the farm-to-table boom, the Mediterranean wave sweeping Brickell, and new plant-based concepts landing from New York, there has never been a better time to eat clean and actually enjoy it in this city.</p>
+
+<p>But the options have also never been more overwhelming. Not everything labeled "healthy" is actually good for you — or good at all. As a Miami-based fitness coach who eats at these spots regularly, I've done the work so you don't have to.</p>
+
+<p>This list is ranked from the cleanest, most nutrient-dense choice down to the most "treat yourself, but still smart" pick. Three spots are brand new additions for 2026 — because Miami doesn't stand still, and neither should your lunch rotation.</p>
+
+<p><strong>The coaching philosophy behind this list:</strong> The best eating plan is one you can actually stick to. If your "healthy" meal makes you miserable by 3pm, you've already lost. Every restaurant on this list proves that <strong>macro-friendly and flavor-forward are not opposites</strong> — that's the same principle we build every client program around at Miami Elite Coaching, including our <a href="/longevity-blueprint">Longevity Blueprint</a> which pairs nutrition guidance with full-body diagnostic testing.</p>
+
+<h2>1. Naked Farmer — Best Overall</h2>
+
+<p><strong>Coach's Verdict:</strong> The cleanest food in Miami. Farm-to-table, no seed oils, locally sourced proteins — this is how food is supposed to work for your body.</p>
+
+<p>Naked Farmer holds the top spot for 2026 and it isn't close. This is the rare Miami restaurant that doesn't just <em>say</em> it's healthy — it proves it with every ingredient decision. Fully farm-to-table, locally and seasonally sourced, and crucially: <strong>no seed oils</strong>. If you care about inflammation, metabolic health, or just eating food that was alive recently, nothing in Miami beats this.</p>
+
+<p>Their Market Plate is a fitness coach's blueprint: choose your protein, stack your sides, hit your macros, leave satisfied. The Faroe Island salmon and grass-fed steak are exceptional. The Pecan Kale Caesar converts salad skeptics on first bite.</p>
+
+<p><strong>Must order:</strong> Market Plate · Faroe Island Salmon · Grass-Fed Steak · Charred Broccoli with Lemon & Garlic · Pecan Kale Caesar · Sweet Potato</p>
+
+<h2>2. Motek Miami — New #2 for 2026</h2>
+
+<p><strong>Coach's Verdict:</strong> Seed-oil free, kosher-style Mediterranean with the kind of flavor that makes you forget you're eating clean. One of the most exciting healthy additions to Miami in years.</p>
+
+<p>Motek has rapidly become one of the hottest tables in Miami, and from a nutrition perspective, it deserves every bit of the hype. Built around cherished family recipes with a modern twist, Motek's kitchen is proudly <strong>seed-oil free</strong> — a rarity at this price point and this level of flavor. The kosher-style menu brings whole Mediterranean branzino, house-baked pita, and creamy hummus into a setting that feels festive and welcoming.</p>
+
+<p>The award-winning burger is exceptional, but the real coaching recommendation here is the whole branzino or the shakshuka for a protein-packed, anti-inflammatory meal that doesn't feel like "diet food." The zero-proof cocktail menu is thoughtful and genuinely good.</p>
+
+<p><strong>Must order:</strong> Whole Mediterranean Branzino · Signature Shakshuka · House-Baked Pita & Hummus · Zero-Proof Cocktails · The Motek Burger</p>
+
+<h2>3. Carrot Express — Miami Institution</h2>
+
+<p><strong>Coach's Verdict:</strong> A Miami institution that keeps earning its place. Fresh, flavorful, genuinely nutritious — and the best coffee in the city right now is a bold claim they back up every morning.</p>
+
+<p>Carrot Express doesn't need the hype — it has the results. This is the local chain that never sold out, never went corporate, and never stopped being the best quick-healthy option in South Florida. The recently overhauled breakfast menu continues to impress in 2026, and the freshly squeezed Carrot Orange Juice remains in a category of one.</p>
+
+<p>From a macro standpoint, the Pesto Salmon Platter is about as close to a perfect meal as fast-casual gets: quality protein, good fats, and real vegetables. The Teeka Salad with Cilantro Lime Dressing is the sleeper hit most people overlook.</p>
+
+<p><strong>Must order:</strong> Carrot Orange Juice · Pesto Salmon Platter · Pesto Chicken Bowl · Teeka Salad · Liv Wrap · Morning Latte</p>
+
+<h2>4. Sweetgreen — New for 2026</h2>
+
+<p><strong>Coach's Verdict:</strong> Finally in Miami at scale — and worth the wait. Build-your-own bowls with real seasonal ingredients, clear nutrition data, and enough protein options to actually fuel a workout.</p>
+
+<p>Sweetgreen has expanded significantly across Miami in 2025–2026, with locations now in Coral Gables, Wynwood, Miami Beach, Coconut Grove, and Aventura. For clients who need a fast, reliable, macro-trackable meal anywhere in the city, this is the answer. The model is simple: <strong>seasonal produce, real ingredients, made from scratch daily</strong>.</p>
+
+<p>What earns Sweetgreen a top-5 spot is the transparency — full nutrition info on every item, easy customization, and a rotating seasonal menu that keeps things from getting stale. The Chicken + Brussels Bowl and the Shroomami are consistent go-tos.</p>
+
+<p><strong>Must order:</strong> Chicken + Brussels Bowl · Shroomami · Warm Grain Bowls · Seasonal Salads · Crispy Rice Bowl</p>
+
+<h2>5. Miami Juice — Best Value</h2>
+
+<p><strong>Coach's Verdict:</strong> Aventura's best-kept secret. An enormous menu, organic ingredients, vegan and gluten-free options, and prices that won't make you regret your goals.</p>
+
+<p>Miami Juice has been an Aventura institution for decades, and it keeps getting better with age. This is a neighborhood spot where the owner knows your order, the menu covers everything from spaghetti squash pasta to fresh acai bowls, and you can buy the organic ingredients they cook with right at their in-house market.</p>
+
+<p>Vegan, vegetarian, and gluten-free options are all robust and satisfying — not the usual afterthought side salad. The Japanese Sweet Potato is comfort food with actual nutritional value. The Spaghetti Squash Pasta is a brilliant low-carb swap that doesn't taste like compromise.</p>
+
+<p><strong>Must order:</strong> Isaac's Salad · Tuna Salad · Spaghetti Squash Pasta · Japanese Sweet Potato · Fruit Salad with Granola · Fresh Juices</p>
+
+<h2>6. Pura Vida — Community Hub</h2>
+
+<p><strong>Coach's Verdict:</strong> Miami's health food social scene lives here. Smoothies and protein options are the move — it's more vibe than macros, but the vibe is genuinely motivating.</p>
+
+<p>Pura Vida continues its takeover of Miami in 2026, and Sunset Harbour remains the flagship experience. Walk in, bump into three people you know, grab a Banana Brew, get some work done. It's less a restaurant and more a lifestyle hub — and for clients who struggle with motivation, sometimes the environment matters as much as the food.</p>
+
+<p>For training-focused eating, I steer clients toward the smoothies and protein bowls over the baked goods. The Bali Crunch Acai Bowl and the Kale Chicken Caesar Wrap are the cleanest, most macro-aligned options on the menu.</p>
+
+<p><strong>Must order:</strong> Banana Brew · Bali Crunch Acai Bowl · Kale Chicken Caesar Wrap · Perfect Egg Sandwich · Tuna Sprout Sandwich</p>
+
+<h2>Halfway Through? Let's Talk About Your Nutrition Plan</h2>
+
+<p>Knowing the best spots is step one. A personalized nutrition plan that works around your schedule — and your Miami life — is step two. That's exactly what we build at Miami Elite Coaching. Our <a href="/longevity-blueprint">Longevity Blueprint</a> starts with a full DEXA body composition scan and VO2 Max test so we know exactly where you stand — then builds a training and nutrition system around your real data, not guesswork. <a href="/longevity-blueprint">Claim your free Longevity Blueprint here →</a></p>
+
+<h2>7. Planta — Best Vegan</h2>
+
+<p><strong>Coach's Verdict:</strong> The best vegan restaurant in Miami. Consistently excellent. Even committed carnivores leave satisfied — which says everything.</p>
+
+<p>Planta on South Beach remains the undisputed king of plant-based dining in Miami. Fully vegan, genuinely creative, and lush enough to feel like a destination rather than a sacrifice. In a city where plant-based dining has historically struggled to match the flavor of its meat-heavy counterparts, Planta has been the outlier for years.</p>
+
+<p>From a health standpoint: high-fiber, anti-inflammatory, whole-food-based proteins throughout the menu. The Kelp Caesar is one of the best salads in Miami, period. The Bang Bang Broccoli is addictive and somehow still good for you.</p>
+
+<p><strong>Must order:</strong> Kelp Caesar · Bang Bang Broccoli · Chinese Chick'n Salad · Spicy Crab Handroll · Hawaiian Crunch Roll</p>
+
+<h2>8. JaJaJa Plantas Mexicana — New for 2026</h2>
+
+<p><strong>Coach's Verdict:</strong> The most exciting new healthy restaurant in Miami. Plant-based Mexican done with real skill — heart of palm ceviche alone is worth the trip to Wynwood.</p>
+
+<p>JaJaJa Plantas Mexicana opened its first Florida location in Wynwood in early 2026, bringing its acclaimed plant-based Mexican concept from New York, and it has already become one of the most talked-about healthy spots in the city. The premise is simple and brilliant: classic Mexican dishes reimagined with plants, without losing any of the soul.</p>
+
+<p>Heart of palm ceviche. Jackfruit enchiladas. Tempura'd cauliflower tacos. These aren't sad vegetable substitutes — they're genuinely inventive dishes that happen to be completely plant-based. For clients looking to reduce animal protein without losing satisfaction or flavor, JaJaJa is the 2026 answer.</p>
+
+<p><strong>Must order:</strong> Heart of Palm Ceviche · Jackfruit Enchiladas · Cauliflower Tacos · Guacamole · Aguas Frescas</p>
+
+<h2>9. Ojo De Agua — Brickell Staple</h2>
+
+<p><strong>Coach's Verdict:</strong> Bright, authentic, and reliably clean. The best spot in Brickell for a post-workout Mexican breakfast or a light lunch that doesn't derail your day.</p>
+
+<p>Ojo De Agua has quietly earned its place as one of Brickell's most reliable healthy spots. Everything here is baked, not fried, and the menu skews fresh and citrusy rather than heavy — exactly what you want in a city where it's 85 degrees before 9am. The breakfast window is where this spot really shines.</p>
+
+<p>The acai bowls are among Miami's best, and the fresh ceviches hit the protein-and-flavor combination better than spots charging twice the price. A clean, fast lunch that respects your macros and your lunch break.</p>
+
+<p><strong>Must order:</strong> Acai Bowl · Fresh Ceviche · Seasonal Tacos · Green Salads</p>
+
+<h2>10. Maman — Work-Friendly Café</h2>
+
+<p><strong>Coach's Verdict:</strong> More café culture than health-food destination, but the food quality is solid and the coffee menu is legitimately one of the most creative in the city.</p>
+
+<p>Maman has now fully settled into Miami's DNA, with multiple locations across the city and a loyal following that treats it as a second office. The warm, European-inspired spaces work perfectly for a working lunch or a post-workout refresh. The food walks a line between café fare and genuinely clean eating — not quite a health-food restaurant, but honest, quality ingredients throughout.</p>
+
+<p>The Iced Salted Tahini Honeycomb Latte is worth visiting for on its own. For food, the chicken caesar and the breakfast bowl are the cleanest, most training-aligned options. And yes, get the famous cookie. One cookie never derailed anyone's progress.</p>
+
+<p><strong>Must order:</strong> Chicken Caesar Salad · Breakfast Bowl · Tahini Honeycomb Latte · Chicken Sandwich · The Famous Cookie</p>
+
+<h2>11. Avo — Worth the Splurge</h2>
+
+<p><strong>Coach's Verdict:</strong> Genuinely beautiful, genuinely organic — but the price point keeps it at the bottom. Save it for a special occasion and order the Halloumi Salad. You won't regret either.</p>
+
+<p>Avo sits at number 11 not because the food is lacking — it genuinely isn't — but because spending $50+ on a salad is difficult to justify as a weekly habit when equally clean options exist at half the price. That said, there are moments when Avo is exactly right: a solo reset Sunday, a client lunch, or when you simply want to sit in one of Miami's most beautiful dining rooms and eat food you feel good about.</p>
+
+<p>The organic credentials are real. The Halloumi Salad is one of the best single salads in Miami. The salmon with lentils is a macro masterpiece. And the Sunset Harbour scene is, well, very Miami — in the best way.</p>
+
+<p><strong>Must order:</strong> Salmon with Lentils · Halloumi Salad · Iced Matcha</p>
+
+<h2>What's Shaping Miami's Healthy Food Scene in 2026</h2>
+
+<p>Seed-oil free cooking is moving from niche to mainstream — spots like Naked Farmer and Motek are leading this shift and building loyal followings because of it. Mediterranean cuisine is dominating the healthy dining conversation in Miami, with its emphasis on olive oil, whole proteins, legumes, and vegetables proving nutritionally superior to most alternatives.</p>
+
+<p>Plant-based options have gotten dramatically better — JaJaJa's Wynwood opening signals that creative, satisfying vegan food is no longer a compromise in this city. And transparency is the new luxury. Diners in 2026 want to know exactly what's in their food — and restaurants that can answer that question confidently are winning.</p>
+
+<h2>A Coach's 2026 Cheat Sheet: Eating Out and Staying on Track</h2>
+
+<p>Knowing the right restaurants matters. But the habits you bring to every meal — at any restaurant — are what actually move the needle:</p>
+
+<p><strong>Protein anchors every meal.</strong> Build the plate around protein first. Grilled fish, chicken, legumes, eggs — then fill in around it. Not the other way around.</p>
+
+<p><strong>Ask about cooking oils.</strong> Seed oils are the hidden saboteur of "healthy" restaurants. Ask if they use olive oil or butter. The answer tells you a lot.</p>
+
+<p><strong>Dressing on the side.</strong> Most restaurant dressings are sugar-loaded. Control the pour, or go oil and vinegar. Two tablespoons is usually enough for a full bowl.</p>
+
+<p><strong>Watch liquid calories.</strong> Smoothies and juices can spike blood sugar fast. Go veggie-forward blends or cold brew over sweetened lattes and tropical bowls with sugary bases.</p>
+
+<h2>FAQ</h2>
+
+<p><strong>What is the healthiest restaurant in Miami in 2026?</strong><br/>Naked Farmer leads for pure nutritional integrity — farm-to-table, no seed oils, locally sourced proteins. Motek Miami is the exciting new challenger, bringing Mediterranean cuisine with the same no-seed-oil commitment.</p>
+
+<p><strong>What are the best new healthy restaurants in Miami in 2026?</strong><br/>Three standout new additions: Motek Miami for seed-oil free Mediterranean, Sweetgreen now with multiple Miami locations, and JaJaJa Plantas Mexicana in Wynwood for the best plant-based Mexican food in South Florida.</p>
+
+<p><strong>Where can I eat healthy in Miami on a budget in 2026?</strong><br/>Miami Juice in Aventura remains the best-value healthy option. Sweetgreen is excellent for the price point with full nutrition transparency. Carrot Express is also a great value given the quality.</p>
+
+<p><strong>What is the best vegan restaurant in Miami?</strong><br/>Planta on South Beach is still the undisputed champion. JaJaJa Plantas Mexicana in Wynwood is the best new vegan option of 2026.</p>
+
+<p><strong>Where do Miami fitness coaches and personal trainers eat?</strong><br/>Naked Farmer, Carrot Express, and Miami Juice are the go-tos for high-protein, clean meals. Sweetgreen has become popular for its nutrition transparency. Pura Vida remains the post-workout smoothie social spot of choice.</p>
+
+<h2>You Know Where to Eat. Now Let's Build the Plan Around It.</h2>
+
+<p>The restaurants are the easy part. The hard part is building a training and nutrition system that actually fits your Miami lifestyle — your schedule, your goals, your social life. That's what Miami Elite Coaching does. Our <a href="/longevity-blueprint">Longevity Blueprint</a> starts with a complimentary DEXA scan and VO2 Max test to establish your baseline, then builds a fully personalized program around your data. <a href="/longevity-blueprint">Claim your free Longevity Blueprint here →</a></p>`,
+  },
+  {
     slug: "biohacking-techniques-miami-professionals",
     title: "The Top 5 Bio-Hacking Techniques for Miami Professionals",
     metaTitle: "Top 5 Bio-Hacking Techniques for Miami Professionals — Science-Backed Strategies",
