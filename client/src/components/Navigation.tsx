@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/miami-personal-trainer", label: "Programs" },
   { href: "/longevity-blueprint", label: "Longevity Blueprint" },
+  { href: "/ceo-performance-protocol", label: "CEO Protocol" },
   { href: "/blog", label: "Articles" },
   { href: "/brickell", label: "Brickell" },
   { href: "/coconut-grove", label: "Coconut Grove" },

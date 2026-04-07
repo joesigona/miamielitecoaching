@@ -59,6 +59,13 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/ceo-performance-protocol">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#5BA3D9] transition-colors cursor-pointer">
+                    CEO Performance Protocol
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -278,6 +278,33 @@ export default function BrickellPage() {
         </div>
       </section>
 
+      {/* CEO Performance Protocol Promo */}
+      <section className="py-16 border-t border-white/8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[oklch(0.12_0.005_285)] border border-[#185FA5]/25 p-8 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-[#185FA5]/12 border border-[#185FA5]/25 text-[#5BA3D9] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-3 py-1 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#185FA5] animate-pulse inline-block" />
+                Q2 2026 — 4 Spots Remaining
+              </div>
+              <h3 className="font-['Barlow_Condensed'] font-700 text-2xl sm:text-3xl text-white mb-2">
+                Ready for a data-driven approach? The CEO Performance Protocol.
+              </h3>
+              <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed max-w-xl">
+                12 weeks of sports science training, DEXA + VO2 Max testing, infrared recovery, and biometric re-testing — built exclusively for high-performing men 40+ in Brickell. $2,400 (save $800 at Q2 launch rate).
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              <Link href="/ceo-performance-protocol">
+                <span className="inline-flex items-center gap-2 bg-[#185FA5] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#0C447C] transition-colors cursor-pointer whitespace-nowrap">
+                  Learn More →
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
