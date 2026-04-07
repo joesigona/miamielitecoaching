@@ -257,11 +257,16 @@ export default function CoconutGrovePage() {
                 The Longevity Blueprint is a complimentary DEXA scan, VO2 Max test, and 1-on-1 consultation at RETO Brickell — a $600 value, free for qualifying Coconut Grove applicants. Know your numbers before you commit to anything.
               </p>
             </div>
-            <Link href="/longevity-blueprint">
-              <span className="inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer whitespace-nowrap flex-shrink-0">
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              <a href="https://q5lhjxf6lyg.typeform.com/to/GjjmWBrN" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer whitespace-nowrap">
                 Claim Free Blueprint →
-              </span>
-            </Link>
+              </a>
+              <Link href="/longevity-blueprint">
+                <span className="inline-flex items-center gap-2 border border-[#1D9E75]/40 text-[#4ECBA0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#1D9E75]/10 transition-colors cursor-pointer whitespace-nowrap">
+                  Learn More
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

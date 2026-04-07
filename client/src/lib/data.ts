@@ -39,10 +39,118 @@ export const CATEGORIES = [
   { id: "miami", label: "Miami Fitness" },
   { id: "mindset", label: "Mindset & Recovery" },
   { id: "executives", label: "Executive Health" },
+  { id: "longevity", label: "Longevity & Biohacking" },
 ];
 
 // ---- Placeholder Articles (populated via SEO content) ----
 export const ARTICLES: Article[] = [
+  {
+    slug: "biohacking-techniques-miami-professionals",
+    title: "The Top 5 Bio-Hacking Techniques for Miami Professionals",
+    metaTitle: "Top 5 Bio-Hacking Techniques for Miami Professionals — Science-Backed Strategies",
+    metaDescription:
+      "Discover the 5 most effective bio-hacking techniques used by Miami executives and professionals to reverse aging, boost energy, and optimize performance.",
+    excerpt:
+      "Miami's top performers aren't just working harder — they're hacking their biology. Here are the five evidence-based bio-hacking techniques that are actually worth your time and money.",
+    category: "longevity",
+    readTime: 10,
+    publishDate: "2025-04-15",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-blog-Lm26dz8LvEeJ9QD4Pqngfi.webp",
+    tags: ["biohacking miami", "longevity miami", "executive health", "reverse aging miami", "DEXA scan miami", "VO2 max miami"],
+    content: `<p>Bio-hacking used to be a fringe concept — Silicon Valley executives experimenting with nootropics and ice baths in their garages. But in 2025, the science has caught up with the hype. And in Miami, where high-performing professionals are already investing heavily in their physical appearance and energy levels, bio-hacking has gone mainstream.</p>
+
+<p>The problem is that most of what you read online about bio-hacking is either unproven, impractical, or flat-out dangerous. So we cut through the noise and identified the five techniques that are backed by clinical evidence, accessible in Miami, and actually deliver measurable results for busy professionals.</p>
+
+<h2>What Is Bio-Hacking, Really?</h2>
+
+<p>At its core, bio-hacking is the practice of using science, technology, and self-experimentation to take control of your own biology — optimizing everything from body composition and cardiovascular fitness to sleep quality and cognitive performance. The goal isn't to live forever. It's to extend your <strong>healthspan</strong>: the number of years you spend feeling strong, sharp, and fully functional.</p>
+
+<p>For Miami professionals, bio-hacking is particularly relevant because the city's lifestyle — late nights, high stress, constant social obligations — accelerates biological aging faster than most people realize. The techniques below are designed to counteract that.</p>
+
+<h2>1. DEXA Body Composition Scanning</h2>
+
+<p>If you're serious about optimizing your body, you need data — and a bathroom scale isn't going to cut it. <strong>DEXA (Dual-Energy X-ray Absorptiometry)</strong> is the gold standard for measuring body composition. It gives you a precise breakdown of body fat percentage, lean muscle mass by region, visceral fat levels, and bone mineral density.</p>
+
+<p>Why it matters for bio-hacking: DEXA gives you a baseline that no other measurement can match. You can track exactly how your body responds to training, nutrition, and supplementation changes over time — down to tenths of a percentage point. It removes guesswork entirely.</p>
+
+<p><strong>Where to get it in Miami:</strong> Clinical facilities in Brickell and Coral Gables offer DEXA scans, typically ranging from $100 to $200 per scan. At <a href="/longevity-blueprint">Miami Elite Coaching's Longevity Blueprint</a>, a full DEXA scan is included as part of the complimentary assessment — a $600 value at no cost.</p>
+
+<p><strong>How often:</strong> Every 8–12 weeks to track meaningful changes in body composition.</p>
+
+<h2>2. VO2 Max Testing</h2>
+
+<p>VO2 Max — your body's maximum rate of oxygen consumption during exercise — is the single strongest predictor of all-cause mortality in modern medicine. Put simply: the higher your VO2 Max, the longer and better you're likely to live. Dr. Peter Attia, one of the leading voices in longevity medicine, calls it "the most powerful marker we have for longevity."</p>
+
+<p>For Miami professionals, VO2 Max testing provides two critical insights:</p>
+
+<ul>
+<li><strong>Your cardiovascular fitness age</strong> — which may be significantly older or younger than your chronological age</li>
+<li><strong>Your training zones</strong> — the exact heart rate ranges where your body burns fat most efficiently, builds aerobic capacity, or develops peak power</li>
+</ul>
+
+<p>Most people train in the wrong zones. They either go too hard (burning out their nervous system) or too easy (never creating enough stimulus for adaptation). A VO2 Max test eliminates this problem by giving you precise, personalized training thresholds.</p>
+
+<p><strong>Where to get it in Miami:</strong> Sports medicine clinics and performance centers across Miami offer VO2 Max testing, typically $150–$300. It's also included in the <a href="/longevity-blueprint">free Longevity Blueprint assessment</a> at RETO Brickell.</p>
+
+<p><strong>How often:</strong> Every 3–6 months, or after a significant training block.</p>
+
+<h2>3. Zone 2 Cardiovascular Training</h2>
+
+<p>This is arguably the most underrated bio-hack available — and it costs nothing. <strong>Zone 2 training</strong> refers to sustained aerobic exercise at a low-to-moderate intensity, where you can still hold a conversation but are working hard enough to build your mitochondrial base.</p>
+
+<p>Why it matters: Zone 2 training improves your body's ability to use fat as fuel, enhances mitochondrial density and function, lowers resting heart rate and blood pressure, and directly improves VO2 Max over time. It's the foundation of every serious longevity protocol.</p>
+
+<p>The problem is that most Miami gym-goers skip Zone 2 entirely. They either do high-intensity interval training (HIIT) or nothing at all. HIIT has its place, but without a strong aerobic base, it's like putting a turbocharger on an engine with no foundation.</p>
+
+<p><strong>How to implement it:</strong> 150–180 minutes per week of Zone 2 cardio — walking at a brisk pace, cycling, rowing, or swimming at a conversational intensity. In Miami, outdoor options are abundant: the Rickenbacker Causeway for cycling, the Brickell Key loop for walking, or laps at the Venetian Pool in Coral Gables.</p>
+
+<p><strong>Pro tip:</strong> Use a heart rate monitor and stay in your Zone 2 range (typically 60–70% of max heart rate). If you've done a VO2 Max test, you'll have your exact zones dialed in.</p>
+
+<h2>4. Cold and Heat Exposure Therapy</h2>
+
+<p>Cold plunges and infrared saunas have exploded in popularity in Miami — and for good reason. The research behind deliberate cold and heat exposure is increasingly robust.</p>
+
+<p><strong>Cold exposure</strong> (cold plunges, cryotherapy, cold showers) triggers a cascade of physiological responses: increased norepinephrine production (improving focus and mood), reduced systemic inflammation, enhanced recovery from training, and activation of brown adipose tissue (which burns calories to generate heat).</p>
+
+<p><strong>Heat exposure</strong> (sauna, infrared sauna, steam) has been linked to reduced cardiovascular mortality, improved blood pressure, enhanced growth hormone release, and better sleep quality. A landmark Finnish study found that men who used a sauna 4–7 times per week had a 40% lower risk of all-cause mortality compared to those who used it once per week.</p>
+
+<p><strong>Where to access it in Miami:</strong> Several facilities in Brickell and Wynwood offer cold plunge and sauna access. RETO Brickell features the Iyashi Dome — a far-infrared thermal therapy system used in clinical settings across Japan and Europe. Plunge Miami and various recovery studios across the city offer cold immersion pools.</p>
+
+<p><strong>Protocol:</strong> 2–4 cold plunge sessions per week (2–5 minutes at 38–50°F) and 3–4 sauna sessions per week (15–20 minutes at 170–210°F). Start conservatively and build tolerance over time.</p>
+
+<h2>5. Sleep Optimization</h2>
+
+<p>Sleep is the single most powerful recovery and performance tool available to any human being — and it's the one that Miami's lifestyle most aggressively undermines. Late dinners, blue light from screens, alcohol, caffeine, and the city's general energy all conspire against quality sleep.</p>
+
+<p>The bio-hacking approach to sleep goes beyond "get 8 hours." It involves optimizing your sleep <em>architecture</em> — the amount of time you spend in deep sleep and REM sleep, which is where the real recovery, hormone production, and cognitive consolidation happens.</p>
+
+<p><strong>Evidence-based sleep optimization strategies:</strong></p>
+
+<ul>
+<li><strong>Temperature control</strong> — your bedroom should be 65–68°F; consider a cooling mattress pad (Eight Sleep or ChiliPad are popular among Miami bio-hackers)</li>
+<li><strong>Light management</strong> — blue-light blocking glasses after sunset, blackout curtains, and morning sunlight exposure within 30 minutes of waking</li>
+<li><strong>Caffeine cutoff</strong> — no caffeine after 12:00 PM; caffeine's half-life is 5–6 hours, meaning an afternoon espresso is still in your system at midnight</li>
+<li><strong>Alcohol awareness</strong> — even moderate alcohol consumption reduces REM sleep by 20–40%; in Miami's social culture, this is the hardest habit to manage but the most impactful to change</li>
+<li><strong>Consistent schedule</strong> — going to bed and waking up within a 30-minute window every day, including weekends</li>
+</ul>
+
+<p><strong>Tracking tools:</strong> Wearables like the Oura Ring, WHOOP strap, or Apple Watch provide sleep stage data that lets you measure the impact of your changes objectively.</p>
+
+<h2>How These Techniques Work Together</h2>
+
+<p>The real power of bio-hacking isn't in any single technique — it's in how they compound. DEXA and VO2 Max testing give you the data. Zone 2 training builds your aerobic foundation. Cold and heat exposure accelerate recovery and reduce inflammation. Sleep optimization ensures your body actually adapts to the stress you're putting it under.</p>
+
+<p>When a Miami professional implements all five of these strategies consistently, the results are dramatic: lower biological age, improved body composition, higher energy throughout the day, better cognitive performance, and a measurably stronger cardiovascular system.</p>
+
+<h2>Where to Start</h2>
+
+<p>If you're new to bio-hacking, don't try to implement everything at once. Start with data: get a DEXA scan and VO2 Max test to understand your current baseline. From there, you can make targeted decisions about which techniques will move the needle fastest for your specific biology.</p>
+
+<p>Miami Elite Coaching's <a href="/longevity-blueprint">Longevity Blueprint</a> is designed exactly for this purpose. It includes a complimentary DEXA scan, VO2 Max test, and a 1-on-1 consultation with a certified health specialist — a $600 assessment, completely free for qualifying Miami professionals. You'll walk out with your biological age, your cardiovascular fitness score, and a personalized action plan for implementing these techniques in your life.</p>
+
+<p><a href="https://q5lhjxf6lyg.typeform.com/to/GjjmWBrN">Claim your free Longevity Blueprint assessment →</a></p>`,
+  },
   {
     slug: "best-personal-trainers-miami",
     title: "The 7 Best Personal Trainers in Miami (2025 Guide)",

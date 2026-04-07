@@ -119,13 +119,15 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
+const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/GjjmWBrN";
+
 function ClaimButton({ size = "default" }: { size?: "default" | "large" }) {
   const cls =
     size === "large"
       ? "inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#17876300] transition-colors cursor-pointer border border-[#1D9E75] hover:border-[#1D9E75] hover:text-[#1D9E75]"
       : "inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer";
   return (
-    <a href="#claim" className={cls}>
+    <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
       Claim Your Free Blueprint Session →
     </a>
   );
