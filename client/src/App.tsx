@@ -19,8 +19,10 @@ import VitalityResetPage from "./pages/VitalityReset";
 import LongevityDuoPage from "./pages/LongevityDuo";
 import DataFirstDropInPage from "./pages/DataFirstDropIn";
 import NotFound from "./pages/NotFound";
-
+import CheckoutSuccess from "./pages/CheckoutSuccess";
+import CheckoutCancel from "./pages/CheckoutCancel";
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -34,6 +36,8 @@ function Router() {
       <Route path="/vitality-reset" component={VitalityResetPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
       <Route path="/data-first-dropin" component={DataFirstDropInPage} />
+      <Route path="/checkout/success" component={CheckoutSuccess} />
+      <Route path="/checkout/cancel" component={CheckoutCancel} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

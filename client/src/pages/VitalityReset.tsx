@@ -95,10 +95,30 @@ const FAQS = [
   { q: "What happens after 8 weeks?", a: "You receive your re-assessment results and a full forward plan. Many clients continue with a 16-week program — and founding members receive priority pricing for any continuation package. There's no pressure; the 8-week program is complete in itself." },
 ];
 
-function CtaButton({ size = "default", label = "Start Your Vitality Reset →" }: { size?: "default" | "large"; label?: string }) {
+function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
+  const [loading, setLoading] = useState(false);
   const cls = size === "large"
     ? "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#72243E] transition-colors cursor-pointer border border-[#993556] hover:border-[#C05A7E]"
     : "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#72243E] transition-colors cursor-pointer";
+  async function handleBuy() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/create-checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ productId: "vitality-reset" }) });
+      const data = await res.json();
+      if (data.url) window.open(data.url, "_blank");
+    } catch (err) { console.error("Checkout error:", err); } finally { setLoading(false); }
+  }
+  return (
+    <button onClick={handleBuy} disabled={loading} className={cls}>
+      {loading ? "Processing..." : "BUY NOW — $1,200 →"}
+    </button>
+  );
+}
+
+function CtaButton({ size = "default", label = "Have Questions? Apply First →" }: { size?: "default" | "large"; label?: string }) {
+  const cls = size === "large"
+    ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
+    : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
     <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
       {label}
@@ -158,6 +178,8 @@ export default function VitalityReset() {
             </div>
             <p className="text-[oklch(0.45_0.01_75)] text-sm mb-6">8-week program · Limited to 6 women this quarter · Payment plans available</p>
 
+            <BuyNowButton size="large" />
+            <div className="mt-3" />
             <CtaButton size="large" />
 
             <div className="mt-6 bg-[#993556]/10 border border-[#993556]/25 px-4 py-3 max-w-md">
@@ -341,7 +363,9 @@ export default function VitalityReset() {
           <p className="text-[oklch(0.60_0.01_75)] leading-relaxed mb-8 max-w-xl mx-auto">
             The Vitality Reset is not a crash program, a detox, or another thing to power through. It's a precise, science-backed 8-week engagement that finally works with your biology — and ends with data showing exactly what changed.
           </p>
-          <CtaButton size="large" label="Start Your Vitality Reset — $1,200 →" />
+          <BuyNowButton size="large" />
+          <div className="mt-3" />
+          <CtaButton size="large" />
           <p className="text-[oklch(0.40_0.01_75)] text-xs mt-4">Founding member rate closes when the cohort fills. Includes $200 longevity consultation bonus.</p>
 
           <div className="mt-8 bg-white/3 border border-white/6 p-5 text-left flex gap-4">

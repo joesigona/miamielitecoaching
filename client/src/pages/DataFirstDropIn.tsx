@@ -72,10 +72,30 @@ const FAQS = [
   { q: "Can I book multiple sessions over time to track progress?", a: "Absolutely. Many clients use the Drop-In as a quarterly benchmark — booking every 90 days to track changes in their body composition and cardiovascular fitness over time. A 10% repeat-booking discount applies from your second session onward." },
 ];
 
-function CtaButton({ size = "default", label = "Book Your Drop-In Session →" }: { size?: "default" | "large"; label?: string }) {
+function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
+  const [loading, setLoading] = useState(false);
   const cls = size === "large"
     ? "inline-flex items-center gap-2 bg-[#534AB7] text-[#EEEDFE] font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#3C3489] transition-colors cursor-pointer border border-[#534AB7] hover:border-[#7B73D1]"
     : "inline-flex items-center gap-2 bg-[#534AB7] text-[#EEEDFE] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#3C3489] transition-colors cursor-pointer";
+  async function handleBuy() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/create-checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ productId: "data-first-drop-in" }) });
+      const data = await res.json();
+      if (data.url) window.open(data.url, "_blank");
+    } catch (err) { console.error("Checkout error:", err); } finally { setLoading(false); }
+  }
+  return (
+    <button onClick={handleBuy} disabled={loading} className={cls}>
+      {loading ? "Processing..." : "BUY NOW — $350 →"}
+    </button>
+  );
+}
+
+function CtaButton({ size = "default", label = "Have Questions? Apply First →" }: { size?: "default" | "large"; label?: string }) {
+  const cls = size === "large"
+    ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
+    : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
     <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
       {label}
@@ -135,6 +155,8 @@ export default function DataFirstDropIn() {
             </div>
             <p className="text-[oklch(0.45_0.01_75)] text-sm mb-6">Single session · Capped at 8 per week · Results same day</p>
 
+            <BuyNowButton size="large" />
+            <div className="mt-3" />
             <CtaButton size="large" />
             <p className="text-[oklch(0.40_0.01_75)] text-xs mt-3">Book online in under 2 minutes. No intake form required.</p>
 
@@ -330,7 +352,9 @@ export default function DataFirstDropIn() {
           </div>
           <p className="text-[oklch(0.45_0.01_75)] text-xs mb-6">3 of 8 weekly slots filled — 5 remaining this week</p>
 
-          <CtaButton size="large" label="Book Your Drop-In — $350 →" />
+          <BuyNowButton size="large" />
+          <div className="mt-3" />
+          <CtaButton size="large" />
           <p className="text-[oklch(0.40_0.01_75)] text-xs mt-4">Includes $100 upgrade credit if you book a program within 7 days. No commitment beyond the session.</p>
 
           <div className="mt-8 bg-white/3 border border-white/6 p-5 text-left flex gap-4">

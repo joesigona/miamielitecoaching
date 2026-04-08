@@ -128,7 +128,7 @@ function ClaimButton({ size = "default" }: { size?: "default" | "large" }) {
       : "inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer";
   return (
     <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
-      Claim Your Free Blueprint Session →
+      BOOK NOW — FREE →
     </a>
   );
 }

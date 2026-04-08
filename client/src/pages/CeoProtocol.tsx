@@ -122,6 +122,43 @@ const FAQS = [
   },
 ];
 
+function BuyNowButton({
+  size = "default",
+}: {
+  size?: "default" | "large";
+}) {
+  const [loading, setLoading] = useState(false);
+  const cls =
+    size === "large"
+      ? "inline-flex items-center gap-2 bg-[#185FA5] text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#0C447C] transition-colors cursor-pointer border border-[#185FA5] hover:border-[#3B82C4] hover:text-white"
+      : "inline-flex items-center gap-2 bg-[#185FA5] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#0C447C] transition-colors cursor-pointer";
+
+  async function handleBuy() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId: "ceo-performance-protocol" }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.open(data.url, "_blank");
+      }
+    } catch (err) {
+      console.error("Checkout error:", err);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <button onClick={handleBuy} disabled={loading} className={cls}>
+      {loading ? "Processing..." : "BUY NOW — $2,400 →"}
+    </button>
+  );
+}
+
 function CtaButton({
   size = "default",
 }: {
@@ -129,8 +166,8 @@ function CtaButton({
 }) {
   const cls =
     size === "large"
-      ? "inline-flex items-center gap-2 bg-[#185FA5] text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#0C447C] transition-colors cursor-pointer border border-[#185FA5] hover:border-[#3B82C4] hover:text-white"
-      : "inline-flex items-center gap-2 bg-[#185FA5] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#0C447C] transition-colors cursor-pointer";
+      ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
+      : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
     <a
       href={TYPEFORM_URL}
@@ -138,7 +175,7 @@ function CtaButton({
       rel="noopener noreferrer"
       className={cls}
     >
-      Reserve Your Protocol Spot →
+      Have Questions? Apply First →
     </a>
   );
 }
@@ -233,6 +270,7 @@ export default function CeoProtocol() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-4">
+              <BuyNowButton size="default" />
               <CtaButton size="default" />
             </div>
             <p className="text-[oklch(0.38_0.01_75)] text-xs">
@@ -584,6 +622,8 @@ export default function CeoProtocol() {
             2 of 6 spots filled for Q2. 4 remaining.
           </p>
 
+          <BuyNowButton size="large" />
+          <div className="mt-3" />
           <CtaButton size="large" />
           <p className="text-[oklch(0.38_0.01_75)] text-xs mt-4">
             A short application ensures the program is the right fit. You'll

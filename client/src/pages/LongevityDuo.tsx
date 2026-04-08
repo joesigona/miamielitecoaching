@@ -53,10 +53,30 @@ const FAQS = [
   { q: "Is this only for couples?", a: "Not at all. Best friends, siblings, business partners, mother-daughter pairs — anyone who wants to do this together. Two people, one shared commitment." },
 ];
 
-function CtaButton({ size = "default", label = "Book the Longevity Duo →" }: { size?: "default" | "large"; label?: string }) {
+function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
+  const [loading, setLoading] = useState(false);
   const cls = size === "large"
     ? "inline-flex items-center gap-2 bg-[#1D9E75] text-[#E1F5EE] font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#0F6E56] transition-colors cursor-pointer border border-[#1D9E75] hover:border-[#3DC49A]"
     : "inline-flex items-center gap-2 bg-[#1D9E75] text-[#E1F5EE] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#0F6E56] transition-colors cursor-pointer";
+  async function handleBuy() {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/stripe/create-checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ productId: "longevity-duo" }) });
+      const data = await res.json();
+      if (data.url) window.open(data.url, "_blank");
+    } catch (err) { console.error("Checkout error:", err); } finally { setLoading(false); }
+  }
+  return (
+    <button onClick={handleBuy} disabled={loading} className={cls}>
+      {loading ? "Processing..." : "BUY NOW — $599 →"}
+    </button>
+  );
+}
+
+function CtaButton({ size = "default", label = "Have Questions? Apply First →" }: { size?: "default" | "large"; label?: string }) {
+  const cls = size === "large"
+    ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
+    : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
     <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
       {label}
@@ -116,6 +136,8 @@ export default function LongevityDuo() {
             </div>
             <p className="text-[oklch(0.45_0.01_75)] text-sm mb-6">No membership required. Book online in under 2 minutes.</p>
 
+            <BuyNowButton size="large" />
+            <div className="mt-3" />
             <CtaButton size="large" />
           </div>
         </div>
@@ -252,7 +274,9 @@ export default function LongevityDuo() {
           <p className="text-[oklch(0.60_0.01_75)] leading-relaxed mb-8 max-w-xl mx-auto">
             Book in under 2 minutes. No commitment beyond the assessment. Full results in hand the same day.
           </p>
-          <CtaButton size="large" label="Book the Longevity Duo — $599 →" />
+          <BuyNowButton size="large" />
+          <div className="mt-3" />
+          <CtaButton size="large" />
           <p className="text-[oklch(0.40_0.01_75)] text-xs mt-4">Includes $250 in free bonuses. Spots are limited.</p>
 
           <div className="mt-8 bg-white/3 border border-white/6 p-5 text-left flex gap-4">
