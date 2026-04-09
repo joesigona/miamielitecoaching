@@ -33,6 +33,7 @@ import VitalityResetPage from "./pages/VitalityReset";
 import LongevityDuoPage from "./pages/LongevityDuo";
 import DataFirstDropInPage from "./pages/DataFirstDropIn";
 import NotFound from "./pages/NotFound";
+import BiohackingMiamiSummer from "./pages/BiohackingMiamiSummer";
 import CheckoutSuccess from "./pages/CheckoutSuccess";
 import CheckoutCancel from "./pages/CheckoutCancel";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -56,6 +57,9 @@ function Router() {
       <Route path="/vitality-reset" component={VitalityResetPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
       <Route path="/data-first-dropin" component={DataFirstDropInPage} />
+
+      {/* Individual article pages with custom layout */}
+      <Route path="/articles/biohacking-miami-summer-longevity" component={BiohackingMiamiSummer} />
 
       <Route path="/checkout/success" component={CheckoutSuccess} />
       <Route path="/checkout/cancel" component={CheckoutCancel} />
