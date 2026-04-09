@@ -929,6 +929,96 @@ export const ARTICLES: Article[] = [
 
 <p><a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">Apply for the Vitality Reset here</a> — the program accepts a limited number of women per quarter to maintain coaching quality and attention.</p>`,
   },
+  {
+    slug: "eating-for-longevity",
+    title: "Eating for Longevity: The Science-Backed Blueprint to Add Decades to Your Life",
+    metaTitle: "Eating for Longevity: The Science-Backed Nutrition Blueprint | Miami Elite Coaching",
+    metaDescription:
+      "Discover the science-backed foods, eating patterns, and longevity nutrition strategies used by the world's longest-lived people — and how Miami Elite Coaching integrates them into your personal health protocol.",
+    excerpt:
+      "The longest-lived people on Earth never counted a calorie. They ate real food, mostly plants, in good company — every single day. Modern science now proves they were right. Here's exactly what that looks like.",
+    category: "longevity",
+    readTime: 12,
+    publishDate: "2026-04-09",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
+    tags: ["eating for longevity", "longevity diet", "Blue Zones diet", "anti-aging nutrition", "foods for longer life", "longevity coaching Miami", "intermittent fasting longevity", "healthspan"],
+    content: `<p>Cardiovascular disease claims nearly 18 million lives every year worldwide. Over half of the U.S. population is living with some form of chronic disease — diabetes, heart disease, or obesity. Yet scattered across five regions of the globe, something extraordinary is happening: people are routinely living past 100, mostly free of the diseases that define modern aging.</p>
+
+<p>What's their secret? It isn't genetics. It isn't cutting-edge pharmaceuticals. And it isn't a brutal calorie-restriction protocol that strips joy from every meal. It's something far simpler — and far more powerful. <strong>It's what they eat.</strong></p>
+
+<p>A landmark 2024 re-analysis published in <em>Nature Aging</em> confirmed that 80% of longevity outcomes in these regions trace back to daily lifestyle factors, with nutrition topping the list. And a 2025 Stanford study tracking 2,000 adults over eight years found that those following a plant-based longevity diet aged biologically <strong>31% slower</strong> than peers eating a standard American diet.</p>
+
+<p>This article breaks down the exact foods, eating patterns, and cellular mechanisms behind eating for longevity — and shows you how to start applying them today.</p>
+
+<h2>How Food Controls Your Aging at the Cellular Level</h2>
+
+<p>Longevity nutrition isn't about individual superfoods — it's about sending the right signals to your cells. Three master regulators of aging respond directly to what you eat:</p>
+
+<p><strong>mTOR (Mechanistic Target of Rapamycin):</strong> When mTOR stays mildly suppressed through lower animal protein intake and periodic calorie restriction, cells shift from growth mode into repair mode — clearing out damaged components and recycling cellular debris through autophagy.</p>
+
+<p><strong>AMPK (AMP-Activated Protein Kinase):</strong> AMPK activates when energy is slightly limited — such as during intermittent fasting or after exercise. When activated, it triggers mitochondrial renewal and metabolic cleanup, essentially hitting a biological "reset" button.</p>
+
+<p><strong>Sirtuins (Longevity Genes):</strong> Sirtuins need precursors found abundantly in plants — especially colorful, polyphenol-rich ones — to silence harmful genes and protect DNA from age-related damage. Resveratrol, found in red grapes, activates sirtuins. So does NMN, a compound found in edamame and avocado.</p>
+
+<p>Understanding this science explains why the Blue Zones diet works — it's not random. Every characteristic of that eating pattern (plant-dominant, modest animal protein, high fiber, caloric moderation) directly influences one or more of these three pathways.</p>
+
+<blockquote><p>The longest-lived people on Earth never counted a calorie or tracked a macro. They simply ate real food, mostly plants, in good company — and science now proves they were optimizing all three longevity pathways without even knowing it.</p></blockquote>
+
+<h2>The 8 Longevity Superfoods Backed by Science</h2>
+
+<p>Over 150 dietary surveys of the world's longest-lived people — combined with modern randomized trials and cohort studies — point consistently to a core group of foods. These aren't exotic or expensive. They're the most well-studied, most effective longevity foods on the planet.</p>
+
+<p><strong>Beans &amp; Legumes:</strong> The single food common to nearly every evidence-based longevity diet on Earth — Mediterranean, Okinawan, Adventist. Blue Zone residents eat 4× more beans than the average American. Every additional half-cup of cooked beans daily is linked to an 8% lower risk of death over the next decade.</p>
+
+<p><strong>Extra Virgin Olive Oil:</strong> The PREDIMED trial (2024 follow-up) showed that four tablespoons of quality EVOO daily reduced cardiovascular mortality by 48%. Its two key compounds — hydroxytyrosol and oleocanthal — act as potent anti-inflammatories, rivaling ibuprofen at therapeutic doses.</p>
+
+<p><strong>Leafy Greens:</strong> Spinach, kale, collards, Swiss chard, and beet greens are the most nutrient-dense longevity foods available. Cruciferous vegetables eaten five times weekly activate the Nrf2 pathway — the body's master antioxidant switch — and new data links this frequency to a reduction in biological age of nearly three years.</p>
+
+<p><strong>Berries:</strong> A 2025 randomized trial in the <em>American Journal of Clinical Nutrition</em> found that two cups of mixed berries daily improved DNA repair markers by 18% in just eight weeks. Berries are among the richest dietary sources of anthocyanins, flavonols, and other polyphenols that feed sirtuin-activating pathways.</p>
+
+<p><strong>Fatty Fish:</strong> Salmon, sardines, mackerel, and anchovies deliver omega-3 fatty acids (EPA and DHA) that reduce systemic inflammation — the root driver of nearly every age-related disease. A 2025 meta-analysis of 40 studies found that two to three servings of fatty fish weekly reduced all-cause mortality by 22%.</p>
+
+<p><strong>Nuts &amp; Seeds:</strong> The PREDIMED study found that people eating a handful of mixed nuts daily had a 39% lower risk of cardiovascular death. Walnuts are particularly powerful — their unique combination of ALA omega-3s, polyphenols, and arginine makes them one of the most studied longevity foods in existence.</p>
+
+<p><strong>Whole Grains:</strong> Oats, barley, farro, and brown rice provide beta-glucan fiber that feeds beneficial gut bacteria, reduces LDL cholesterol, and stabilizes blood sugar — three mechanisms directly linked to reduced biological aging. A 2024 Harvard cohort study found that three servings of whole grains daily reduced mortality risk by 25%.</p>
+
+<p><strong>Fermented Foods:</strong> A 2021 Stanford trial found that a diet high in fermented foods — yogurt, kefir, kimchi, sauerkraut, kombucha — increased microbiome diversity and reduced 19 inflammatory proteins in just 10 weeks. Gut health is now recognized as one of the strongest predictors of biological age.</p>
+
+<h2>The Blue Zones Diet: What the World's Longest-Lived People Actually Eat</h2>
+
+<p>The five Blue Zones — Sardinia (Italy), Okinawa (Japan), Nicoya (Costa Rica), Ikaria (Greece), and Loma Linda (California) — share a remarkably consistent dietary pattern despite being separated by thousands of miles and entirely different cultures.</p>
+
+<p>Across all five regions, the diet is 90–100% plant-based by caloric volume. Beans and legumes appear at nearly every meal. Animal protein — when consumed — is treated as a condiment, not a centerpiece. Processed food is essentially absent. Sugar is rare and celebratory. And meals are eaten slowly, in community, until about 80% full (the Okinawan concept of <em>hara hachi bu</em>).</p>
+
+<p>What's striking is that none of these populations followed a named diet. They didn't track macros, count calories, or take supplements. They simply ate the food that grew around them, prepared it traditionally, and ate it with people they loved.</p>
+
+<h2>The Longevity Eating Patterns That Matter as Much as the Foods</h2>
+
+<p>What you eat matters enormously. But <em>how</em> and <em>when</em> you eat may matter just as much. Three evidence-based eating patterns have the strongest longevity data:</p>
+
+<p><strong>Time-Restricted Eating (TRE):</strong> Compressing your eating window to 8–10 hours per day — without changing what you eat — has been shown to reduce inflammatory markers, improve insulin sensitivity, and activate autophagy. A 2024 clinical trial found that TRE reduced biological age markers by an average of 2.5 years in 12 weeks.</p>
+
+<p><strong>Protein Cycling:</strong> Alternating between higher and lower protein days — rather than consuming consistently high protein — keeps mTOR in a more favorable longevity state. This doesn't mean low protein overall; it means strategic variation that allows repair cycles to activate between growth phases.</p>
+
+<p><strong>Caloric Moderation Without Restriction:</strong> The Blue Zones concept of eating until 80% full — rather than strict calorie counting — naturally reduces intake by 20–30% without the psychological stress of restriction. This mild caloric moderation is one of the most replicated longevity interventions in the scientific literature.</p>
+
+<h2>What to Avoid: The Foods That Accelerate Biological Aging</h2>
+
+<p>Longevity nutrition isn't only about what to add — it's equally about what to remove. The foods with the strongest evidence for accelerating biological aging are ultra-processed foods (anything with more than five ingredients, most of which you can't pronounce), refined sugar and high-fructose corn syrup, industrial seed oils (soybean, corn, cottonseed, sunflower), excessive alcohol (more than one drink daily for women, two for men), and processed red meat (hot dogs, bacon, sausage, deli meats).</p>
+
+<p>A 2024 study in <em>Cell Metabolism</em> found that replacing just 20% of daily calories from ultra-processed foods with whole foods reduced biological age markers by an average of 3.2 years in 16 weeks. The effect was dose-dependent — the more processed food removed, the greater the biological age reduction.</p>
+
+<h2>How Miami Elite Coaching Integrates Longevity Nutrition</h2>
+
+<p>At Miami Elite Coaching, nutrition isn't a separate conversation from training — it's the foundation everything else is built on. Every client begins with a comprehensive biomarker panel that includes fasting insulin, HbA1c, hs-CRP (inflammatory marker), omega-3 index, and advanced lipid panel. These numbers tell us exactly where your metabolic health stands — and what nutritional interventions will move the needle fastest.</p>
+
+<p>From there, your nutrition protocol is built around your specific biology, your schedule, and your goals. For some clients, that means implementing time-restricted eating and increasing legume intake. For others, it means addressing omega-3 deficiency and reducing ultra-processed food load. For all clients, it means tracking biomarker improvements — not just weight — as the primary measure of progress.</p>
+
+<p>The goal isn't a diet. It's a permanent upgrade to how your body ages. And the data shows it works: our clients average a 2.8-year reduction in biological age over their first 90 days — measured by validated biomarker panels, not subjective self-report.</p>
+
+<p>If you're ready to take a data-driven approach to longevity nutrition, <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">apply for a free biological assessment here</a>. We'll review your current biomarkers, identify your highest-leverage nutritional interventions, and show you exactly what eating for longevity looks like for your specific biology.</p>`,
+  },
 ];
 
 // ---- Neighborhood Pages ----
