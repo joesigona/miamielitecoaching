@@ -56,7 +56,7 @@ export const ARTICLES: Article[] = [
     readTime: 14,
     publishDate: "2026-04-07",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
+      
     tags: ["healthy restaurants miami", "best healthy food miami 2026", "clean eating miami", "seed oil free restaurants miami", "macro friendly restaurants miami", "vegan restaurants miami", "fitness coach restaurant guide"],
     content: `<p><em>Updated for 2026 — includes 3 new additions to Miami's health food scene + current rankings refresh.</em></p>
 
