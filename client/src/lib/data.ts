@@ -56,7 +56,7 @@ export const ARTICLES: Article[] = [
     readTime: 14,
     publishDate: "2026-04-07",
     image:
-      
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
     tags: ["healthy restaurants miami", "best healthy food miami 2026", "clean eating miami", "seed oil free restaurants miami", "macro friendly restaurants miami", "vegan restaurants miami", "fitness coach restaurant guide"],
     content: `<p><em>Updated for 2026 — includes 3 new additions to Miami's health food scene + current rankings refresh.</em></p>
 
@@ -1018,6 +1018,19 @@ export const ARTICLES: Article[] = [
 <p>The goal isn't a diet. It's a permanent upgrade to how your body ages. And the data shows it works: our clients average a 2.8-year reduction in biological age over their first 90 days — measured by validated biomarker panels, not subjective self-report.</p>
 
 <p>If you're ready to take a data-driven approach to longevity nutrition, <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">apply for a free biological assessment here</a>. We'll review your current biomarkers, identify your highest-leverage nutritional interventions, and show you exactly what eating for longevity looks like for your specific biology.</p>`,
+  },
+  {
+    slug: "biohacking-miami-summer-longevity",
+    title: "Biohacking in the Heat: How Miami Residents Can Optimize Longevity During Florida Summers",
+    metaTitle: "Biohacking Miami Summer: Longevity Protocols for Florida Heat | Miami Elite Coaching",
+    metaDescription: "Living in Miami's tropical heat isn't just uncomfortable — science shows it accelerates biological aging. Discover the evidence-based biohacking protocols Miami Elite Coaching uses to help South Florida residents protect their healthspan all summer long.",
+    excerpt: "South Florida's tropical climate isn't just uncomfortable — new science shows it can accelerate your biological aging by over a year per decade. Here's the evidence-based playbook to fight back.",
+    category: "longevity",
+    readTime: 11,
+    publishDate: "2026-04-09",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
+    tags: ["biohacking miami", "florida summer health", "longevity miami", "tropical climate hydration", "UV protection aging", "heat stress biohacking", "miami elite coaching", "metabolic health florida", "south florida wellness"],
+    content: `<p>This article has a dedicated page with full interactive layout. <a href="/articles/biohacking-miami-summer-longevity">Read the full article here.</a></p>`,
   },
 ];
 
