@@ -1,6 +1,19 @@
 // App.tsx — Miami Elite Coaching
-// Routes: Home, Brickell, Coconut Grove, Miami Personal Trainer, Blog, Article
+// Routes: Home, Brickell, Coconut Grove, Miami Personal Trainer, Blog, Article, Programs
 // Design: Dark luxury, Barlow Condensed + Source Serif 4
+//
+// NAVIGATION NOTE:
+// The individual program pages below are intentionally NOT listed in the nav menu.
+// They are used as standalone lead landing pages — backlink each URL directly
+// to its corresponding lead source (ads, email, referral, etc.).
+//
+//   /longevity-blueprint       → Lead source: [your link here]
+//   /ceo-performance-protocol  → Lead source: [your link here]
+//   /vitality-reset            → Lead source: [your link here]
+//   /longevity-duo             → Lead source: [your link here]
+//   /data-first-dropin         → Lead source: [your link here]
+//
+// All five are still accessible via direct URL and visible on the /programs overview page.
 
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +26,7 @@ import CoconutGrovePage from "./pages/CoconutGrove";
 import MiamiPersonalTrainerPage from "./pages/MiamiPersonalTrainer";
 import BlogPage from "./pages/Blog";
 import ArticlePage from "./pages/Article";
+import ProgramsPage from "./pages/Programs";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import CeoProtocolPage from "./pages/CeoProtocol";
 import VitalityResetPage from "./pages/VitalityReset";
@@ -22,8 +36,8 @@ import NotFound from "./pages/NotFound";
 import CheckoutSuccess from "./pages/CheckoutSuccess";
 import CheckoutCancel from "./pages/CheckoutCancel";
 import ProtectedRoute from "./components/ProtectedRoute";
+
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -32,13 +46,20 @@ function Router() {
       <Route path="/miami-personal-trainer" component={MiamiPersonalTrainerPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={ArticlePage} />
+
+      {/* Programs overview — linked from nav */}
+      <Route path="/programs" component={ProgramsPage} />
+
+      {/* Individual program pages — hidden from nav, used as lead landing pages */}
       <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
       <Route path="/ceo-performance-protocol" component={CeoProtocolPage} />
       <Route path="/vitality-reset" component={VitalityResetPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
       <Route path="/data-first-dropin" component={DataFirstDropInPage} />
+
       <Route path="/checkout/success" component={CheckoutSuccess} />
       <Route path="/checkout/cancel" component={CheckoutCancel} />
+
       {/* Admin routes — protected by Clerk */}
       <Route path="/admin">
         <ProtectedRoute>
@@ -50,8 +71,8 @@ function Router() {
           </div>
         </ProtectedRoute>
       </Route>
+
       <Route path="/404" component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
