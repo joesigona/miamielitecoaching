@@ -8,8 +8,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const HERO_IMAGE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-coconut-grove-5gCHpDXMEFXfxZiXSKRqkT.webp";
+// ─── Drop your photo at: src/assets/vitality-hero.jpg
+import heroImage from "@/assets/vitality-hero.jpg";
 
 const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/mUElqlHh";
 
@@ -97,16 +97,25 @@ const FAQS = [
 
 function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
   const [loading, setLoading] = useState(false);
-  const cls = size === "large"
-    ? "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#72243E] transition-colors cursor-pointer border border-[#993556] hover:border-[#C05A7E]"
-    : "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#72243E] transition-colors cursor-pointer";
+  const cls =
+    size === "large"
+      ? "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#72243E] transition-colors cursor-pointer border border-[#993556] hover:border-[#C05A7E]"
+      : "inline-flex items-center gap-2 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#72243E] transition-colors cursor-pointer";
   async function handleBuy() {
     setLoading(true);
     try {
-      const res = await fetch("/api/stripe/create-checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ productId: "vitality-reset" }) });
+      const res = await fetch("/api/stripe/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId: "vitality-reset" }),
+      });
       const data = await res.json();
       if (data.url) window.open(data.url, "_blank");
-    } catch (err) { console.error("Checkout error:", err); } finally { setLoading(false); }
+    } catch (err) {
+      console.error("Checkout error:", err);
+    } finally {
+      setLoading(false);
+    }
   }
   return (
     <button onClick={handleBuy} disabled={loading} className={cls}>
@@ -115,12 +124,24 @@ function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
   );
 }
 
-function CtaButton({ size = "default", label = "Have Questions? Apply First →" }: { size?: "default" | "large"; label?: string }) {
-  const cls = size === "large"
-    ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
-    : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
+function CtaButton({
+  size = "default",
+  label = "Have Questions? Apply First →",
+}: {
+  size?: "default" | "large";
+  label?: string;
+}) {
+  const cls =
+    size === "large"
+      ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
+      : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
-    <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
+    <a
+      href={TYPEFORM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cls}
+    >
       {label}
     </a>
   );
@@ -130,20 +151,38 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="border-b border-white/8 last:border-b-0">
-      <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between py-5 text-left cursor-pointer">
-        <span className="font-['Barlow_Condensed'] font-600 text-base text-white pr-4">{q}</span>
-        {open ? <ChevronUp className="w-5 h-5 text-[#C05A7E] flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-[#C05A7E] flex-shrink-0" />}
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between py-5 text-left cursor-pointer"
+      >
+        <span className="font-['Barlow_Condensed'] font-600 text-base text-white pr-4">
+          {q}
+        </span>
+        {open ? (
+          <ChevronUp className="w-5 h-5 text-[#C05A7E] flex-shrink-0" />
+        ) : (
+          <ChevronDown className="w-5 h-5 text-[#C05A7E] flex-shrink-0" />
+        )}
       </button>
-      {open && <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed pb-5 pr-8">{a}</p>}
+      {open && (
+        <p className="text-[oklch(0.60_0.01_75)] text-sm leading-relaxed pb-5 pr-8">
+          {a}
+        </p>
+      )}
     </div>
   );
 }
 
 export default function VitalityReset() {
   useEffect(() => {
-    document.title = "Vitality Reset — 8-Week Hormone-Aware Fitness for Women 40+ | Miami Elite Coaching";
+    document.title =
+      "Vitality Reset — 8-Week Hormone-Aware Fitness for Women 40+ | Miami Elite Coaching";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "The Vitality Reset is an 8-week, science-backed fitness program designed for women in peri and post-menopause. DEXA testing, hormone-aware training, and infrared recovery at RETO Brickell. Coconut Grove, Miami.");
+    if (meta)
+      meta.setAttribute(
+        "content",
+        "The Vitality Reset is an 8-week, science-backed fitness program designed for women in peri and post-menopause. DEXA testing, hormone-aware training, and infrared recovery at RETO Brickell. Coconut Grove, Miami."
+      );
     window.scrollTo(0, 0);
   }, []);
 
@@ -151,42 +190,159 @@ export default function VitalityReset() {
     <div className="min-h-screen bg-[oklch(0.10_0.005_285)]">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMAGE})` }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.06_0.005_285)] via-[oklch(0.06_0.005_285)]/90 to-[oklch(0.06_0.005_285)]/40" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#993556]/15 border border-[#993556]/30 text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-4 py-1.5 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#993556] animate-pulse inline-block" />
-              Coconut Grove — Founding Member Rate — 8 Weeks
-            </div>
-            <h1 className="font-['Barlow_Condensed'] font-800 text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.05] mb-4">
-              Your Body Changed After 40.{" "}
-              <span className="text-[#C05A7E] italic font-['Source_Serif_4']">
-                Your Fitness Plan Should Too.
-              </span>
-            </h1>
-            <p className="text-[oklch(0.65_0.01_75)] text-base sm:text-lg leading-relaxed max-w-xl mb-8">
-              The Vitality Reset is an 8-week, science-backed program designed specifically for women in peri and post-menopause. Built on clinical-grade body composition testing and hormone-aware training, it works with your body's new biology — not against it.
-            </p>
+      {/* ─────────────────────────────────────────────────────────────
+          HERO — two-column: copy left, photo right
+      ───────────────────────────────────────────────────────────── */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-white/5">
 
-            <div className="flex items-baseline gap-4 mb-2 flex-wrap">
-              <span className="font-['Barlow_Condensed'] font-800 text-4xl text-[#C05A7E]">$1,200</span>
-              <span className="text-[oklch(0.45_0.01_75)] line-through text-lg">$1,600</span>
-              <span className="bg-[#993556]/20 text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-wider px-3 py-1">Save $400</span>
-            </div>
-            <p className="text-[oklch(0.45_0.01_75)] text-sm mb-6">8-week program · Limited to 6 women this quarter · Payment plans available</p>
+        {/* Subtle radial glow behind copy */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 55% 70% at 20% 50%, rgba(153,53,86,0.12) 0%, transparent 65%)",
+          }}
+        />
 
-            <BuyNowButton size="large" />
-            <div className="mt-3" />
-            <CtaButton size="large" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <div className="mt-6 bg-[#993556]/10 border border-[#993556]/25 px-4 py-3 max-w-md">
-              <p className="text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-sm">
-                Founding member pricing closes when the first cohort fills. 6 spots — currently 3 remaining.
+            {/* ── Left: Copy ── */}
+            <div className="flex flex-col gap-6">
+              {/* Eyebrow badge */}
+              <div className="inline-flex items-center gap-2 bg-[#993556]/15 border border-[#993556]/30 text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-4 py-1.5 w-fit">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#993556] animate-pulse inline-block" />
+                Coconut Grove — Founding Member Rate — 8 Weeks
+              </div>
+
+              <h1 className="font-['Barlow_Condensed'] font-800 text-4xl sm:text-5xl lg:text-[3.25rem] text-white leading-[1.05]">
+                Your Body Changed After 40.{" "}
+                <span className="text-[#C05A7E] italic font-['Source_Serif_4']">
+                  Your Fitness Plan Should Too.
+                </span>
+              </h1>
+
+              {/* Rose rule */}
+              <div
+                className="w-12 h-[2px] bg-[#993556]"
+                style={{ flexShrink: 0 }}
+              />
+
+              <p className="text-[oklch(0.65_0.01_75)] text-base sm:text-lg leading-relaxed max-w-xl">
+                The Vitality Reset is an 8-week, science-backed program designed
+                specifically for women in peri and post-menopause. Built on
+                clinical-grade body composition testing and hormone-aware
+                training, it works with your body's new biology — not against it.
               </p>
+
+              {/* Pricing */}
+              <div>
+                <div className="flex items-baseline gap-4 mb-1 flex-wrap">
+                  <span className="font-['Barlow_Condensed'] font-800 text-4xl text-[#C05A7E]">
+                    $1,200
+                  </span>
+                  <span className="text-[oklch(0.45_0.01_75)] line-through text-lg">
+                    $1,600
+                  </span>
+                  <span className="bg-[#993556]/20 text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-wider px-3 py-1">
+                    Save $400
+                  </span>
+                </div>
+                <p className="text-[oklch(0.45_0.01_75)] text-sm">
+                  8-week program · Limited to 6 women this quarter · Payment
+                  plans available
+                </p>
+              </div>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-3">
+                <BuyNowButton size="large" />
+                <CtaButton size="large" />
+              </div>
+
+              {/* Urgency strip */}
+              <div className="bg-[#993556]/10 border border-[#993556]/25 px-4 py-3 max-w-md">
+                <p className="text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-sm">
+                  Founding member pricing closes when the first cohort fills. 6
+                  spots — currently 3 remaining.
+                </p>
+              </div>
             </div>
+
+            {/* ── Right: Photo ── */}
+            <div className="relative flex justify-center lg:justify-end">
+              {/* Decorative rose glow behind image */}
+              <div
+                className="absolute inset-0 rounded-2xl pointer-events-none"
+                style={{
+                  background:
+                    "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(153,53,86,0.18) 0%, transparent 70%)",
+                  transform: "scale(1.1)",
+                }}
+              />
+
+              {/* Image frame */}
+              <div
+                className="relative w-full max-w-[520px] rounded-2xl overflow-hidden"
+                style={{
+                  boxShadow:
+                    "0 32px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(153,53,86,0.2)",
+                }}
+              >
+                <img
+                  src={heroImage}
+                  alt="Woman resting on a purple yoga mat, hydrating after a workout in a sun-lit modern gym"
+                  className="w-full h-full object-cover object-center block"
+                  style={{ aspectRatio: "4/5", maxHeight: "620px" }}
+                  loading="eager"
+                  draggable={false}
+                />
+
+                {/* Gradient overlay — darkens bottom for legibility */}
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background:
+                      "linear-gradient(to top, rgba(10,8,14,0.55) 0%, transparent 45%)",
+                  }}
+                />
+
+                {/* Floating stat badge — bottom left */}
+                <div className="absolute bottom-5 left-5 bg-[oklch(0.10_0.005_285)]/90 backdrop-blur-sm border border-white/10 px-4 py-3 rounded-xl flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-[#993556]/30 flex items-center justify-center flex-shrink-0">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2 7l3 3 7-7"
+                        stroke="#C05A7E"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white font-['Barlow_Condensed'] font-700 text-sm leading-none">
+                      94% of clients
+                    </p>
+                    <p className="text-[oklch(0.55_0.01_75)] text-xs mt-0.5">
+                      see measurable results by week 5
+                    </p>
+                  </div>
+                </div>
+
+                {/* Pill tag — top right */}
+                <div className="absolute top-4 right-4 bg-[#993556] text-[#FBEAF0] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-3 py-1.5 rounded-full">
+                  Women 40+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -194,34 +350,66 @@ export default function VitalityReset() {
       {/* Biology Section */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">What's Actually Happening in Your Body</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            What's Actually Happening in Your Body
+          </p>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-6">
             It's Not Willpower. It's Biology — and It Changed.
           </h2>
           <div className="max-w-3xl">
             <p className="text-[oklch(0.60_0.01_75)] leading-relaxed mb-4">
-              If you're eating the way you always have, moving the way you always have, and your body is responding completely differently — you are not imagining it. After 40, and especially around perimenopause and menopause, estrogen and progesterone shifts change how your body stores fat, builds muscle, recovers from exercise, and regulates energy.
+              If you're eating the way you always have, moving the way you
+              always have, and your body is responding completely differently —
+              you are not imagining it. After 40, and especially around
+              perimenopause and menopause, estrogen and progesterone shifts
+              change how your body stores fat, builds muscle, recovers from
+              exercise, and regulates energy.
             </p>
             <p className="text-[oklch(0.60_0.01_75)] leading-relaxed mb-6">
-              The problem isn't you. The problem is that almost everything written about women's fitness was designed for a 28-year-old body. The Vitality Reset is built around the body you actually have right now.
+              The problem isn't you. The problem is that almost everything
+              written about women's fitness was designed for a 28-year-old body.
+              The Vitality Reset is built around the body you actually have
+              right now.
             </p>
           </div>
 
-          <div className="border-l-3 border-[#993556] bg-white/3 px-6 py-5 mb-8 max-w-3xl" style={{ borderLeftWidth: "3px" }}>
+          <div
+            className="border-l-3 border-[#993556] bg-white/3 px-6 py-5 mb-8 max-w-3xl"
+            style={{ borderLeftWidth: "3px" }}
+          >
             <p className="text-white/80 italic leading-relaxed">
-              "Cardio alone won't rebuild muscle lost to hormonal decline. Generic plans don't account for cortisol sensitivity. And eating less often makes things worse, not better. If you've tried everything and nothing is working — it's not you. It's the plan."
+              "Cardio alone won't rebuild muscle lost to hormonal decline.
+              Generic plans don't account for cortisol sensitivity. And eating
+              less often makes things worse, not better. If you've tried
+              everything and nothing is working — it's not you. It's the plan."
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { num: "30–40%", label: "Of women in perimenopause experience significant body composition changes — muscle loss, fat redistribution — within 2–3 years" },
-              { num: "DEXA", label: "The only accurate way to measure what's actually happening to muscle and fat — not weight, not BMI, not how clothes fit" },
-              { num: "8 weeks", label: "The minimum effective window for measurable change in body composition and cardiovascular fitness when training is hormone-aware" },
+              {
+                num: "30–40%",
+                label:
+                  "Of women in perimenopause experience significant body composition changes — muscle loss, fat redistribution — within 2–3 years",
+              },
+              {
+                num: "DEXA",
+                label:
+                  "The only accurate way to measure what's actually happening to muscle and fat — not weight, not BMI, not how clothes fit",
+              },
+              {
+                num: "8 weeks",
+                label:
+                  "The minimum effective window for measurable change in body composition and cardiovascular fitness when training is hormone-aware",
+              },
             ].map((s, i) => (
               <div key={i} className="bg-white/4 border border-white/6 p-5">
-                <p className="font-['Barlow_Condensed'] font-800 text-2xl text-[#C05A7E] mb-1">{s.num}</p>
-                <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{s.label}</p>
+                <p className="font-['Barlow_Condensed'] font-800 text-2xl text-[#C05A7E] mb-1">
+                  {s.num}
+                </p>
+                <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">
+                  {s.label}
+                </p>
               </div>
             ))}
           </div>
@@ -231,15 +419,21 @@ export default function VitalityReset() {
       {/* Symptoms */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">Is This You?</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            Is This You?
+          </p>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-8">
             You'll Recognize at Least Four of These.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {SYMPTOMS.map((s, i) => (
               <div key={i} className="bg-white/3 border border-white/6 p-5">
-                <p className="font-['Barlow_Condensed'] font-700 text-white mb-2">{s.title}</p>
-                <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{s.desc}</p>
+                <p className="font-['Barlow_Condensed'] font-700 text-white mb-2">
+                  {s.title}
+                </p>
+                <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -249,7 +443,9 @@ export default function VitalityReset() {
       {/* Includes */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">What's Included — The Full Reset</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            What's Included — The Full Reset
+          </p>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-8">
             Eight Weeks. Every Component Chosen for Your Biology.
           </h2>
@@ -257,14 +453,33 @@ export default function VitalityReset() {
             {INCLUDES.map((item, i) => (
               <div key={i} className="flex gap-4 py-5">
                 <div className="w-8 h-8 rounded-full bg-[#993556]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg viewBox="0 0 10 10" fill="none" className="w-3 h-3"><path d="M2 5l2.5 2.5L8 3" stroke="#C05A7E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <svg
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    className="w-3 h-3"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 5l2.5 2.5L8 3"
+                      stroke="#C05A7E"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
                 <div>
                   <div className="flex items-baseline gap-3 mb-1 flex-wrap">
-                    <p className="font-['Barlow_Condensed'] font-700 text-white">{item.title}</p>
-                    <span className="text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-wider">{item.value}</span>
+                    <p className="font-['Barlow_Condensed'] font-700 text-white">
+                      {item.title}
+                    </p>
+                    <span className="text-[#C05A7E] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-wider">
+                      {item.value}
+                    </span>
                   </div>
-                  <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -272,15 +487,24 @@ export default function VitalityReset() {
 
           {/* Bonuses */}
           <div className="mt-8 bg-[#993556]/10 border border-[#993556]/25 p-6">
-            <p className="font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest text-[#C05A7E] mb-4">Founding Member Bonuses</p>
+            <p className="font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest text-[#C05A7E] mb-4">
+              Founding Member Bonuses
+            </p>
             <div className="space-y-3">
               <div className="flex gap-3">
                 <span className="text-[#C05A7E] font-bold flex-shrink-0">+</span>
-                <p className="text-[oklch(0.65_0.01_75)] text-sm leading-relaxed">Complimentary longevity consultation ($200 value) — a dedicated session to review your full biological age picture and map a long-term health strategy beyond the 8 weeks</p>
+                <p className="text-[oklch(0.65_0.01_75)] text-sm leading-relaxed">
+                  Complimentary longevity consultation ($200 value) — a
+                  dedicated session to review your full biological age picture
+                  and map a long-term health strategy beyond the 8 weeks
+                </p>
               </div>
               <div className="flex gap-3">
                 <span className="text-[#C05A7E] font-bold flex-shrink-0">+</span>
-                <p className="text-[oklch(0.65_0.01_75)] text-sm leading-relaxed">Referral discount — bring a friend and both of you receive $75 off your programs. Shared accountability makes results stick.</p>
+                <p className="text-[oklch(0.65_0.01_75)] text-sm leading-relaxed">
+                  Referral discount — bring a friend and both of you receive $75
+                  off your programs. Shared accountability makes results stick.
+                </p>
               </div>
             </div>
           </div>
@@ -290,17 +514,28 @@ export default function VitalityReset() {
       {/* Phases */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">How the 8 Weeks Unfold</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            How the 8 Weeks Unfold
+          </p>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-8">
             A Structured Reset — With a Real Finish Line.
           </h2>
           <div className="space-y-3">
             {PHASES.map((p, i) => (
-              <div key={i} className="bg-white/3 border border-white/6 p-5 flex gap-4">
-                <span className="bg-[#993556]/20 text-[#C05A7E] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-wider px-3 py-1 h-fit flex-shrink-0 whitespace-nowrap">{p.num}</span>
+              <div
+                key={i}
+                className="bg-white/3 border border-white/6 p-5 flex gap-4"
+              >
+                <span className="bg-[#993556]/20 text-[#C05A7E] font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-wider px-3 py-1 h-fit flex-shrink-0 whitespace-nowrap">
+                  {p.num}
+                </span>
                 <div>
-                  <p className="font-['Barlow_Condensed'] font-700 text-white mb-1">{p.title}</p>
-                  <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{p.desc}</p>
+                  <p className="font-['Barlow_Condensed'] font-700 text-white mb-1">
+                    {p.title}
+                  </p>
+                  <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">
+                    {p.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -311,16 +546,26 @@ export default function VitalityReset() {
       {/* Location */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">Where It Happens</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            Where It Happens
+          </p>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-4">
             RETO Brickell — Private, Clinical-Grade, and Nothing Like a Gym.
           </h2>
           <p className="text-[oklch(0.60_0.01_75)] leading-relaxed max-w-3xl mb-6">
-            Your sessions and assessments take place at RETO — Miami's premier longevity and biohacking facility. Private consultation suites. Medical-grade equipment. No crowded studio classes, no waiting for machines, no mirrors full of people half your age. This is a precision health environment built for serious people who want real results.
+            Your sessions and assessments take place at RETO — Miami's premier
+            longevity and biohacking facility. Private consultation suites.
+            Medical-grade equipment. No crowded studio classes, no waiting for
+            machines, no mirrors full of people half your age. This is a
+            precision health environment built for serious people who want real
+            results.
           </p>
           <div className="inline-flex items-center gap-3 bg-white/4 border border-white/8 px-4 py-2.5">
             <span className="w-2 h-2 rounded-full bg-[#993556]" />
-            <span className="text-[oklch(0.55_0.01_75)] text-sm">Brickell, Miami — 15 minutes from Coconut Grove. Parking available.</span>
+            <span className="text-[oklch(0.55_0.01_75)] text-sm">
+              Brickell, Miami — 15 minutes from Coconut Grove. Parking
+              available.
+            </span>
           </div>
         </div>
       </section>
@@ -328,12 +573,18 @@ export default function VitalityReset() {
       {/* Testimonials */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-6">What Clients Say</p>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-6">
+            What Clients Say
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {TESTIMONIALS.map((t, i) => (
               <div key={i} className="bg-white/3 border border-white/6 p-6">
-                <p className="text-white/80 italic leading-relaxed mb-4">"{t.quote}"</p>
-                <p className="text-[oklch(0.45_0.01_75)] text-sm">{t.name} — {t.title}</p>
+                <p className="text-white/80 italic leading-relaxed mb-4">
+                  "{t.quote}"
+                </p>
+                <p className="text-[oklch(0.45_0.01_75)] text-sm">
+                  {t.name} — {t.title}
+                </p>
               </div>
             ))}
           </div>
@@ -343,8 +594,12 @@ export default function VitalityReset() {
       {/* FAQ */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">Questions</p>
-          <h2 className="font-['Barlow_Condensed'] font-800 text-3xl text-white mb-8">Frequently Asked</h2>
+          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#C05A7E] mb-3">
+            Questions
+          </p>
+          <h2 className="font-['Barlow_Condensed'] font-800 text-3xl text-white mb-8">
+            Frequently Asked
+          </h2>
           {FAQS.map((f, i) => (
             <FaqItem key={i} q={f.q} a={f.a} />
           ))}
@@ -355,26 +610,56 @@ export default function VitalityReset() {
       <section className="py-24 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-[#993556]/15 border border-[#993556]/30 inline-block px-5 py-2 mb-6">
-            <p className="text-[#C05A7E] font-['Barlow_Condensed'] font-700 text-sm">Founding member rate — 3 of 6 spots remaining</p>
+            <p className="text-[#C05A7E] font-['Barlow_Condensed'] font-700 text-sm">
+              Founding member rate — 3 of 6 spots remaining
+            </p>
           </div>
           <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-4">
-            Eight Weeks From Now, You Could Have Your Body's Real Data — and Real Results.
+            Eight Weeks From Now, You Could Have Your Body's Real Data — and
+            Real Results.
           </h2>
           <p className="text-[oklch(0.60_0.01_75)] leading-relaxed mb-8 max-w-xl mx-auto">
-            The Vitality Reset is not a crash program, a detox, or another thing to power through. It's a precise, science-backed 8-week engagement that finally works with your biology — and ends with data showing exactly what changed.
+            The Vitality Reset is not a crash program, a detox, or another
+            thing to power through. It's a precise, science-backed 8-week
+            engagement that finally works with your biology — and ends with data
+            showing exactly what changed.
           </p>
           <BuyNowButton size="large" />
           <div className="mt-3" />
           <CtaButton size="large" />
-          <p className="text-[oklch(0.40_0.01_75)] text-xs mt-4">Founding member rate closes when the cohort fills. Includes $200 longevity consultation bonus.</p>
+          <p className="text-[oklch(0.40_0.01_75)] text-xs mt-4">
+            Founding member rate closes when the cohort fills. Includes $200
+            longevity consultation bonus.
+          </p>
 
           <div className="mt-8 bg-white/3 border border-white/6 p-5 text-left flex gap-4">
             <div className="w-9 h-9 bg-[#993556]/20 flex items-center justify-center flex-shrink-0">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M9 3l6 6-6 6" stroke="#C05A7E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 9h12M9 3l6 6-6 6"
+                  stroke="#C05A7E"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
             <div>
-              <p className="font-['Barlow_Condensed'] font-700 text-white mb-1">Continue to 16 weeks — and track your biological age over time</p>
-              <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">Clients who extend to a 16-week program add monthly DEXA re-testing to see their muscle-to-fat ratio change in real time. Most women see measurable biological age improvements within the first two cycles.</p>
+              <p className="font-['Barlow_Condensed'] font-700 text-white mb-1">
+                Continue to 16 weeks — and track your biological age over time
+              </p>
+              <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">
+                Clients who extend to a 16-week program add monthly DEXA
+                re-testing to see their muscle-to-fat ratio change in real time.
+                Most women see measurable biological age improvements within the
+                first two cycles.
+              </p>
             </div>
           </div>
         </div>
