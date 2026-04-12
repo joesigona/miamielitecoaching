@@ -1,6 +1,7 @@
 // Route: /longevity-duo
 // SEO: couples health assessment miami, biological age test miami, longevity testing brickell
 // Design: Dark luxury with emerald accent (#1D9E75) — targeting couples/pairs
+// UPDATED: Hero image replaced with longevity-duo-hero.jpg
 
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
@@ -8,8 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const HERO_IMAGE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-blog-Lm26dz8LvEeJ9QD4Pqngfi.webp";
+const HERO_IMAGE = "/longevity-duo-hero.jpg";
 
 const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/fe89pL85";
 
@@ -34,12 +34,14 @@ const INCLUDES = [
 
 const TESTIMONIALS = [
   {
-    quote: "We did this for our anniversary and it completely reframed how we think about the next decade. Seeing our VO2 Max numbers side by side was a wake-up call — and also oddly competitive. We both signed up for training the following week.",
+    quote:
+      "We did this for our anniversary and it completely reframed how we think about the next decade. Seeing our VO2 Max numbers side by side was a wake-up call — and also oddly competitive. We both signed up for training the following week.",
     name: "M. & R.",
     title: "Coconut Grove",
   },
   {
-    quote: "As a CEO, I'm used to data driving every decision. This gave me data on the most important thing I own — my health. The fact that my wife could do it with me made it a no-brainer.",
+    quote:
+      "As a CEO, I'm used to data driving every decision. This gave me data on the most important thing I own — my health. The fact that my wife could do it with me made it a no-brainer.",
     name: "D.A.",
     title: "Brickell",
   },
@@ -109,10 +111,19 @@ export default function LongevityDuo() {
     <div className="min-h-screen bg-[oklch(0.10_0.005_285)]">
       <Navigation />
 
-      {/* Hero */}
+      {/* ── HERO ── */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMAGE})` }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.06_0.005_285)] via-[oklch(0.06_0.005_285)]/90 to-[oklch(0.06_0.005_285)]/40" />
+        {/* New hero image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+          aria-label="Miami Elite Coaching personal training session — Longevity Duo"
+        />
+        {/* Dark overlay — heavier on left so text is readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.06_0.005_285/0.95)] via-[oklch(0.06_0.005_285/0.85)] to-[oklch(0.06_0.005_285/0.50)]" />
+        {/* Bottom fade into page bg */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[oklch(0.10_0.005_285)] to-transparent" />
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-[#1D9E75]/15 border border-[#1D9E75]/30 text-[#3DC49A] font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest px-4 py-1.5 mb-6">
@@ -136,9 +147,10 @@ export default function LongevityDuo() {
             </div>
             <p className="text-[oklch(0.45_0.01_75)] text-sm mb-6">No membership required. Book online in under 2 minutes.</p>
 
-            <BuyNowButton size="large" />
-            <div className="mt-3" />
-            <CtaButton size="large" />
+            <div className="flex flex-col sm:flex-row gap-3">
+              <BuyNowButton size="large" />
+              <CtaButton size="large" />
+            </div>
           </div>
         </div>
       </section>
@@ -290,6 +302,11 @@ export default function LongevityDuo() {
           </div>
         </div>
       </section>
+
+      <Footer />
+    </div>
+  );
+}
 
       <Footer />
     </div>
