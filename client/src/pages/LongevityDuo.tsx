@@ -307,8 +307,3 @@ export default function LongevityDuo() {
     </div>
   );
 }
-
-      <Footer />
-    </div>
-  );
-}
