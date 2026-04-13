@@ -9,7 +9,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const HERO_IMAGE = "/longevity-duo-hero.jpg";
+import heroImage from "@/assets/longevity-duo-hero.jpg";
+
+const HERO_IMAGE = heroImage;
 
 const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/fe89pL85";
 
