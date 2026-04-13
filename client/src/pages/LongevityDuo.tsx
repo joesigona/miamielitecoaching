@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import heroImage from "@/assets/longevity-duo-hero.jpg";
+import biometricImage from "@/assets/longevity-biometric.jpg";
 
 const HERO_IMAGE = heroImage;
 
@@ -190,7 +191,7 @@ export default function LongevityDuo() {
             <div className="relative">
               <div className="absolute inset-0 bg-[#1D9E75]/10 rounded-sm blur-2xl scale-95" />
               <img
-                src="/assets/longevity-biometric.jpg"
+                src={biometricImage}
                 alt="Athlete reviewing biometric dashboard with VO2 Max, sleep quality, and metabolic data in Miami"
                 className="relative w-full rounded-sm object-cover"
                 style={{ maxHeight: "480px" }}
