@@ -157,29 +157,46 @@ export default function LongevityDuo() {
         </div>
       </section>
 
-      {/* Why This Matters */}
+    {/* Why This Matters */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#3DC49A] mb-3">Why This Matters</p>
-          <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-6">
-            Most People Don't Know How Fast They're Actually Aging.
-          </h2>
-          <p className="text-[oklch(0.60_0.01_75)] leading-relaxed max-w-3xl mb-4">
-            After 40, your body composition, cardiovascular fitness, and metabolic health shift in ways that are invisible to the naked eye — but completely measurable with the right tools. The Longevity Duo gives you and your partner a precise, data-driven snapshot of where you stand biologically — not just chronologically.
-          </p>
-          <p className="text-[oklch(0.60_0.01_75)] leading-relaxed max-w-3xl mb-8">
-            Because the decision to take your health seriously is more powerful when you make it together.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-            {[
-              { num: "10–15 yrs", label: "Average gap between chronological age and biological age in sedentary adults after 40" },
-              { num: "3×", label: "More likely to maintain a health habit when a partner is also committed to the same goal" },
-            ].map((s, i) => (
-              <div key={i} className="bg-white/4 border border-white/6 p-5">
-                <p className="font-['Barlow_Condensed'] font-800 text-3xl text-[#3DC49A] mb-1">{s.num}</p>
-                <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{s.label}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text content */}
+            <div>
+              <p className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-widest text-[#3DC49A] mb-3">Why This Matters</p>
+              <h2 className="font-['Barlow_Condensed'] font-800 text-3xl sm:text-4xl text-white mb-6">
+                Most People Don't Know How Fast They're Actually Aging.
+              </h2>
+              <p className="text-[oklch(0.60_0.01_75)] leading-relaxed max-w-3xl mb-4">
+                After 40, your body composition, cardiovascular fitness, and metabolic health shift in ways that are invisible to the naked eye — but completely measurable with the right tools. The Longevity Duo gives you and your partner a precise, data-driven snapshot of where you stand biologically — not just chronologically.
+              </p>
+              <p className="text-[oklch(0.60_0.01_75)] leading-relaxed max-w-3xl mb-8">
+                Because the decision to take your health seriously is more powerful when you make it together.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+                {[
+                  { num: "10–15 yrs", label: "Average gap between chronological age and biological age in sedentary adults after 40" },
+                  { num: "3×", label: "More likely to maintain a health habit when a partner is also committed to the same goal" },
+                ].map((s, i) => (
+                  <div key={i} className="bg-white/4 border border-white/6 p-5">
+                    <p className="font-['Barlow_Condensed'] font-800 text-3xl text-[#3DC49A] mb-1">{s.num}</p>
+                    <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed">{s.label}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Right: Biometric dashboard image */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-[#1D9E75]/10 rounded-sm blur-2xl scale-95" />
+              <img
+                src="/assets/longevity-biometric.jpg"
+                alt="Athlete reviewing biometric dashboard with VO2 Max, sleep quality, and metabolic data in Miami"
+                className="relative w-full rounded-sm object-cover"
+                style={{ maxHeight: "480px" }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[oklch(0.10_0.005_285)] to-transparent rounded-sm" />
+            </div>
           </div>
         </div>
       </section>
