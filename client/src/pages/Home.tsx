@@ -10,6 +10,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ARTICLES } from "@/lib/data";
 import { Clock, ArrowRight } from "lucide-react";
+import longevityHomeImg from "@/assets/longevity-home.jpg";
 
 const HERO_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp";
@@ -125,6 +126,20 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+
+        {/* Faded hero image — right side, desktop only */}
+        <div className="absolute inset-y-0 right-0 w-[55%] hidden lg:block pointer-events-none z-[1]">
+          <img
+            src={longevityHomeImg}
+            alt="Miami Elite Coaching longevity assessment"
+            className="w-full h-full object-cover object-center"
+            style={{
+              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%)",
+              opacity: 0.5,
+            }}
+          />
         </div>
 
         {/* Scroll indicator */}
