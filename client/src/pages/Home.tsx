@@ -128,16 +128,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Faded hero image — right side, desktop only */}
-        <div className="absolute inset-y-0 right-0 w-[55%] hidden lg:block pointer-events-none z-[1]">
+        {/* Hero image — visible on all devices with responsive positioning */}
+        <div className="absolute inset-0 pointer-events-none z-[1] overflow-hidden">
           <img
             src={longevityHomeImg}
             alt="Miami Elite Coaching longevity assessment"
             className="w-full h-full object-cover object-center"
             style={{
-              maskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%)",
-              opacity: 0.5,
+              maskImage: "linear-gradient(to right, transparent 0%, transparent 20%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.8) 100%)",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 20%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.8) 100%)",
+              opacity: 0.65,
             }}
           />
         </div>
