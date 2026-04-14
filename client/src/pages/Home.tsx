@@ -173,26 +173,86 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { stat: "Healthspan", sub: "not just lifespan", label: "We measure success in peak performance years — the years you're sharp, strong, and fully in the game." },
-                { stat: "Biomarker", sub: "driven precision", label: "Every protocol is built from your blood, not a template. Your biology dictates the plan." },
-                { stat: "Quarterly", sub: "recalibration", label: "Your program evolves as your biomarkers improve. We stay ahead of your biology, not behind it." },
-                { stat: "3 Pillars", sub: "longevity framework", label: "Metabolic, performance, and cellular optimization — three systems, one unified protocol." },
-              ].map((item, i) => (
-                <div key={i} className="bg-[oklch(0.12_0.005_285)] border border-white/8 p-5">
-                  <div className="font-['Barlow_Condensed'] font-800 text-2xl text-gold leading-tight mb-0.5">
-                    {item.stat}
-                  </div>
-                  <div className="font-['Barlow_Condensed'] font-600 text-xs uppercase tracking-wider text-[oklch(0.72_0.12_75)] mb-2">
-                    {item.sub}
-                  </div>
-                  <p className="text-[oklch(0.50_0.01_75)] text-xs leading-relaxed">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
+            {/* Longevity Framework SVG Visualization */}
+            <div style={{ width: "100%", maxWidth: "680px", margin: "0 auto" }}>
+              <svg width="100%" viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+                <title>MEC Longevity Framework</title>
+                <desc>Miami Elite Coaching's four-pillar longevity framework: Healthspan, Biomarker-Driven Precision, Quarterly Recalibration, and 3 Pillars arranged in a circular quadrant design.</desc>
+                <defs>
+                  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M2 1L8 5L2 9" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </marker>
+                </defs>
+                <path d="M340 360 L340 210 A150 150 0 0 0 190 360 Z" fill="#0d2340"/>
+                <path d="M340 360 L490 360 A150 150 0 0 0 340 210 Z" fill="#12294a"/>
+                <path d="M340 360 L340 510 A150 150 0 0 0 490 360 Z" fill="#0e1e30"/>
+                <path d="M340 360 L190 360 A150 150 0 0 0 340 510 Z" fill="#0b1a28"/>
+                <line x1="340" y1="212" x2="340" y2="508" stroke="#c9a84c" strokeWidth="1.2" opacity="0.7"/>
+                <line x1="192" y1="360" x2="488" y2="360" stroke="#c9a84c" strokeWidth="1.2" opacity="0.7"/>
+                <circle cx="340" cy="360" r="151" fill="none" stroke="#c9a84c" strokeWidth="1.5" opacity="0.5"/>
+                <circle cx="276" cy="296" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <polyline points="265,296 270,296 273,288 276,304 279,291 282,296 291,296" fill="none" stroke="#c9a84c" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="404" cy="296" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <path d="M395,285 Q400,292 395,299 Q390,306 395,313" fill="none" stroke="#c9a84c" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M405,285 Q400,292 405,299 Q410,306 405,313" fill="none" stroke="#4a8fc4" strokeWidth="1.5" strokeLinecap="round"/>
+                <line x1="395" y1="289" x2="405" y2="291" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <line x1="395" y1="299" x2="405" y2="299" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <line x1="395" y1="309" x2="405" y2="307" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <circle cx="404" cy="424" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <path d="M404 414 A10 10 0 1 1 397 417" fill="none" stroke="#c9a84c" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow)"/>
+                <circle cx="276" cy="424" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <rect x="269" y="411" width="5" height="18" rx="1" fill="#c9a84c" opacity="0.9"/>
+                <rect x="276" y="408" width="5" height="21" rx="1" fill="#c9a84c"/>
+                <rect x="283" y="414" width="5" height="15" rx="1" fill="#c9a84c" opacity="0.7"/>
+                <line x1="267" y1="430" x2="291" y2="430" stroke="#c9a84c" strokeWidth="1.4" strokeLinecap="round"/>
+                <circle cx="340" cy="360" r="40" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.5"/>
+                <text x="340" y="355" textAnchor="middle" fontFamily="Georgia, serif" fontSize="8" fill="#c9a84c" fontWeight="600" letterSpacing="1.5">MIAMI ELITE</text>
+                <text x="340" y="367" textAnchor="middle" fontFamily="Georgia, serif" fontSize="8" fill="#c9a84c" fontWeight="600" letterSpacing="1.5">COACHING</text>
+                <circle cx="234" cy="254" r="3" fill="#c9a84c" opacity="0.8"/>
+                <circle cx="446" cy="254" r="3" fill="#c9a84c" opacity="0.8"/>
+                <circle cx="446" cy="466" r="3" fill="#4a8fc4" opacity="0.8"/>
+                <circle cx="234" cy="466" r="3" fill="#4a8fc4" opacity="0.8"/>
+                <line x1="234" y1="254" x2="210" y2="185" stroke="#c9a84c" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="446" y1="254" x2="470" y2="185" stroke="#c9a84c" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="446" y1="466" x2="470" y2="535" stroke="#4a8fc4" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="234" y1="466" x2="210" y2="535" stroke="#4a8fc4" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <rect x="20" y="20" width="190" height="155" rx="6" fill="#0d2340" stroke="#c9a84c" strokeWidth="0.8"/>
+                <rect x="20" y="20" width="190" height="4" rx="3" fill="#c9a84c" opacity="0.8"/>
+                <text x="36" y="47" fontFamily="Georgia, serif" fontSize="13" fill="#c9a84c" fontWeight="700" letterSpacing="0.5">Healthspan</text>
+                <text x="36" y="63" fontFamily="Georgia, serif" fontSize="11" fill="#4a8fc4" fontStyle="italic">not just lifespan</text>
+                <line x1="36" y1="72" x2="194" y2="72" stroke="#c9a84c" strokeWidth="0.5" opacity="0.4"/>
+                <text x="36" y="90" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">We measure success in peak</text>
+                <text x="36" y="106" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">performance years — the years</text>
+                <text x="36" y="122" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">you're sharp, strong, and</text>
+                <text x="36" y="138" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">fully in the game.</text>
+                <rect x="470" y="20" width="190" height="155" rx="6" fill="#0d2340" stroke="#c9a84c" strokeWidth="0.8"/>
+                <rect x="470" y="20" width="190" height="4" rx="3" fill="#c9a84c" opacity="0.8"/>
+                <text x="486" y="47" fontFamily="Georgia, serif" fontSize="13" fill="#c9a84c" fontWeight="700" letterSpacing="0.5">Biomarker</text>
+                <text x="486" y="63" fontFamily="Georgia, serif" fontSize="11" fill="#4a8fc4" fontStyle="italic">driven precision</text>
+                <line x1="486" y1="72" x2="644" y2="72" stroke="#c9a84c" strokeWidth="0.5" opacity="0.4"/>
+                <text x="486" y="90" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Every protocol is built from</text>
+                <text x="486" y="106" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">your blood, not a template.</text>
+                <text x="486" y="122" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Your biology dictates</text>
+                <text x="486" y="138" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">the plan.</text>
+                <rect x="20" y="535" width="190" height="155" rx="6" fill="#0d2340" stroke="#4a8fc4" strokeWidth="0.8"/>
+                <rect x="20" y="535" width="190" height="4" rx="3" fill="#4a8fc4" opacity="0.8"/>
+                <text x="36" y="562" fontFamily="Georgia, serif" fontSize="13" fill="#4a8fc4" fontWeight="700" letterSpacing="0.5">3 Pillars</text>
+                <text x="36" y="578" fontFamily="Georgia, serif" fontSize="11" fill="#c9a84c" fontStyle="italic">longevity framework</text>
+                <line x1="36" y1="587" x2="194" y2="587" stroke="#4a8fc4" strokeWidth="0.5" opacity="0.4"/>
+                <text x="36" y="605" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Metabolic, performance, and</text>
+                <text x="36" y="621" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">cellular optimization —</text>
+                <text x="36" y="637" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">three systems, one</text>
+                <text x="36" y="653" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">unified protocol.</text>
+                <rect x="470" y="535" width="190" height="155" rx="6" fill="#0d2340" stroke="#4a8fc4" strokeWidth="0.8"/>
+                <rect x="470" y="535" width="190" height="4" rx="3" fill="#4a8fc4" opacity="0.8"/>
+                <text x="486" y="562" fontFamily="Georgia, serif" fontSize="13" fill="#4a8fc4" fontWeight="700" letterSpacing="0.5">Quarterly</text>
+                <text x="486" y="578" fontFamily="Georgia, serif" fontSize="11" fill="#c9a84c" fontStyle="italic">recalibration</text>
+                <line x1="486" y1="587" x2="644" y2="587" stroke="#4a8fc4" strokeWidth="0.5" opacity="0.4"/>
+                <text x="486" y="605" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Your program evolves as your</text>
+                <text x="486" y="621" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">biomarkers improve. We stay</text>
+                <text x="486" y="637" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">ahead of your biology,</text>
+                <text x="486" y="653" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">not behind it.</text>
+              </svg>
             </div>
           </div>
         </div>
