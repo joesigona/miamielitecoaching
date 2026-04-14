@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Shield, Clock, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
-
+import heroImage from "@/assets/longevity-blueprint-hero.jpg";
 const HERO_IMAGE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp";
 
