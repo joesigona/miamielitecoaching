@@ -10,11 +10,7 @@ import Footer from "@/components/Footer";
 import { Shield, Clock, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/longevity-blueprint-hero.jpg";
 const HERO_IMAGE = heroImage;
-<div
-  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: `url(${HERO_IMAGE})` }}
-/>
-<div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.08_0.005_285/0.85)] via-[oklch(0.08_0.005_285/0.92)] to-[oklch(0.08_0.005_285)]" />
+
 const INCLUDES = [
   {
     title: "DEXA Body Composition Scan",
