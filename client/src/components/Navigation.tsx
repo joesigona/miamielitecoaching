@@ -1,51 +1,15 @@
 // Navigation — Miami Elite Coaching
-// 3 items: Home | Programs (dropdown) | Articles
-// Mobile: hamburger → accordion for Programs
+// 3 items: Home | Programs (plain link) | Articles
+// Mobile: hamburger → plain links (no dropdown)
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown } from "lucide-react";
-
-const PROGRAMS = [
-  {
-    href: "/longevity-blueprint",
-    label: "Longevity Blueprint",
-    price: "Free",
-    description: "Complimentary longevity assessment + DEXA scan consultation",
-  },
-  {
-    href: "/ceo-performance-protocol",
-    label: "CEO Performance Protocol",
-    price: "$2,400",
-    description: "12-week private performance system for Brickell executives",
-  },
-  {
-    href: "/vitality-reset",
-    label: "Vitality Reset",
-    price: "$1,200",
-    description: "8-week transformation program for women 40+ in Coconut Grove",
-  },
-  {
-    href: "/longevity-duo",
-    label: "Longevity Duo",
-    price: "$599",
-    description: "4-week couples longevity program with dual DEXA scans",
-  },
-  {
-    href: "/data-first-drop-in",
-    label: "Data-First Drop-In",
-    price: "$350",
-    description: "Single session: DEXA + VO2 Max + coached workout",
-  },
-];
+import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [programsOpen, setProgramsOpen] = useState(false);
-  const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -55,21 +19,9 @@ export default function Navigation() {
 
   useEffect(() => {
     setMobileOpen(false);
-    setProgramsOpen(false);
   }, [location]);
 
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setProgramsOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
   const isActive = (href: string) => location === href;
-  const isProgramActive = PROGRAMS.some((p) => location === p.href);
 
   return (
     <nav
@@ -104,69 +56,17 @@ export default function Navigation() {
               Home
             </Link>
 
-            {/* Programs dropdown */}
-            <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={() => setProgramsOpen((v) => !v)}
-                onMouseEnter={() => setProgramsOpen(true)}
-                className={`flex items-center gap-1 px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
-                  isProgramActive || programsOpen
-                    ? "text-[oklch(0.72_0.12_75)]"
-                    : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-                }`}
-              >
-                Programs
-                <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${programsOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-
-              {programsOpen && (
-                <div
-                  onMouseLeave={() => setProgramsOpen(false)}
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 rounded-xl border border-[oklch(0.72_0.12_75/0.2)] bg-[oklch(0.10_0.005_285)] shadow-2xl shadow-black/60 overflow-hidden"
-                >
-                  <div className="p-2">
-                    {PROGRAMS.map((prog) => (
-                      <Link
-                        key={prog.href}
-                        href={prog.href}
-                        onClick={() => setProgramsOpen(false)}
-                        className={`flex items-start justify-between gap-3 px-3 py-3 rounded-lg transition-colors group ${
-                          isActive(prog.href)
-                            ? "bg-[oklch(0.72_0.12_75/0.12)]"
-                            : "hover:bg-[oklch(0.72_0.12_75/0.08)]"
-                        }`}
-                      >
-                        <div className="flex-1 min-w-0">
-                          <p
-                            className={`font-['Barlow_Condensed'] font-semibold text-sm tracking-wide ${
-                              isActive(prog.href)
-                                ? "text-[oklch(0.72_0.12_75)]"
-                                : "text-white group-hover:text-[oklch(0.72_0.12_75)] transition-colors"
-                            }`}
-                          >
-                            {prog.label}
-                          </p>
-                          <p className="text-[oklch(0.65_0.01_285)] text-xs mt-0.5 leading-snug">
-                            {prog.description}
-                          </p>
-                        </div>
-                        <span
-                          className={`shrink-0 font-['Barlow_Condensed'] font-bold text-sm mt-0.5 ${
-                            prog.price === "Free"
-                              ? "text-emerald-400"
-                              : "text-[oklch(0.72_0.12_75)]"
-                          }`}
-                        >
-                          {prog.price}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
+            {/* Programs — single plain link, no dropdown */}
+            <Link
+              href="/programs"
+              className={`px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
+                isActive("/programs")
+                  ? "text-[oklch(0.72_0.12_75)]"
+                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
+              }`}
+            >
+              Programs
+            </Link>
 
             <Link
               href="/blog"
@@ -213,47 +113,17 @@ export default function Navigation() {
               Home
             </Link>
 
-            {/* Programs accordion */}
-            <div>
-              <button
-                onClick={() => setMobileProgramsOpen((v) => !v)}
-                className={`w-full flex items-center justify-between px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
-                  isProgramActive || mobileProgramsOpen
-                    ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
-                    : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-                }`}
-              >
-                Programs
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${mobileProgramsOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-
-              {mobileProgramsOpen && (
-                <div className="mt-1 ml-3 border-l-2 border-[oklch(0.72_0.12_75/0.3)] pl-3 space-y-1">
-                  {PROGRAMS.map((prog) => (
-                    <Link
-                      key={prog.href}
-                      href={prog.href}
-                      className={`flex items-center justify-between gap-2 px-2 py-2 rounded transition-colors ${
-                        isActive(prog.href)
-                          ? "text-[oklch(0.72_0.12_75)]"
-                          : "text-[oklch(0.75_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-                      }`}
-                    >
-                      <span className="font-['Barlow_Condensed'] text-sm font-medium">{prog.label}</span>
-                      <span
-                        className={`font-['Barlow_Condensed'] font-bold text-xs shrink-0 ${
-                          prog.price === "Free" ? "text-emerald-400" : "text-[oklch(0.72_0.12_75)]"
-                        }`}
-                      >
-                        {prog.price}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Programs — single plain link, no dropdown */}
+            <Link
+              href="/programs"
+              className={`block px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
+                isActive("/programs")
+                  ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
+                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
+              }`}
+            >
+              Programs
+            </Link>
 
             <Link
               href="/blog"
