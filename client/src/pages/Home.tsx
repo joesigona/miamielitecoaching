@@ -117,7 +117,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/longevity-blueprint">
                 <span className="btn-gold text-sm px-8 py-4">
-                  Get Your Free Biological Assessment
+                  Get Your Biological Assessment
                 </span>
               </Link>
               <Link href="/miami-personal-trainer">
@@ -278,7 +278,7 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link href="/longevity-blueprint">
               <span className="btn-gold text-sm px-8 py-4">
-                Start With a Free Assessment
+                  Start With an Assessment
               </span>
             </Link>
           </div>
@@ -417,7 +417,7 @@ export default function Home() {
           </p>
           <Link href="/longevity-blueprint">
             <span className="btn-gold text-base px-8 py-4">
-              Claim Your Free Longevity Assessment
+              Claim Your Longevity Assessment
             </span>
           </Link>
         </div>

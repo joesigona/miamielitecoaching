@@ -55,21 +55,7 @@ export default function Footer() {
               <li>
                 <Link href="/longevity-blueprint">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#4ECBA0] transition-colors cursor-pointer">
-                    Longevity Blueprint (Free)
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/ceo-performance-protocol">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#5BA3D9] transition-colors cursor-pointer">
-                    CEO Performance Protocol
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/vitality-reset">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#C05A7E] transition-colors cursor-pointer">
-                    Vitality Reset
+                    Longevity Blueprint
                   </span>
                 </Link>
               </li>
@@ -83,7 +69,7 @@ export default function Footer() {
               <li>
                 <Link href="/data-first-dropin">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#7B73D1] transition-colors cursor-pointer">
-                    Data-First Drop-In
+                    Drop-In
                   </span>
                 </Link>
               </li>
