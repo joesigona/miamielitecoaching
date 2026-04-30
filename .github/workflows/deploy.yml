@@ -19,11 +19,9 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build project
         run: pnpm build
@@ -44,7 +42,7 @@ jobs:
           script: |
             cd /var/www/miamielitecoaching
             git pull origin main
-            pnpm install --frozen-lockfile
+            pnpm install
             pnpm build
             pm2 restart miamielitecoaching
             echo "Deploy complete at $(date)"
