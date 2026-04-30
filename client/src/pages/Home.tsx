@@ -2,19 +2,18 @@
 // SEO: Longevity Practice & Biological Age Optimization Miami
 // Keywords: Healthspan vs Lifespan, Metabolic Health Miami, Biohacking South Florida,
 //           CSCS Longevity Coach, Precision Medicine Miami, Human Performance Lab
-// Design: Dark luxury, full-screen hero
+// Design: Dark luxury, full-bleed hero photo
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SectionDivider from "@/components/SectionDivider";
 import { ARTICLES } from "@/lib/data";
 import { Clock, ArrowRight } from "lucide-react";
-import longevityHomeImg from "@/assets/longevity-home.jpg";
-import biometricImg from "@/assets/longevity-biometric.jpg";
 
-const HERO_IMAGE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp";
+const LONGEVITY_HOME_IMG =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/longevity-home_6d7180ef.jpg";
 
 const PILLARS = [
   {
@@ -76,81 +75,87 @@ export default function Home() {
 
   const recentArticles = ARTICLES.slice(0, 3);
 
+  // Show the full Navigation only after user scrolls past the hero (100vh)
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowNav(window.scrollY > window.innerHeight * 0.6);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // check initial state
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[oklch(0.08_0.005_285)]">
-      <Navigation />
-
-      {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* ── FULL-BLEED HERO ── */}
+      <section className="relative w-screen h-screen overflow-hidden">
+        {/* Full-bleed background image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
-          aria-label="Miami Elite Coaching Longevity Assessment"
+          className="absolute inset-0 bg-cover bg-no-repeat"
+          style={{
+            backgroundImage: `url(${LONGEVITY_HOME_IMG})`,
+            backgroundPosition: "center top",
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.08_0.005_285/0.95)] via-[oklch(0.08_0.005_285/0.80)] to-[oklch(0.08_0.005_285/0.30)]" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-3xl">
-            <div className="badge-gold mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[oklch(0.72_0.12_75)] inline-block" />
-              Miami's Premier Longevity Practice
-            </div>
+        {/* Dark overlay so text is clearly readable */}
+        <div className="absolute inset-0 bg-black/60" />
 
-            <h1 className="font-['Barlow_Condensed'] font-800 text-5xl sm:text-6xl lg:text-8xl text-white leading-[0.92] mb-6">
-              Your Chronological Age{" "}
-              <br className="hidden sm:block" />
-              is Just a Number.{" "}
-              <br className="hidden sm:block" />
-              <span className="text-gold italic">
-                Your Biological Age
-              </span>{" "}
-              <br className="hidden sm:block" />
-              is the One We Change.
-            </h1>
-
-            <p className="text-[oklch(0.72_0.01_75)] text-lg leading-relaxed mb-10 max-w-2xl">
-              Miami's only data-driven longevity practice built for high performers.
-              We combine elite coaching, precision medicine, and cutting-edge biological
-              protocols to extend your healthspan — and make every year count.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/longevity-blueprint">
-                <span className="btn-gold text-sm px-8 py-4">
-                  Get Your Biological Assessment
+        {/* Floating transparent nav — logo + CTA only */}
+        <nav className="absolute top-0 left-0 right-0 z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <Link href="/" className="flex items-center gap-2 group">
+                <div className="w-8 h-8 rounded-full bg-[oklch(0.72_0.12_75)] flex items-center justify-center">
+                  <span className="text-black font-bold text-xs font-['Barlow_Condensed']">ME</span>
+                </div>
+                <span className="font-['Barlow_Condensed'] font-semibold text-white text-lg tracking-wide group-hover:text-[oklch(0.72_0.12_75)] transition-colors drop-shadow-lg">
+                  Miami Elite Coaching
                 </span>
               </Link>
-              <Link href="/miami-personal-trainer">
-                <span className="btn-ghost text-sm px-8 py-4">
-                  Explore All Programs
+              <Link href="/contact?program=Biological%20Assessment">
+                <span className="btn-gold text-sm px-6 py-3 shadow-lg">
+                  Book Free Assessment
                 </span>
               </Link>
             </div>
           </div>
-        </div>
+        </nav>
 
-        {/* Hero image — visible on all devices with responsive positioning */}
-        <div className="absolute inset-0 pointer-events-none z-[1] overflow-hidden">
-          <img
-            src={longevityHomeImg}
-            alt="Miami Elite Coaching longevity assessment"
-            className="w-full h-full object-cover object-center"
-            style={{
-              maskImage: "linear-gradient(to right, transparent 0%, transparent 20%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.8) 100%)",
-              WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 20%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.8) 100%)",
-              opacity: 0.65,
-            }}
-          />
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="w-px h-12 bg-gradient-to-b from-transparent to-[oklch(0.72_0.12_75/0.5)]" />
+        {/* Hero copy */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="font-['Barlow_Condensed'] font-800 text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] max-w-4xl mb-6">
+            Your Chronological Age Is Just a Number.{" "}
+            <span className="text-gold italic">Your Biological Age Is the One We Change.</span>
+          </h1>
+          <p className="text-[oklch(0.85_0.02_85)] text-lg sm:text-xl leading-relaxed max-w-2xl mb-10">
+            Miami's only data-driven longevity practice built for high performers. We combine elite coaching, precision medicine, and cutting-edge biological protocols to extend healthspan and make every year count.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+              <Link href="/contact?program=Biological%20Assessment">
+              <span className="btn-gold text-base px-8 py-4 shadow-lg">
+                Book Your Biological Assessment
+              </span>
+            </Link>
+            <Link href="/programs">
+              <span className="inline-block border-2 border-[oklch(0.72_0.12_75)] text-[oklch(0.72_0.12_75)] font-['Barlow_Condensed'] font-semibold uppercase tracking-[0.15em] text-base px-8 py-4 hover:bg-[oklch(0.72_0.12_75)] hover:text-black transition-all duration-300">
+                Explore All Programs
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 
+      {/* ── DIVIDER: after hero ── */}
+      <SectionDivider />
+
+      {/* ── STICKY NAV (appears when user scrolls past hero) ── */}
+      {showNav && <Navigation />}
+
       {/* ── PHILOSOPHY ── */}
-      <section className="py-24 border-t border-white/8 bg-[oklch(0.10_0.005_285)]">
+      <section className="py-24 bg-[oklch(0.10_0.005_285)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -174,73 +179,138 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Longevity Framework SVG Visualization — v5 (2×2 grid, no circle) */}
+            {/* Longevity Framework SVG Visualization */}
             <div style={{ width: "100%", maxWidth: "680px", margin: "0 auto" }}>
-              <img
-                src="/mec_longevity_quadrant_v5.svg"
-                alt="MEC Longevity Framework — Four Boxes: Healthspan, Biomarkers, 3 Pillars, Quarterly Recalibration"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <svg width="100%" viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+                <title>MEC Longevity Framework</title>
+                <desc>Miami Elite Coaching's four-pillar longevity framework: Healthspan, Biomarker-Driven Precision, Quarterly Recalibration, and 3 Pillars arranged in a circular quadrant design.</desc>
+                <defs>
+                  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M2 1L8 5L2 9" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </marker>
+                </defs>
+                <path d="M340 360 L340 210 A150 150 0 0 0 190 360 Z" fill="#0d2340"/>
+                <path d="M340 360 L490 360 A150 150 0 0 0 340 210 Z" fill="#12294a"/>
+                <path d="M340 360 L340 510 A150 150 0 0 0 490 360 Z" fill="#0e1e30"/>
+                <path d="M340 360 L190 360 A150 150 0 0 0 340 510 Z" fill="#0b1a28"/>
+                <line x1="340" y1="212" x2="340" y2="508" stroke="#c9a84c" strokeWidth="1.2" opacity="0.7"/>
+                <line x1="192" y1="360" x2="488" y2="360" stroke="#c9a84c" strokeWidth="1.2" opacity="0.7"/>
+                <circle cx="340" cy="360" r="151" fill="none" stroke="#c9a84c" strokeWidth="1.5" opacity="0.5"/>
+                <circle cx="276" cy="296" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <polyline points="265,296 270,296 273,288 276,304 279,291 282,296 291,296" fill="none" stroke="#c9a84c" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="404" cy="296" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <path d="M395,285 Q400,292 395,299 Q390,306 395,313" fill="none" stroke="#c9a84c" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M405,285 Q400,292 405,299 Q410,306 405,313" fill="none" stroke="#4a8fc4" strokeWidth="1.5" strokeLinecap="round"/>
+                <line x1="395" y1="289" x2="405" y2="291" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <line x1="395" y1="299" x2="405" y2="299" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <line x1="395" y1="309" x2="405" y2="307" stroke="#c9a84c" strokeWidth="1" opacity="0.7"/>
+                <circle cx="404" cy="424" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <path d="M404 414 A10 10 0 1 1 397 417" fill="none" stroke="#c9a84c" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow)"/>
+                <circle cx="276" cy="424" r="22" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.2"/>
+                <rect x="269" y="411" width="5" height="18" rx="1" fill="#c9a84c" opacity="0.9"/>
+                <rect x="276" y="408" width="5" height="21" rx="1" fill="#c9a84c"/>
+                <rect x="283" y="414" width="5" height="15" rx="1" fill="#c9a84c" opacity="0.7"/>
+                <line x1="267" y1="430" x2="291" y2="430" stroke="#c9a84c" strokeWidth="1.4" strokeLinecap="round"/>
+                <circle cx="340" cy="360" r="40" fill="#0a1628" stroke="#c9a84c" strokeWidth="1.5"/>
+                <text x="340" y="355" textAnchor="middle" fontFamily="Georgia, serif" fontSize="8" fill="#c9a84c" fontWeight="600" letterSpacing="1.5">MIAMI ELITE</text>
+                <text x="340" y="367" textAnchor="middle" fontFamily="Georgia, serif" fontSize="8" fill="#c9a84c" fontWeight="600" letterSpacing="1.5">COACHING</text>
+                <circle cx="234" cy="254" r="3" fill="#c9a84c" opacity="0.8"/>
+                <circle cx="446" cy="254" r="3" fill="#c9a84c" opacity="0.8"/>
+                <circle cx="446" cy="466" r="3" fill="#4a8fc4" opacity="0.8"/>
+                <circle cx="234" cy="466" r="3" fill="#4a8fc4" opacity="0.8"/>
+                <line x1="234" y1="254" x2="210" y2="185" stroke="#c9a84c" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="446" y1="254" x2="470" y2="185" stroke="#c9a84c" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="446" y1="466" x2="470" y2="535" stroke="#4a8fc4" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <line x1="234" y1="466" x2="210" y2="535" stroke="#4a8fc4" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.6"/>
+                <rect x="20" y="20" width="190" height="155" rx="6" fill="#0d2340" stroke="#c9a84c" strokeWidth="0.8"/>
+                <rect x="20" y="20" width="190" height="4" rx="3" fill="#c9a84c" opacity="0.8"/>
+                <text x="36" y="47" fontFamily="Georgia, serif" fontSize="13" fill="#c9a84c" fontWeight="700" letterSpacing="0.5">Healthspan</text>
+                <text x="36" y="63" fontFamily="Georgia, serif" fontSize="11" fill="#4a8fc4" fontStyle="italic">not just lifespan</text>
+                <line x1="36" y1="72" x2="194" y2="72" stroke="#c9a84c" strokeWidth="0.5" opacity="0.4"/>
+                <text x="36" y="90" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">We measure success in peak</text>
+                <text x="36" y="106" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">performance years — the years</text>
+                <text x="36" y="122" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">you're sharp, strong, and</text>
+                <text x="36" y="138" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">fully in the game.</text>
+                <rect x="470" y="20" width="190" height="155" rx="6" fill="#0d2340" stroke="#c9a84c" strokeWidth="0.8"/>
+                <rect x="470" y="20" width="190" height="4" rx="3" fill="#c9a84c" opacity="0.8"/>
+                <text x="486" y="47" fontFamily="Georgia, serif" fontSize="13" fill="#c9a84c" fontWeight="700" letterSpacing="0.5">Biomarker</text>
+                <text x="486" y="63" fontFamily="Georgia, serif" fontSize="11" fill="#4a8fc4" fontStyle="italic">driven precision</text>
+                <line x1="486" y1="72" x2="644" y2="72" stroke="#c9a84c" strokeWidth="0.5" opacity="0.4"/>
+                <text x="486" y="90" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Every protocol is built from</text>
+                <text x="486" y="106" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">your blood, not a template.</text>
+                <text x="486" y="122" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Your biology dictates</text>
+                <text x="486" y="138" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">the plan.</text>
+                <rect x="20" y="535" width="190" height="155" rx="6" fill="#0d2340" stroke="#4a8fc4" strokeWidth="0.8"/>
+                <rect x="20" y="535" width="190" height="4" rx="3" fill="#4a8fc4" opacity="0.8"/>
+                <text x="36" y="562" fontFamily="Georgia, serif" fontSize="13" fill="#4a8fc4" fontWeight="700" letterSpacing="0.5">3 Pillars</text>
+                <text x="36" y="578" fontFamily="Georgia, serif" fontSize="11" fill="#c9a84c" fontStyle="italic">longevity framework</text>
+                <line x1="36" y1="587" x2="194" y2="587" stroke="#4a8fc4" strokeWidth="0.5" opacity="0.4"/>
+                <text x="36" y="605" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Metabolic, performance, and</text>
+                <text x="36" y="621" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">cellular optimization —</text>
+                <text x="36" y="637" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">three systems, one</text>
+                <text x="36" y="653" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">unified protocol.</text>
+                <rect x="470" y="535" width="190" height="155" rx="6" fill="#0d2340" stroke="#4a8fc4" strokeWidth="0.8"/>
+                <rect x="470" y="535" width="190" height="4" rx="3" fill="#4a8fc4" opacity="0.8"/>
+                <text x="486" y="562" fontFamily="Georgia, serif" fontSize="13" fill="#4a8fc4" fontWeight="700" letterSpacing="0.5">Quarterly</text>
+                <text x="486" y="578" fontFamily="Georgia, serif" fontSize="11" fill="#c9a84c" fontStyle="italic">recalibration</text>
+                <line x1="486" y1="587" x2="644" y2="587" stroke="#4a8fc4" strokeWidth="0.5" opacity="0.4"/>
+                <text x="486" y="605" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">Your program evolves as your</text>
+                <text x="486" y="621" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">biomarkers improve. We stay</text>
+                <text x="486" y="637" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">ahead of your biology,</text>
+                <text x="486" y="653" fontFamily="Arial, sans-serif" fontSize="11" fill="#a0b8cc">not behind it.</text>
+              </svg>
             </div>
           </div>
         </div>
       </section>
+
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
 
       {/* ── THREE PILLARS ── */}
-      <section className="py-24 border-t border-white/8">
+      <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            {/* Text content */}
-            <div className="flex-1">
-              <p className="text-[oklch(0.72_0.12_75)] font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-xs mb-4">
-                The Longevity Foundation
-              </p>
-              <h2 className="font-['Barlow_Condensed'] font-800 text-4xl sm:text-5xl text-white leading-tight mb-4">
-                Three Systems. One Protocol.
-              </h2>
-              <p className="text-[oklch(0.62_0.01_75)] text-base leading-relaxed max-w-2xl mb-14">
-                Most programs address one dimension of health. We address all three — simultaneously,
-                and in the exact order your biology demands.
-              </p>
+          <p className="text-[oklch(0.72_0.12_75)] font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-xs mb-4">
+            The Longevity Foundation
+          </p>
+          <h2 className="font-['Barlow_Condensed'] font-800 text-4xl sm:text-5xl text-white leading-tight mb-4">
+            Three Systems. One Protocol.
+          </h2>
+          <p className="text-[oklch(0.62_0.01_75)] text-base leading-relaxed max-w-2xl mb-14">
+            Most programs address one dimension of health. We address all three — simultaneously,
+            and in the exact order your biology demands.
+          </p>
 
-              <div className="flex flex-col gap-0 divide-y divide-white/8">
-                {PILLARS.map((pillar) => (
-                  <div key={pillar.num} className="py-10 grid grid-cols-1 md:grid-cols-[80px_1fr] gap-6 items-start">
-                    <div className="flex items-center gap-3 md:flex-col md:items-start md:gap-0">
-                      <span
-                        className="font-['Barlow_Condensed'] font-800 text-5xl leading-none"
-                        style={{ color: pillar.accent }}
-                      >
-                        {pillar.num}
-                      </span>
-                    </div>
-                    <div>
-                      <h3 className="font-['Barlow_Condensed'] font-700 text-2xl text-white mb-3">
-                        Pillar {pillar.num}: {pillar.title}
-                      </h3>
-                      <p className="text-[oklch(0.62_0.01_75)] text-base leading-relaxed max-w-2xl">
-                        {pillar.body}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+          <div className="flex flex-col gap-0 divide-y divide-white/8">
+            {PILLARS.map((pillar) => (
+              <div key={pillar.num} className="py-10 grid grid-cols-1 md:grid-cols-[80px_1fr] gap-6 items-start">
+                <div className="flex items-center gap-3 md:flex-col md:items-start md:gap-0">
+                  <span
+                    className="font-['Barlow_Condensed'] font-800 text-5xl leading-none"
+                    style={{ color: pillar.accent }}
+                  >
+                    {pillar.num}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-['Barlow_Condensed'] font-700 text-2xl text-white mb-3">
+                    Pillar {pillar.num}: {pillar.title}
+                  </h3>
+                  <p className="text-[oklch(0.62_0.01_75)] text-base leading-relaxed max-w-2xl">
+                    {pillar.body}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            {/* Biometrics image */}
-            <div className="flex-1 max-w-lg w-full">
-              <img
-                src={biometricImg}
-                alt="Biometric data and performance testing at Miami Elite Coaching"
-                className="w-full h-auto rounded object-cover"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
+
       {/* ── PROTOCOL ── */}
-      <section className="py-24 border-t border-white/8 bg-[oklch(0.10_0.005_285)]">
+      <section className="py-24 bg-[oklch(0.10_0.005_285)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[oklch(0.72_0.12_75)] font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-xs mb-4">
             How It Works
@@ -278,15 +348,18 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link href="/longevity-blueprint">
               <span className="btn-gold text-sm px-8 py-4">
-                  Start With an Assessment
+                Start With a Free Assessment
               </span>
             </Link>
           </div>
         </div>
       </section>
 
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
+
       {/* ── THE ELITE COLLECTIVE ── */}
-      <section className="py-24 border-t border-white/8">
+      <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[oklch(0.72_0.12_75)] font-['Barlow_Condensed'] font-600 uppercase tracking-widest text-xs mb-4">
             The Team
@@ -317,7 +390,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-['Barlow_Condensed'] font-700 text-white text-base mb-1">
+                  <p className="font-['Barlow_Condensed'] font-700 text-white text-sm tracking-wide uppercase">
                     {member.role}
                   </p>
                   <p className="text-[oklch(0.50_0.01_75)] text-xs leading-relaxed">
@@ -330,8 +403,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
+
       {/* ── STATS BAR ── */}
-      <section className="py-16 border-y border-white/8 bg-[oklch(0.10_0.005_285)]">
+      <section className="py-16 bg-[oklch(0.10_0.005_285)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -353,6 +429,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
 
       {/* ── RECENT ARTICLES ── */}
       <section className="py-20">
@@ -399,8 +478,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── DIVIDER ── */}
+      <SectionDivider />
+
       {/* ── FINAL CTA ── */}
-      <section className="py-24 bg-[oklch(0.10_0.005_285)] border-t border-white/8">
+      <section className="py-24 bg-[oklch(0.10_0.005_285)]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="badge-gold mb-6 mx-auto w-fit">
             <span className="w-1.5 h-1.5 rounded-full bg-[oklch(0.72_0.12_75)] inline-block" />
@@ -417,7 +499,7 @@ export default function Home() {
           </p>
           <Link href="/longevity-blueprint">
             <span className="btn-gold text-base px-8 py-4">
-              Claim Your Longevity Assessment
+              Claim Your Free Longevity Assessment
             </span>
           </Link>
         </div>

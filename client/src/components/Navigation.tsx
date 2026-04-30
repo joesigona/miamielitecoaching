@@ -1,6 +1,6 @@
 // Navigation — Miami Elite Coaching
-// 3 items: Home | Programs (plain link) | Articles
-// Mobile: hamburger → plain links (no dropdown)
+// Clean nav: Home | Programs | About | Articles | Book Assessment CTA
+// No dropdown, no prices, no landing page links
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
@@ -22,6 +22,13 @@ export default function Navigation() {
   }, [location]);
 
   const isActive = (href: string) => location === href;
+
+  const NAV_LINKS = [
+    { href: "/", label: "Home" },
+    { href: "/programs", label: "Programs" },
+    { href: "/about", label: "About" },
+    { href: "/blog", label: "Articles" },
+  ];
 
   return (
     <nav
@@ -45,45 +52,25 @@ export default function Navigation() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            <Link
-              href="/"
-              className={`px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
-                isActive("/")
-                  ? "text-[oklch(0.72_0.12_75)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Home
-            </Link>
-
-            {/* Programs — single plain link, no dropdown */}
-            <Link
-              href="/programs"
-              className={`px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
-                isActive("/programs")
-                  ? "text-[oklch(0.72_0.12_75)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Programs
-            </Link>
-
-            <Link
-              href="/blog"
-              className={`px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
-                isActive("/blog")
-                  ? "text-[oklch(0.72_0.12_75)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Articles
-            </Link>
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-2 rounded font-['Barlow_Condensed'] text-sm font-medium tracking-wider uppercase transition-colors ${
+                  isActive(link.href)
+                    ? "text-[oklch(0.72_0.12_75)]"
+                    : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
 
             <Link
               href="/longevity-blueprint"
               className="ml-3 px-4 py-2 rounded bg-[oklch(0.72_0.12_75)] text-black font-['Barlow_Condensed'] font-bold text-sm tracking-wider uppercase hover:bg-[oklch(0.78_0.14_75)] transition-colors"
             >
-              Book Free Session
+              Book Assessment
             </Link>
           </div>
 
@@ -102,46 +89,26 @@ export default function Navigation() {
       {mobileOpen && (
         <div className="md:hidden border-t border-[oklch(0.72_0.12_75/0.15)] bg-[oklch(0.08_0.005_285/0.98)]">
           <div className="px-4 py-3 space-y-1">
-            <Link
-              href="/"
-              className={`block px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
-                isActive("/")
-                  ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Home
-            </Link>
-
-            {/* Programs — single plain link, no dropdown */}
-            <Link
-              href="/programs"
-              className={`block px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
-                isActive("/programs")
-                  ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Programs
-            </Link>
-
-            <Link
-              href="/blog"
-              className={`block px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
-                isActive("/blog")
-                  ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
-                  : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
-              }`}
-            >
-              Articles
-            </Link>
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`block px-3 py-2.5 rounded font-['Barlow_Condensed'] font-medium tracking-wider uppercase text-sm transition-colors ${
+                  isActive(link.href)
+                    ? "text-[oklch(0.72_0.12_75)] bg-[oklch(0.72_0.12_75/0.08)]"
+                    : "text-[oklch(0.85_0.01_285)] hover:text-[oklch(0.72_0.12_75)]"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
 
             <div className="pt-2">
               <Link
                 href="/longevity-blueprint"
                 className="block text-center px-4 py-3 rounded bg-[oklch(0.72_0.12_75)] text-black font-['Barlow_Condensed'] font-bold text-sm tracking-wider uppercase hover:bg-[oklch(0.78_0.14_75)] transition-colors"
               >
-                Book Free Session
+                Book Assessment
               </Link>
             </div>
           </div>

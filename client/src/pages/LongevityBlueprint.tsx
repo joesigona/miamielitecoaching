@@ -5,8 +5,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import LandingPageLayout from "@/components/LandingPageLayout";
 import { Shield, Clock, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/longevity-blueprint-hero.jpg";
 const HERO_IMAGE = heroImage;
@@ -146,8 +145,7 @@ export default function LongevityBlueprint() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[oklch(0.08_0.005_285)]">
-      <Navigation />
+    <LandingPageLayout>
 
       {/* ── HERO ── */}
       <section className="relative pt-24 pb-0 overflow-hidden">
@@ -537,18 +535,6 @@ export default function LongevityBlueprint() {
           {/* Internal links */}
           <div className="mt-10 pt-8 border-t border-white/8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-[oklch(0.45_0.01_75)]">
             <span>Also explore:</span>
-            <Link href="/brickell">
-              <span className="text-[oklch(0.72_0.12_75)] hover:text-[oklch(0.85_0.10_75)] transition-colors cursor-pointer font-['Barlow_Condensed'] font-600 uppercase tracking-wider">
-                Brickell 90-Day Program
-              </span>
-            </Link>
-            <span className="hidden sm:inline">·</span>
-            <Link href="/coconut-grove">
-              <span className="text-[oklch(0.72_0.12_75)] hover:text-[oklch(0.85_0.10_75)] transition-colors cursor-pointer font-['Barlow_Condensed'] font-600 uppercase tracking-wider">
-                Coconut Grove Program
-              </span>
-            </Link>
-            <span className="hidden sm:inline">·</span>
             <Link href="/miami-personal-trainer">
               <span className="text-[oklch(0.72_0.12_75)] hover:text-[oklch(0.85_0.10_75)] transition-colors cursor-pointer font-['Barlow_Condensed'] font-600 uppercase tracking-wider">
                 All Miami Programs
@@ -558,7 +544,6 @@ export default function LongevityBlueprint() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </LandingPageLayout>
   );
 }

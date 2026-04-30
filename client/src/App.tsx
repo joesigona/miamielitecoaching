@@ -1,5 +1,5 @@
 // App.tsx — Miami Elite Coaching
-// Routes: Home, Brickell, Coconut Grove, Miami Personal Trainer, Blog, Article, Programs
+// Routes: Home, Miami Personal Trainer, Programs, Contact, Blog, Article, Longevity Blueprint, Longevity Duo
 // Design: Dark luxury, Barlow Condensed + Source Serif 4
 //
 // NAVIGATION NOTE:
@@ -8,12 +8,9 @@
 // to its corresponding lead source (ads, email, referral, etc.).
 //
 //   /longevity-blueprint       → Lead source: [your link here]
-//   /ceo-performance-protocol  → Lead source: [your link here]
-//   /vitality-reset            → Lead source: [your link here]
 //   /longevity-duo             → Lead source: [your link here]
-//   /data-first-dropin         → Lead source: [your link here]
 //
-// All five are still accessible via direct URL and visible on the /programs overview page.
+// All are still accessible via direct URL and visible on the /programs overview page.
 
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,17 +18,14 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import BrickellPage from "./pages/Brickell";
-import CoconutGrovePage from "./pages/CoconutGrove";
 import MiamiPersonalTrainerPage from "./pages/MiamiPersonalTrainer";
 import BlogPage from "./pages/Blog";
 import ArticlePage from "./pages/Article";
 import ProgramsPage from "./pages/Programs";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
-import CeoProtocolPage from "./pages/CeoProtocol";
-import VitalityResetPage from "./pages/VitalityReset";
 import LongevityDuoPage from "./pages/LongevityDuo";
-import DataFirstDropInPage from "./pages/DataFirstDropIn";
+import AboutPage from "./pages/About";
+import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BiohackingMiamiSummer from "./pages/BiohackingMiamiSummer";
 import CheckoutSuccess from "./pages/CheckoutSuccess";
@@ -42,21 +36,18 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/brickell" component={BrickellPage} />
-      <Route path="/coconut-grove" component={CoconutGrovePage} />
       <Route path="/miami-personal-trainer" component={MiamiPersonalTrainerPage} />
+      <Route path="/about" component={AboutPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={ArticlePage} />
 
       {/* Programs overview — linked from nav */}
       <Route path="/programs" component={ProgramsPage} />
+      <Route path="/contact" component={ContactPage} />
 
       {/* Individual program pages — hidden from nav, used as lead landing pages */}
       <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
-      <Route path="/ceo-performance-protocol" component={CeoProtocolPage} />
-      <Route path="/vitality-reset" component={VitalityResetPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
-      <Route path="/data-first-dropin" component={DataFirstDropInPage} />
 
       {/* Individual article pages with custom layout */}
       <Route path="/articles/biohacking-miami-summer-longevity" component={BiohackingMiamiSummer} />

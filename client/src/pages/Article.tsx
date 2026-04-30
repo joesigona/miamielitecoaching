@@ -193,7 +193,7 @@ export default function ArticlePage() {
                   the 90-Day Executive Transformation — results guaranteed or
                   you don't pay.
                 </p>
-                <Link href="/brickell#apply">
+                <Link href="/programs">
                   <span className="btn-gold w-full justify-center text-xs">
                     Apply Now →
                   </span>
@@ -236,7 +236,7 @@ export default function ArticlePage() {
                   Our Programs
                 </p>
                 <div className="space-y-2">
-                  <Link href="/brickell">
+                  <Link href="/programs">
                     <div className="flex items-center justify-between py-2 border-b border-white/6 cursor-pointer group">
                       <span className="text-[oklch(0.70_0.01_75)] text-sm group-hover:text-gold transition-colors">
                         Brickell Program
@@ -244,7 +244,7 @@ export default function ArticlePage() {
                       <ArrowRight size={12} className="text-[oklch(0.40_0.01_75)] group-hover:text-gold transition-colors" />
                     </div>
                   </Link>
-                  <Link href="/coconut-grove">
+                  <Link href="/programs">
                     <div className="flex items-center justify-between py-2 cursor-pointer group">
                       <span className="text-[oklch(0.70_0.01_75)] text-sm group-hover:text-gold transition-colors">
                         Coconut Grove Program

@@ -1,4 +1,4 @@
-// Footer — Miami Elite Coaching
+// Footer.tsx — Miami Elite Coaching
 // Design: Dark, minimal, with gold accents and SEO-friendly internal links
 
 import { Link } from "wouter";
@@ -32,20 +32,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               <li>
-                <Link href="/brickell">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
-                    Brickell Executive Program
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/coconut-grove">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
-                    Coconut Grove Program
-                  </span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/miami-personal-trainer">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
                     Miami Personal Training
@@ -55,7 +41,7 @@ export default function Footer() {
               <li>
                 <Link href="/longevity-blueprint">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#4ECBA0] transition-colors cursor-pointer">
-                    Longevity Blueprint
+                    Longevity Blueprint (Free)
                   </span>
                 </Link>
               </li>
@@ -63,13 +49,6 @@ export default function Footer() {
                 <Link href="/longevity-duo">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#3DC49A] transition-colors cursor-pointer">
                     Longevity Duo
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/data-first-dropin">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#7B73D1] transition-colors cursor-pointer">
-                    Drop-In
                   </span>
                 </Link>
               </li>
@@ -122,11 +101,8 @@ export default function Footer() {
               <li className="text-[oklch(0.55_0.01_75)] text-sm">
                 Miami, Florida
               </li>
-              <li className="text-[oklch(0.55_0.01_75)] text-sm">
-                Brickell · Coconut Grove
-              </li>
               <li>
-                <Link href="/brickell#apply">
+                <Link href="/programs">
                   <span className="text-[oklch(0.72_0.12_75)] text-sm hover:text-[oklch(0.82_0.10_75)] transition-colors cursor-pointer font-['Barlow_Condensed'] font-600 uppercase tracking-wider">
                     Apply Now →
                   </span>
@@ -141,11 +117,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Miami Elite Coaching. All rights reserved. Results may vary. Guarantee subject to program compliance.
           </p>
           <div className="flex gap-6">
-            <Link href="/coconut-grove">
-              <span className="text-[oklch(0.40_0.01_75)] text-xs hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
-                Coconut Grove Program
-              </span>
-            </Link>
             <Link href="/blog">
               <span className="text-[oklch(0.40_0.01_75)] text-xs hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
                 Articles

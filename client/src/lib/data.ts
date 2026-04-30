@@ -383,7 +383,7 @@ export const ARTICLES: Article[] = [
 
 <p>Miami's fitness scene is world-class, but the best results come from working with a trainer who treats your health like the serious investment it is. Whether you're in Brickell, Coconut Grove, or South Beach, the trainers on this list represent the highest standard of private coaching in the city.</p>
 
-<p>If you're a professional in Brickell looking for a guaranteed-results program, <a href="/brickell">Miami Elite Coaching's 90-Day Executive Transformation</a> is worth a serious look.</p>`,
+<p>If you're a professional in Brickell looking for a guaranteed-results program, <a href="/programs">Miami Elite Coaching's 90-Day Executive Transformation</a> is worth a serious look.</p>`,
   },
   {
     slug: "personal-trainer-brickell-miami",
@@ -439,7 +439,7 @@ export const ARTICLES: Article[] = [
 
 <p>The key is finding a trainer who understands your world. Not someone who'll put you on a generic program and count reps, but someone who manages your health like you manage your business — with data, accountability, and a clear outcome.</p>
 
-<p>Ready to explore what private coaching in Brickell looks like? <a href="/brickell">Apply for the 90-Day Executive Transformation</a> and receive a call within the hour.</p>`,
+<p>Ready to explore what private coaching in Brickell looks like? <a href="/programs">Apply for the 90-Day Executive Transformation</a> and receive a call within the hour.</p>`,
   },
   {
     slug: "eating-healthy-miami-restaurants",
@@ -513,7 +513,7 @@ export const ARTICLES: Article[] = [
 
 <p>Eating healthy in Miami is entirely possible — it just requires a framework. Know which neighborhoods offer the best options, know what to order when you get there, and build the habit of making one smart swap per meal rather than trying to eat perfectly.</p>
 
-<p>If you want a nutrition protocol that's specifically designed around Miami's restaurant scene — one that tells you exactly what to order at business dinners, client lunches, and social events — that's exactly what we build for every client in our <a href="/brickell">90-Day Executive Transformation program</a>.</p>`,
+<p>If you want a nutrition protocol that's specifically designed around Miami's restaurant scene — one that tells you exactly what to order at business dinners, client lunches, and social events — that's exactly what we build for every client in our <a href="/programs">90-Day Executive Transformation program</a>.</p>`,
   },
   {
     slug: "miami-personal-trainer-cost",
@@ -586,7 +586,7 @@ export const ARTICLES: Article[] = [
 
 <p>We're transparent about our pricing because we're confident in our results. If you follow the program and don't see measurable changes in 90 days, you receive a full refund.</p>
 
-<p><a href="/brickell">Apply for the 90-Day Transformation</a> — spots are limited to 5 clients per quarter.</p>`,
+<p><a href="/programs">Apply for the 90-Day Transformation</a> — spots are limited to 5 clients per quarter.</p>`,
   },
   {
     slug: "ceo-fitness-program-miami",
@@ -622,7 +622,7 @@ export const ARTICLES: Article[] = [
 
 <p>A performance protocol is a structured, time-bound health optimization program built around <strong>objective biometric data</strong> rather than subjective feelings. Think of it as the difference between managing a business by gut instinct versus managing it with a P&L statement and KPIs.</p>
 
-<p>At <a href="/ceo-performance-protocol">Miami Elite Coaching</a>, the CEO Performance Protocol is a 12-week program that includes:</p>
+<p>At <a href="/programs">Miami Elite Coaching</a>, the CEO Performance Protocol is a 12-week program that includes:</p>
 
 <p><strong>DEXA body composition scan</strong> at Week 1 and Week 12 — giving you precise measurements of body fat percentage by region, lean muscle mass, visceral fat, and bone density. This is the same technology used by the NFL and NBA for player assessments.</p>
 
@@ -674,7 +674,7 @@ export const ARTICLES: Article[] = [
 
 <p>The CEO Performance Protocol accepts a limited number of clients per quarter to maintain coaching quality. The process starts with a brief intake assessment to confirm fit, followed by your initial DEXA and VO2 Max testing at RETO Brickell.</p>
 
-<p><a href="/ceo-performance-protocol">Learn more about the CEO Performance Protocol</a> or <a href="https://q5lhjxf6lyg.typeform.com/to/CqpamnE1" target="_blank" rel="noopener noreferrer">apply directly here</a>. Spots for Q2 2026 are limited to 4 remaining.</p>`,
+<p><a href="/programs">Learn more about the CEO Performance Protocol</a> or <a href="https://q5lhjxf6lyg.typeform.com/to/CqpamnE1" target="_blank" rel="noopener noreferrer">apply directly here</a>. Spots for Q2 2026 are limited to 4 remaining.</p>`,
   },
   {
     slug: "dexa-scan-miami-what-to-expect",
@@ -720,7 +720,7 @@ export const ARTICLES: Article[] = [
 <ul>
 <li><strong>Standalone DEXA scan:</strong> $100–$200 at most clinical facilities in Brickell, Coral Gables, and South Beach</li>
 <li><strong>DEXA + VO2 Max bundle:</strong> $250–$400 at performance-focused facilities</li>
-<li><strong>Free with program enrollment:</strong> At <a href="/data-first-drop-in">Miami Elite Coaching's Data-First Drop-In</a>, a full DEXA scan is included in the $0 introductory assessment, normally valued at $350</li>
+<li><strong>Free with program enrollment:</strong> At <a href="/programs">Miami Elite Coaching's Data-First Drop-In</a>, a full DEXA scan is included in the $0 introductory assessment, normally valued at $350</li>
 </ul>
 
 <p>If you're serious about using DEXA as a tracking tool (which you should be), plan on scanning every 8–12 weeks. This gives your body enough time to show meaningful changes while keeping you accountable to your program.</p>
@@ -741,7 +741,7 @@ export const ARTICLES: Article[] = [
 
 <p>Several facilities across Miami offer DEXA scanning. Here are the most reputable options by neighborhood:</p>
 
-<p><strong>Brickell:</strong> RETO Brickell (home of Miami Elite Coaching's diagnostic programs) offers clinical-grade DEXA scanning as part of their <a href="/longevity-blueprint">Longevity Blueprint</a> and <a href="/data-first-drop-in">Data-First Drop-In</a> programs. The advantage here is that your scan is interpreted by a performance coach who builds an actionable plan around the results — not just handed to you as a PDF.</p>
+<p><strong>Brickell:</strong> RETO Brickell (home of Miami Elite Coaching's diagnostic programs) offers clinical-grade DEXA scanning as part of their <a href="/longevity-blueprint">Longevity Blueprint</a> and <a href="/programs">Data-First Drop-In</a> programs. The advantage here is that your scan is interpreted by a performance coach who builds an actionable plan around the results — not just handed to you as a PDF.</p>
 
 <p><strong>Coral Gables:</strong> Several sports medicine and radiology clinics offer standalone DEXA scans, typically in the $150–$200 range.</p>
 
@@ -771,7 +771,7 @@ export const ARTICLES: Article[] = [
 
 <h2>Take the First Step</h2>
 
-<p>If you've never had a DEXA scan, there's no better time to start. The <a href="/data-first-drop-in">Data-First Drop-In</a> at Miami Elite Coaching includes a full DEXA scan, VO2 Max test, and 30-minute consultation — all at no cost for first-time clients. It's the most comprehensive diagnostic session available in Miami, and it gives you the data foundation to make every future health decision with confidence.</p>
+<p>If you've never had a DEXA scan, there's no better time to start. The <a href="/programs">Data-First Drop-In</a> at Miami Elite Coaching includes a full DEXA scan, VO2 Max test, and 30-minute consultation — all at no cost for first-time clients. It's the most comprehensive diagnostic session available in Miami, and it gives you the data foundation to make every future health decision with confidence.</p>
 
 <p><a href="https://q5lhjxf6lyg.typeform.com/to/fKybxD1d" target="_blank" rel="noopener noreferrer">Book your free Data-First Drop-In here</a> — limited spots available each week.</p>`,
   },
@@ -917,7 +917,7 @@ export const ARTICLES: Article[] = [
 
 <h2>Programs Designed for Women Over 40 in Miami</h2>
 
-<p>The <a href="/vitality-reset">Vitality Reset</a> at Miami Elite Coaching was designed specifically for women in their 40s, 50s, and 60s who want to take a science-based approach to fitness and longevity. It starts with a full diagnostic assessment — DEXA body composition scan, VO2 Max test, and movement screening — so your program is built on data, not guesswork.</p>
+<p>The <a href="/programs">Vitality Reset</a> at Miami Elite Coaching was designed specifically for women in their 40s, 50s, and 60s who want to take a science-based approach to fitness and longevity. It starts with a full diagnostic assessment — DEXA body composition scan, VO2 Max test, and movement screening — so your program is built on data, not guesswork.</p>
 
 <p>The 90-day program includes progressive resistance training, Zone 2 cardio programming, nutrition coaching tailored to hormonal changes, and recovery protocols including infrared therapy at RETO Brickell. Every 8 weeks, you rescan to measure objective progress in body composition, cardiovascular fitness, and bone density.</p>
 
@@ -925,7 +925,7 @@ export const ARTICLES: Article[] = [
 
 <h2>Getting Started</h2>
 
-<p>The first step is understanding where your body is right now. A DEXA scan and VO2 Max test give you the objective baseline that makes everything else possible. The <a href="/vitality-reset">Vitality Reset</a> includes both assessments as part of the program, and the initial consultation is designed to understand your specific goals, challenges, and lifestyle.</p>
+<p>The first step is understanding where your body is right now. A DEXA scan and VO2 Max test give you the objective baseline that makes everything else possible. The <a href="/programs">Vitality Reset</a> includes both assessments as part of the program, and the initial consultation is designed to understand your specific goals, challenges, and lifestyle.</p>
 
 <p><a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">Apply for the Vitality Reset here</a> — the program accepts a limited number of women per quarter to maintain coaching quality and attention.</p>`,
   },
@@ -1031,6 +1031,174 @@ export const ARTICLES: Article[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
     tags: ["biohacking miami", "florida summer health", "longevity miami", "tropical climate hydration", "UV protection aging", "heat stress biohacking", "miami elite coaching", "metabolic health florida", "south florida wellness"],
     content: `<p>This article has a dedicated page with full interactive layout. <a href="/articles/biohacking-miami-summer-longevity">Read the full article here.</a></p>`,
+  },
+  {
+    slug: "is-golf-actually-a-workout-2026",
+    title: "Is Golf Actually a Workout? The Science-Backed Answer (2026)",
+    metaTitle: "Is Golf Actually a Workout? The Science-Backed Answer (2026) | Miami Elite Coaching",
+    metaDescription: "New research shows golf burns more calories, extends lifespan, and demands more athleticism than you think — but only if you train for it. Here's the science behind golf strength training, plus how to get started in Miami.",
+    excerpt: "Golf is not only a legitimate workout. It's one of the most uniquely beneficial physical activities a human being can do across a lifetime — but only if your body is prepared for it.",
+    category: "training",
+    readTime: 12,
+    publishDate: "2026-04-21",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
+    tags: ["golf strength training", "health benefits of golf", "TPI assessment", "golf fitness", "VO2 max", "longevity", "Miami golf coach"],
+    content: `<h2>The Question Every Golfer's Been Asked at a Dinner Party</h2>
+
+<p>\"Is golf even a sport? Isn't it just walking?\"</p>
+
+<p>If you've played more than a handful of rounds, you've defended the game. Maybe badly. Maybe with a half-joke about the 19th hole. But new research from 2024 and 2025 has finally armed you with real answers — and the data is more impressive than most players realize.</p>
+
+<p>Golf is not only a legitimate workout. It's one of the most uniquely beneficial physical activities a human being can do across a lifetime. It trains cardiovascular endurance, rotational power, balance, mobility, and mental focus — all while getting you outside for four to five hours in a parasympathetic-friendly environment.</p>
+
+<p>But here's the twist most articles won't tell you: the health benefits of golf only show up fully when your body is <em>prepared</em> to play it. Without targeted <strong>golf strength training</strong>, the same sport that extends lifespan can also wreck your lower back, elbow, and shoulders.</p>
+
+<p>Let's break down what the science actually says — and what it means for the way you should be training in 2026.</p>
+
+<h2>The 18-Hole Reality Check: What Your Body Actually Does on a Round</h2>
+
+<p>Start with the raw numbers. A walking golfer carrying or pushing their bag over an 18-hole round will typically:</p>
+
+<ul>
+<li>Cover <strong>4 to 7 miles</strong> of terrain, often on uneven ground</li>
+<li>Log <strong>11,000 to 17,000 steps</strong>, well past the \"10k steps a day\" benchmark</li>
+<li>Burn <strong>1,200 to 2,400 calories</strong> depending on body weight, temperature, and terrain</li>
+<li>Perform <strong>60 to 90+ full-speed rotational movements</strong> (swings, including practice swings)</li>
+<li>Spend <strong>3.5 to 5 hours</strong> in continuous low-to-moderate intensity activity</li>
+</ul>
+
+<p>Compare that to a typical 45-minute gym session (250–500 calories) or an hour-long group fitness class (400–700 calories), and the cumulative load of a walking round is dramatically higher than most people assume.</p>
+
+<p>A 2020 study in the <em>British Journal of Sports Medicine</em> classified walking golf as <strong>moderate-intensity physical activity</strong> — the same category the WHO recommends 150 minutes of per week to reduce all-cause mortality. One round gets you most of the way there.</p>
+
+<h3>But What About Riding a Cart?</h3>
+
+<p>Fair question. Riding does cut step count roughly in half, but research from the R&A and USGA in 2023 still found cart golfers average 6,000–8,000 steps per round and measurable cardiovascular benefit — more than a sedentary afternoon on the couch, though clearly less than walking.</p>
+
+<p>If health is your goal, <strong>walk when you can</strong>. The data consistently favors it.</p>
+
+<h2>Cardiovascular Health: Why Walking 18 Beats the Gym (Sometimes)</h2>
+
+<p>Golf's cardiovascular profile is unusual — and that's exactly what makes it valuable.</p>
+
+<p>Instead of 30 minutes of elevated heart rate followed by a shower, golf delivers <strong>sustained low-to-moderate cardiovascular demand over several hours</strong>. This \"Zone 2\" style training is what exercise physiologists now recognize as one of the single most important adaptations for long-term cardiovascular health, mitochondrial density, and metabolic flexibility.</p>
+
+<p>In other words: the slow, steady, walking-uphill-with-a-7-iron nature of a round is exactly the kind of aerobic work that drives longevity markers like VO2 max and resting heart rate in the right direction.</p>
+
+<div style=\"background: #f8fafc; border-left: 4px solid #0f766e; padding: 1.5rem 1.75rem; margin: 2rem 0; border-radius: 6px;\">
+  <p>Curious where your own VO2 max actually stands? Stop guessing and get a real baseline number.</p>
+  <p><a href=\"https://q5lhjxf6lyg.typeform.com/to/VTNFhNhR\" target=\"_blank\" rel=\"noopener\" style=\"display: inline-block; background: #0f766e; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; margin: 0.5rem 0; border: none; transition: background 0.2s ease;\">Book Your VO2 Max Test →</a></p>
+</div>
+
+<p>A long-term Swedish study that followed more than 300,000 golfers found regular players had a <strong>40% lower mortality rate</strong> than non-golfers of the same age and sex — translating to roughly <strong>5 additional years of life expectancy</strong>. Even after controlling for income and socioeconomic factors, the effect remained significant.</p>
+
+<p>That's not a marketing stat. That's one of the largest longitudinal datasets on a single sport ever published.</p>
+
+<h2>The Longevity Edge: Why Golfers Live Longer</h2>
+
+<p>The 5-year longevity bonus isn't magic. It's the convergence of several proven health drivers that golf stacks into a single activity:</p>
+
+<ol>
+<li><strong>Sustained aerobic movement</strong> across multiple hours</li>
+<li><strong>Outdoor light exposure</strong> that regulates circadian rhythm and vitamin D production</li>
+<li><strong>Social connection</strong> — one of the strongest predictors of healthspan</li>
+<li><strong>Cognitive engagement</strong> through strategy, focus, and problem-solving</li>
+<li><strong>Stress-state regulation</strong> through time in green, natural environments</li>
+<li><strong>Low-impact rotational movement</strong> that maintains spinal mobility as we age</li>
+</ol>
+
+<p>You would struggle to design a better \"longevity intervention\" if you tried. A single activity that trains your heart, your brain, your balance, your social life, and your stress response — for decades, with a low injury barrier to entry.</p>
+
+<p>That last point is where most golfers run into trouble.</p>
+
+<h2>Mental Health: Nature, Focus, and the \"Flow State\" Advantage</h2>
+
+<p>Beyond the physical, golf is increasingly recognized as a powerful mental health tool. Research on <strong>nature exposure</strong> (sometimes called \"green exercise\") consistently shows reductions in cortisol, blood pressure, and rumination after time spent outdoors in park-like environments.</p>
+
+<p>Golf also produces what psychologists call <strong>flow state</strong> — the deep, absorbed focus where time distorts and self-consciousness disappears. Each shot demands full attention, and the ritual of addressing the ball, visualizing the shot, and executing creates a repeated cycle of mindfulness most people can't access in daily life.</p>
+
+<p>For many players, a round of golf is the <strong>only four-hour window all week</strong> where they're not checking a phone. That alone has measurable mental health value.</p>
+
+<h2>The Dark Side: Why Up to 60% of Amateur Golfers Get Injured</h2>
+
+<p>Here's what no \"golf is great for you\" article tells you: playing golf in a body that isn't prepared for golf is one of the fastest ways to develop chronic pain.</p>
+
+<p>Survey data from multiple sports medicine studies places the amateur golfer injury rate between <strong>40% and 60% over a playing career</strong>. The most common problem areas:</p>
+
+<ul>
+<li><strong>Lower back</strong> — by far the most frequent injury site, driven by repetitive rotation under load</li>
+<li><strong>Elbows</strong> — \"golfer's elbow\" (medial epicondylitis) and lateral strain from poor grip and mishits</li>
+<li><strong>Shoulders</strong> — especially the lead shoulder during the downswing</li>
+<li><strong>Wrists</strong> — from fat shots, divots, and long range sessions without conditioning</li>
+<li><strong>Hips</strong> — where most rotational power <em>should</em> come from, but often doesn't</li>
+</ul>
+
+<p>The pattern behind nearly all of these is the same: <strong>players load a high-velocity rotational movement onto a body that lacks the mobility, strength, and motor control to handle it.</strong></p>
+
+<p>The swing itself isn't dangerous. An unprepared body doing the swing is.</p>
+
+<p>That's the gap <strong>golf strength training</strong> exists to close.</p>
+
+<h2>Enter Golf Strength Training: The Missing Link Between Health Benefits and Actual Performance</h2>
+
+<p>Golf strength training isn't general gym work with a golf hat on. It's a targeted approach that addresses the specific demands the swing places on the body:</p>
+
+<ul>
+<li><strong>Rotational power</strong> through the hips and thoracic spine</li>
+<li><strong>Anti-rotation core stability</strong> so the lumbar spine isn't absorbing force it shouldn't</li>
+<li><strong>Hip mobility and internal rotation</strong> — the single most common restriction in amateur players</li>
+<li><strong>Thoracic mobility</strong> to let the upper body rotate without the low back compensating</li>
+<li><strong>Shoulder stability and scapular control</strong> for a repeatable downswing</li>
+<li><strong>Ground force production</strong> — how efficiently you push into the ground and transfer that energy up the chain</li>
+</ul>
+
+<p>Players who train these qualities see two outcomes that compound over time:</p>
+
+<ol>
+<li><strong>They hit the ball farther and more consistently</strong> — more clubhead speed, better strike quality, lower scores</li>
+<li><strong>They stay healthier, longer</strong> — fewer injuries, faster recovery, more rounds per year, more years of rounds</li>
+</ol>
+
+<p>The health benefits of golf are real. Golf strength training is what lets you actually <em>collect</em> them over a 20-, 30-, 40-year playing life.</p>
+
+<h2>What Is a TPI Assessment — and Why It's the Starting Line</h2>
+
+<p>Before any serious training program, the smartest move a golfer can make is a <strong>TPI assessment</strong>.</p>
+
+<p>TPI (Titleist Performance Institute) is the gold-standard screening framework used by the majority of tour-level strength coaches and physical therapists who work with elite players. The assessment is a structured physical screen — typically 16+ movements — that identifies exactly where your body is limited, where it compensates, and how those limitations are showing up in your swing.</p>
+
+<p>The reason TPI matters so much: <strong>your swing faults are almost always body faults first.</strong></p>
+
+<p>Can't load into your trail hip? You're going to early-extend. Limited thoracic rotation? You'll slide, not rotate. Weak glutes? Your low back is doing work it was never designed to do.</p>
+
+<p>A TPI assessment ends the guesswork. Instead of grinding on YouTube drills that don't address <em>your</em> specific restrictions, you walk out with a clear picture of:</p>
+
+<ul>
+<li>Which physical limitations are holding your swing (and your body) back</li>
+<li>Which training priorities will create the fastest improvement</li>
+<li>What risks you're currently playing through that could become injuries</li>
+</ul>
+
+<p>For most players, it's the first time anyone has looked at their swing as a function of how their body actually moves — not a generic list of faults.</p>
+
+<h2>Your Next Step: Train Like You Plan to Play for Decades</h2>
+
+<p>If you've read this far, you already know the answer to the headline: <strong>yes, golf is absolutely a workout.</strong> It's a cardiovascular, rotational, neurological, social, and psychological workout rolled into one. The 5-year longevity bonus is real. So is the 60% injury rate for players who don't prepare their bodies for the game.</p>
+
+<p>The difference between those two outcomes is training.</p>
+
+<p>If you're in Miami, Brickell, Coconut Grove, or the surrounding areas, Miami Elite Coaching exists to close that gap.</p>
+
+<p><strong>Coach Joe Sigona</strong> is a <strong>TPI-certified golf coach</strong> with nearly <strong>10 years in the fitness industry</strong> and a <strong>master's degree focused on performance and injury management</strong>. He specializes in helping golfers train around existing injuries, move better, and reach real performance goals — all while applying the principles of <strong>longevity science</strong> so clients stay strong, mobile, and able to play the game they love for decades.</p>
+
+<p>Every client relationship starts the same way: with a proper assessment. From there, training is built around your body, your goals, and your schedule — whether you're chasing more distance, getting rid of nagging pain, or simply making sure you're still swinging freely at 70.</p>
+
+<div style=\"background: #0f172a; color: #f1f5f9; padding: 2.5rem 2rem; border-radius: 12px; margin: 3rem 0 2rem 0; text-align: center;\">
+  <h3 style=\"color: #ffffff; margin-top: 0; font-size: 1.5rem;\">Book Your Consultation</h3>
+  <p>Curious how your body is affecting your swing — and what a real plan for golf strength training, fitness, and TPI-guided performance work looks like? The first step is a conversation.</p>
+  <p><a href=\"https://q5lhjxf6lyg.typeform.com/to/VTNFhNhR\" target=\"_blank\" rel=\"noopener\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 18px 36px; border-radius: 10px; font-weight: 800; font-size: 1.15rem; margin: 1rem 0; border: none; letter-spacing: 0.3px;\">Book a Consultation →</a></p>
+  <p style=\"font-size: 0.9rem; color: #94a3b8; margin-top: 1rem;\">Serving Miami, FL and surrounding areas including Brickell and Coconut Grove.</p>
+</div>`,
   },
 ];
 

@@ -3,10 +3,7 @@ import { Express, Request, Response } from "express";
 
 // Price IDs from Stripe (created via seed script)
 const PRICE_MAP: Record<string, string> = {
-  "ceo-performance-protocol": "price_1TJlQvGgjRVkK2Zk1krLCna6",
-  "vitality-reset": "price_1TJlQvGgjRVkK2ZkladuMSRM",
   "longevity-duo": "price_1TJlQwGgjRVkK2Zk9r9TLdiK",
-  "data-first-drop-in": "price_1TJlQwGgjRVkK2Zky2Nee9Cq",
 };
 
 function getStripe() {

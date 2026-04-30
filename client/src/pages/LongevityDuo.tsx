@@ -5,8 +5,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import LandingPageLayout from "@/components/LandingPageLayout";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import heroImage from "@/assets/longevity-duo-hero.jpg";
@@ -111,8 +110,7 @@ export default function LongevityDuo() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[oklch(0.10_0.005_285)]">
-      <Navigation />
+    <LandingPageLayout>
 
       {/* ── HERO ── */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
@@ -323,7 +321,6 @@ export default function LongevityDuo() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </LandingPageLayout>
   );
 }

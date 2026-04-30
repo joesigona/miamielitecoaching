@@ -53,37 +53,37 @@ export default function MiamiPersonalTrainerPage() {
   const neighborhoods = [
     {
       name: "Brickell",
-      slug: "/brickell",
+      slug: "/programs",
       desc: "Private training for executives and finance professionals in Miami's financial district.",
       highlight: "90-Day Executive Transformation",
     },
     {
       name: "Coconut Grove",
-      slug: "/coconut-grove",
+      slug: "/programs",
       desc: "Outdoor and studio training in Miami's most naturally beautiful neighborhood.",
       highlight: "Outdoor & Studio Options",
     },
     {
       name: "Coral Gables",
-      slug: "/brickell#apply",
+      slug: "/programs",
       desc: "Premium private training for Coral Gables professionals and families.",
       highlight: "Coming Soon",
     },
     {
       name: "South Beach",
-      slug: "/brickell#apply",
+      slug: "/programs",
       desc: "Beach-lifestyle fitness programming for South Beach residents.",
       highlight: "Coming Soon",
     },
     {
       name: "Wynwood",
-      slug: "/brickell#apply",
+      slug: "/programs",
       desc: "Creative district training for Wynwood's entrepreneurial community.",
       highlight: "Coming Soon",
     },
     {
       name: "Edgewater",
-      slug: "/brickell#apply",
+      slug: "/programs",
       desc: "Bayfront training for Edgewater's growing professional community.",
       highlight: "Coming Soon",
     },
