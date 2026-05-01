@@ -8,9 +8,12 @@
 // (2) sends a Manus owner notification, and (3) emails the owner.
 
 import React, { useEffect, useState } from "react";
+import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import LandingPageLayout from "@/components/LandingPageLayout";
 import { trpc } from "@/lib/trpc";
+import heroAssessmentImg from "@/assets/longevity-blueprint-hero.jpg";
+import tabletImg from "@/assets/longevity-biometric.jpg";
 
 const PHONE_DISPLAY = "(732) 618-3056";
 const PHONE_HREF = "tel:+17326183056";
@@ -197,20 +200,31 @@ const AssessmentLandingPage: React.FC = () => {
 
           /* ---------- HERO ---------- */
           .mec-assessment .hero {
-            background:
-              radial-gradient(ellipse 80% 60% at 70% 20%, rgba(201, 163, 82, 0.12) 0%, transparent 60%),
-              linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+            background-color: var(--navy-deep);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             color: var(--ivory);
             padding: 120px 0 110px 0;
             position: relative;
             overflow: hidden;
           }
+          .mec-assessment .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(6, 19, 37, 0.72) 0%, rgba(10, 31, 61, 0.88) 100%);
+            pointer-events: none;
+            z-index: 0;
+          }
+          .mec-assessment .hero > .container { position: relative; z-index: 1; }
           .mec-assessment .hero::before {
             content: "";
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--gold) 0%, var(--rose) 100%);
+            z-index: 2;
           }
           .mec-assessment .hero .eyebrow { margin-bottom: 22px; }
           .mec-assessment .hero h1 {
@@ -459,6 +473,14 @@ const AssessmentLandingPage: React.FC = () => {
           }
           @media (max-width: 880px) {
             .mec-assessment .outcomes-grid { grid-template-columns: 1fr; gap: 40px; }
+          }
+          .mec-assessment .outcomes .outcome-image {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            display: block;
+            border: 1px solid var(--rule);
+            box-shadow: 0 24px 60px -28px rgba(10, 31, 61, 0.4);
           }
           .mec-assessment .outcomes h2 {
             font-size: clamp(34px, 4.2vw, 52px);
@@ -732,7 +754,10 @@ const AssessmentLandingPage: React.FC = () => {
         `}</style>
 
         {/* ============== HERO ============== */}
-        <section className="hero on-dark">
+        <section
+          className="hero on-dark"
+          style={{ backgroundImage: `url(${heroAssessmentImg})` }}
+        >
           <div className="container">
             <div className="eyebrow">— THE MIAMI ELITE COACHING ASSESSMENT</div>
             <h1>
@@ -744,9 +769,11 @@ const AssessmentLandingPage: React.FC = () => {
               expert analysis, and a custom plan — engineered by <strong>Sports Scientists</strong>.
             </p>
             <div className="cta-row">
-              <button type="button" className="btn-primary" onClick={openForm}>
-                Book Your Assessment
-              </button>
+              <Link href="/contact?program=Assessment">
+                <span className="btn-primary" role="button">
+                  Book an Assessment
+                </span>
+              </Link>
               <a className="btn-secondary" href={PHONE_HREF}>
                 Or call <b>{PHONE_DISPLAY}</b>
               </a>
@@ -886,6 +913,12 @@ const AssessmentLandingPage: React.FC = () => {
                   out knowing exactly where you stand and exactly what to do about it —
                   with the data to track every win along the way.
                 </p>
+                <img
+                  src={tabletImg}
+                  alt="Reviewing your biometric dashboard on a tablet — VO2 max, biological age, and recovery data at a glance."
+                  className="outcome-image"
+                  loading="lazy"
+                />
               </div>
               <div>
                 <ul>
@@ -934,9 +967,11 @@ const AssessmentLandingPage: React.FC = () => {
               </span>
             </div>
             <div className="cta-row">
-              <button type="button" className="btn-primary" onClick={openForm}>
-                Book Your Assessment
-              </button>
+              <Link href="/contact?program=Assessment">
+                <span className="btn-primary" role="button">
+                  Book an Assessment
+                </span>
+              </Link>
               <a className="btn-secondary" href={PHONE_HREF}>
                 Or call <b>{PHONE_DISPLAY}</b>
               </a>

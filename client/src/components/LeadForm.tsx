@@ -14,9 +14,9 @@ interface LeadFormProps {
 
 export default function LeadForm({
   source = "website",
-  title = "Apply Now",
+  title = "Book an Assessment",
   subtitle = "Fill out the form below and you'll receive a call within the hour to discuss your goals and confirm your spot.",
-  ctaText = "Apply for the 90-Day Transformation →",
+  ctaText = "Book an Assessment →",
 }: LeadFormProps) {
   const [form, setForm] = useState({
     name: "",
@@ -45,7 +45,7 @@ export default function LeadForm({
     await new Promise((r) => setTimeout(r, 1200));
     setLoading(false);
     setSubmitted(true);
-    toast.success("Application received! We'll call you within the hour.");
+    toast.success("Request received! We'll call you within the hour.");
   };
 
   if (submitted) {
@@ -57,7 +57,7 @@ export default function LeadForm({
           </svg>
         </div>
         <h3 className="font-['Barlow_Condensed'] font-700 text-2xl text-white mb-2">
-          Application Received
+          Request Received
         </h3>
         <p className="text-[oklch(0.65_0.01_75)] text-sm">
           We'll reach out within the hour to discuss your goals and confirm your spot. Check your email for a confirmation.

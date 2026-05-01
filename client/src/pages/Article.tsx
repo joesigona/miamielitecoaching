@@ -189,13 +189,13 @@ export default function ArticlePage() {
                   Ready to Work with a Miami Personal Trainer?
                 </h3>
                 <p className="text-[oklch(0.55_0.01_75)] text-sm leading-relaxed mb-5">
-                  Stop reading about results and start getting them. Apply for
-                  the 90-Day Executive Transformation — results guaranteed or
-                  you don't pay.
+                  Ready to know exactly where your biology stands? Start with a
+                  Baseline Assessment — 90 minutes of diagnostics, a same-day
+                  data review, and a 12-week training framework built to your numbers.
                 </p>
-                <Link href="/programs">
+                <Link href="/contact?program=Assessment">
                   <span className="btn-gold w-full justify-center text-xs">
-                    Apply Now →
+                    Book an Assessment →
                   </span>
                 </Link>
               </div>
@@ -269,13 +269,13 @@ export default function ArticlePage() {
               </h2>
               <p className="text-[oklch(0.60_0.01_75)] leading-relaxed">
                 The best personal trainers in Miami are booked out quickly.
-                Apply now to secure one of the 5 available spots this quarter.
+                Book an assessment now to secure one of the 5 available spots this quarter.
               </p>
             </div>
             <LeadForm
               source={`article-${article.slug}`}
-              title="Apply for the 90-Day Transformation"
-              ctaText="Apply Now →"
+              title="Book Your Baseline Assessment"
+              ctaText="Book an Assessment →"
             />
           </div>
         </div>

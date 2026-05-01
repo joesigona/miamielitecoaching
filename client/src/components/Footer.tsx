@@ -32,23 +32,23 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               <li>
+                <Link href="/programs">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
+                    Custom-Made Protocol
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact?program=Assessment">
+                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
+                    Baseline Assessment
+                  </span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/miami-personal-trainer">
                   <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[oklch(0.72_0.12_75)] transition-colors cursor-pointer">
                     Miami Personal Training
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/longevity-blueprint">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#4ECBA0] transition-colors cursor-pointer">
-                    Longevity Blueprint (Free)
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/longevity-duo">
-                  <span className="text-[oklch(0.55_0.01_75)] text-sm hover:text-[#3DC49A] transition-colors cursor-pointer">
-                    Longevity Duo
                   </span>
                 </Link>
               </li>
@@ -102,9 +102,9 @@ export default function Footer() {
                 Miami, Florida
               </li>
               <li>
-                <Link href="/programs">
+                <Link href="/contact?program=Assessment">
                   <span className="text-[oklch(0.72_0.12_75)] text-sm hover:text-[oklch(0.82_0.10_75)] transition-colors cursor-pointer font-['Barlow_Condensed'] font-600 uppercase tracking-wider">
-                    Apply Now →
+                    Book an Assessment →
                   </span>
                 </Link>
               </li>

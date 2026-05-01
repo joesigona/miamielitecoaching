@@ -117,7 +117,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/GjjmWBrN";
+const ASSESSMENT_URL = "/contact?program=Assessment";
 
 function ClaimButton({ size = "default" }: { size?: "default" | "large" }) {
   const cls =
@@ -125,9 +125,11 @@ function ClaimButton({ size = "default" }: { size?: "default" | "large" }) {
       ? "inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-[#17876300] transition-colors cursor-pointer border border-[#1D9E75] hover:border-[#1D9E75] hover:text-[#1D9E75]"
       : "inline-flex items-center gap-2 bg-[#1D9E75] text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-[#178763] transition-colors cursor-pointer";
   return (
-    <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
-      BOOK NOW — FREE →
-    </a>
+    <Link href={ASSESSMENT_URL}>
+      <span className={cls} role="button">
+        BOOK AN ASSESSMENT →
+      </span>
+    </Link>
   );
 }
 

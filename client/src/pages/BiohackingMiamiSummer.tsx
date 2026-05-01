@@ -829,8 +829,8 @@ export default function BiohackingMiamiSummer() {
               <p>The science is clear: unmanaged heat exposure in a climate like Miami's adds measurable biological aging over time. But the science also shows that with the right protocols, that same heat can be channeled into cardiovascular adaptations, mitochondrial efficiency, and metabolic resilience that accelerate your path toward a longer, stronger life. The difference between those two outcomes is having the right system in place. That's what we build for every client.</p>
 
               <div className="bhs-cta-buttons">
-                <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer" className="bhs-btn-primary">Explore Our Longevity Protocol →</a>
-                <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer" className="bhs-btn-secondary">Book a Biohacking Consult</a>
+                <Link href="/contact?program=Custom-Made%20Protocol" className="bhs-btn-primary">Explore Our Longevity Protocol →</Link>
+                <Link href="/contact?program=Assessment" className="bhs-btn-secondary">Book a Biohacking Consult</Link>
                 <Link href="/miami-personal-trainer" className="bhs-btn-secondary">Get in Touch</Link>
               </div>
             </div>
@@ -856,7 +856,7 @@ export default function BiohackingMiamiSummer() {
             <div className="bhs-sidebar-cta">
               <h4>Built for Miami. Built for You.</h4>
               <p>Get a longevity protocol designed for South Florida's climate and your biology.</p>
-              <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer" className="bhs-btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center', fontSize: '0.82rem' }}>Book Your Free Call →</a>
+              <Link href="/contact?program=Assessment" className="bhs-btn-primary" style={{ width: '100%', display: 'block', textAlign: 'center', fontSize: '0.82rem' }}>Book an Assessment →</Link>
             </div>
 
             <div className="bhs-sidebar-card">

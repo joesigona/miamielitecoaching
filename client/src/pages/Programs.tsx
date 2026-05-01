@@ -10,17 +10,17 @@ import { ArrowRight } from "lucide-react";
 
 const PROGRAMS = [
   {
-    name: "CEO Performance Protocol",
+    name: "Custom-Made Protocol",
     description:
-      "A 12-week data-driven protocol built for executives 40+. DEXA, VO2 Max, and elite coaching included — all calibrated to your biology.",
-    accent: "#185FA5",
+      "A fully personalized longevity and performance protocol engineered around your biology. Built on your DEXA, VO2 Max, bloodwork, and lifestyle data — calibrated by our Sports Scientists, Medical Doctors, and CSCS coaches. Training, nutrition, recovery, and biomarker tracking, all in one program designed for you.",
+    accent: "#C9A352",
     icon: "01",
   },
   {
-    name: "Vitality Reset",
+    name: "Baseline Assessment",
     description:
-      "An 8-week transformation program designed for women navigating perimenopause and beyond. Hormone-aware training, metabolic optimization, and measurable results.",
-    accent: "#993556",
+      "The 90-minute foundation behind every program we build. A full diagnostic — DEXA scan, VO2 Max test, and structured strength assessment — followed by a same-day data review and a 12-week training framework engineered to your numbers. The exact starting point used by every Miami Elite Coaching client.",
+    accent: "#185FA5",
     icon: "02",
   },
 ];
@@ -32,7 +32,7 @@ export default function ProgramsPage() {
     if (meta)
       meta.setAttribute(
         "content",
-        "Explore Miami Elite Coaching programs — the Longevity Blueprint and Longevity Duo. Precision health and performance at RETO Brickell."
+        "Miami Elite Coaching programs — a Custom-Made Protocol engineered to your biology, and a 90-minute Baseline Assessment using DEXA, VO2 Max, and strength diagnostics. Inquire to learn more."
       );
     window.scrollTo(0, 0);
   }, []);
@@ -106,12 +106,12 @@ export default function ProgramsPage() {
             Not Sure Which Program Is Right for You?
           </h2>
           <p className="text-[oklch(0.60_0.01_75)] text-base mb-8 max-w-xl mx-auto">
-            Start with a free assessment. We'll review your goals, run baseline tests,
+            Start with a Baseline Assessment. We'll review your goals, run the diagnostics,
             and recommend the protocol that fits your biology and lifestyle.
           </p>
-          <Link href="/programs">
+          <Link href="/contact?program=Assessment">
             <span className="btn-gold text-sm px-8 py-4">
-              Book Free Assessment
+              Book an Assessment
             </span>
           </Link>
         </div>

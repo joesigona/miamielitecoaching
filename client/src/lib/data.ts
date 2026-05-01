@@ -56,7 +56,7 @@ export const ARTICLES: Article[] = [
     readTime: 14,
     publishDate: "2026-04-07",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1600&q=80&auto=format&fit=crop",
     tags: ["healthy restaurants miami", "best healthy food miami 2026", "clean eating miami", "seed oil free restaurants miami", "macro friendly restaurants miami", "vegan restaurants miami", "fitness coach restaurant guide"],
     content: `<p><em>Updated for 2026 — includes 3 new additions to Miami's health food scene + current rankings refresh.</em></p>
 
@@ -228,7 +228,7 @@ export const ARTICLES: Article[] = [
     readTime: 10,
     publishDate: "2025-04-15",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-blog-Lm26dz8LvEeJ9QD4Pqngfi.webp",
+      "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1600&q=80&auto=format&fit=crop",
     tags: ["biohacking miami", "longevity miami", "executive health", "reverse aging miami", "DEXA scan miami", "VO2 max miami"],
     content: `<p>Bio-hacking used to be a fringe concept — Silicon Valley executives experimenting with nootropics and ice baths in their garages. But in 2025, the science has caught up with the hype. And in Miami, where high-performing professionals are already investing heavily in their physical appearance and energy levels, bio-hacking has gone mainstream.</p>
 
@@ -321,7 +321,7 @@ export const ARTICLES: Article[] = [
 
 <p>Miami Elite Coaching's <a href="/longevity-blueprint">Longevity Blueprint</a> is designed exactly for this purpose. It includes a complimentary DEXA scan, VO2 Max test, and a 1-on-1 consultation with a certified health specialist — a $600 assessment, completely free for qualifying Miami professionals. You'll walk out with your biological age, your cardiovascular fitness score, and a personalized action plan for implementing these techniques in your life.</p>
 
-<p><a href="https://q5lhjxf6lyg.typeform.com/to/GjjmWBrN">Claim your free Longevity Blueprint assessment →</a></p>`,
+<p><a href="/contact?program=Assessment">Book your Baseline Assessment →</a></p>`,
   },
   {
     slug: "best-personal-trainers-miami",
@@ -335,8 +335,8 @@ export const ARTICLES: Article[] = [
     readTime: 8,
     publishDate: "2025-03-15",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
-    tags: ["personal trainer miami", "miami fitness", "best trainers"],
+      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1600&q=80&auto=format&fit=crop",
+    tags: ["best personal trainers miami", "miami fitness", "best trainers"],
     content: `<p>Finding the right personal trainer in Miami can feel overwhelming. The city is packed with fitness professionals ranging from boutique studio coaches to independent trainers who work out of private facilities in Brickell and Coral Gables.</p>
 
 <p>We spent three months evaluating trainers across Miami's most popular neighborhoods — Brickell, South Beach, Coconut Grove, Coral Gables, and Wynwood — based on credentials, client results, training methodology, and value for money.</p>
@@ -397,7 +397,7 @@ export const ARTICLES: Article[] = [
     readTime: 6,
     publishDate: "2025-03-22",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-blog-Lm26dz8LvEeJ9QD4Pqngfi.webp",
+      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1600&q=80&auto=format&fit=crop",
     tags: ["personal trainer brickell", "brickell fitness", "miami personal trainer"],
     content: `<p>Brickell is unlike any other neighborhood in Miami. It's the city's financial and business hub — home to hedge funds, law firms, tech startups, and the professionals who run them. And those professionals have a very specific set of fitness challenges that most trainers aren't equipped to handle.</p>
 
@@ -439,7 +439,7 @@ export const ARTICLES: Article[] = [
 
 <p>The key is finding a trainer who understands your world. Not someone who'll put you on a generic program and count reps, but someone who manages your health like you manage your business — with data, accountability, and a clear outcome.</p>
 
-<p>Ready to explore what private coaching in Brickell looks like? <a href="/programs">Apply for the 90-Day Executive Transformation</a> and receive a call within the hour.</p>`,
+<p>Ready to explore what private coaching in Brickell looks like? <a href="/contact?program=Assessment">Book a Baseline Assessment</a> and receive a call within the hour.</p>`,
   },
   {
     slug: "eating-healthy-miami-restaurants",
@@ -453,8 +453,8 @@ export const ARTICLES: Article[] = [
     readTime: 9,
     publishDate: "2025-04-01",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-eiFCghreTCfWfN9GcBNCSM.webp",
-    tags: ["eating healthy miami", "miami restaurants weight loss", "healthy food miami", "miami nutrition"],
+      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1600&q=80&auto=format&fit=crop",
+    tags: ["eating healthy miami restaurants", "miami restaurants weight loss", "healthy food miami", "miami nutrition"],
     content: `<p>Miami has one of the most vibrant restaurant scenes in the country. The problem? Most of it isn't built with your body composition goals in mind. Between the late-night spots in Wynwood, the steakhouses in Brickell, and the beach clubs on South Beach, eating out in Miami can quietly derail even the most disciplined fitness plan.</p>
 
 <p>But here's the truth: you don't have to choose between enjoying Miami's food culture and reaching your body goals. You just need to know where to go — and what to order when you get there.</p>
@@ -527,8 +527,8 @@ export const ARTICLES: Article[] = [
     readTime: 7,
     publishDate: "2025-04-08",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-2-YTpEKifvYgDgzreA69WNKf.webp",
-    tags: ["personal trainer cost miami", "miami personal trainer price", "how much personal trainer"],
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=1600&q=80&auto=format&fit=crop",
+    tags: ["miami personal trainer cost", "miami personal trainer price", "how much personal trainer"],
     content: `<p>Personal trainer pricing in Miami is all over the map. You can find trainers charging $50 per session at a commercial gym, and independent coaches charging $250+ for private sessions. Understanding what drives these price differences — and what you actually get at each level — is essential before making a decision.</p>
 
 <h2>Personal Trainer Pricing in Miami: The Breakdown</h2>
@@ -586,7 +586,7 @@ export const ARTICLES: Article[] = [
 
 <p>We're transparent about our pricing because we're confident in our results. If you follow the program and don't see measurable changes in 90 days, you receive a full refund.</p>
 
-<p><a href="/programs">Apply for the 90-Day Transformation</a> — spots are limited to 5 clients per quarter.</p>`,
+<p><a href="/contact?program=Assessment">Book a Baseline Assessment</a> — spots are limited to 5 clients per quarter.</p>`,
   },
   {
     slug: "ceo-fitness-program-miami",
@@ -598,10 +598,10 @@ export const ARTICLES: Article[] = [
       "The traditional gym model is broken for executives. Here's why Miami's top CEOs are investing in 12-week performance protocols built around biometric data, not reps and sets.",
     category: "executives",
     readTime: 9,
-    publishDate: "2025-04-18",
+    publishDate: "2025-04-22",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
-    tags: ["ceo fitness miami", "executive fitness program", "performance protocol miami", "personal trainer brickell ceo", "biometric fitness testing miami"],
+      "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?w=1600&q=80&auto=format&fit=crop",
+    tags: ["ceo fitness program miami", "executive fitness program", "performance protocol miami", "personal trainer brickell ceo", "biometric fitness testing miami"],
     content: `<p>Walk into any high-end gym in Brickell on a Tuesday morning and you'll see the same scene: a handful of executives grinding through the same routine they've done for years — 30 minutes on the treadmill, a few sets of bench press, maybe some bicep curls. They look the same as they did last year. Their energy hasn't improved. Their bloodwork tells a different story than the mirror.</p>
 
 <p>Now walk into a sports-science facility like RETO Brickell, and you'll see something entirely different: a 48-year-old managing director getting his VO2 Max tested while his coach adjusts his Zone 2 heart rate thresholds in real time. A 52-year-old founder reviewing his DEXA scan results to see exactly how much visceral fat he's lost in the last 6 weeks. These men aren't "working out." They're running a <strong>performance protocol</strong> — and the results speak for themselves.</p>
@@ -674,7 +674,7 @@ export const ARTICLES: Article[] = [
 
 <p>The CEO Performance Protocol accepts a limited number of clients per quarter to maintain coaching quality. The process starts with a brief intake assessment to confirm fit, followed by your initial DEXA and VO2 Max testing at RETO Brickell.</p>
 
-<p><a href="/programs">Learn more about the CEO Performance Protocol</a> or <a href="https://q5lhjxf6lyg.typeform.com/to/CqpamnE1" target="_blank" rel="noopener noreferrer">apply directly here</a>. Spots for Q2 2026 are limited to 4 remaining.</p>`,
+<p><a href="/programs">Learn more about our Custom-Made Protocol</a> or <a href="/contact?program=Custom-Made%20Protocol">inquire directly here</a>. Spots for Q2 2026 are limited to 4 remaining.</p>`,
   },
   {
     slug: "dexa-scan-miami-what-to-expect",
@@ -688,7 +688,7 @@ export const ARTICLES: Article[] = [
     readTime: 9,
     publishDate: "2025-04-18",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-1-ioFYxUHKSMXBbQwzKqXbPD.webp",
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80&auto=format&fit=crop",
     tags: ["DEXA scan miami", "body composition scan miami", "DEXA cost miami", "body fat testing miami", "longevity testing miami"],
     content: `<p>If you've ever wondered what's really going on inside your body — not the number on the scale, but the actual breakdown of fat, muscle, and bone — a DEXA scan is the answer. And in Miami, where fitness culture is as much about looking good on the beach as it is about long-term health, DEXA scanning has become one of the most sought-after diagnostic tools available.</p>
 
@@ -773,7 +773,7 @@ export const ARTICLES: Article[] = [
 
 <p>If you've never had a DEXA scan, there's no better time to start. The <a href="/programs">Data-First Drop-In</a> at Miami Elite Coaching includes a full DEXA scan, VO2 Max test, and 30-minute consultation — all at no cost for first-time clients. It's the most comprehensive diagnostic session available in Miami, and it gives you the data foundation to make every future health decision with confidence.</p>
 
-<p><a href="https://q5lhjxf6lyg.typeform.com/to/fKybxD1d" target="_blank" rel="noopener noreferrer">Book your free Data-First Drop-In here</a> — limited spots available each week.</p>`,
+<p><a href="/contact?program=Assessment">Book your Baseline Assessment here</a> — limited spots available each week.</p>`,
   },
   {
     slug: "couples-fitness-miami-train-together",
@@ -787,7 +787,7 @@ export const ARTICLES: Article[] = [
     readTime: 8,
     publishDate: "2025-04-20",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/article-thumb-2-5TLYCBLiEGvGhFUPLQS2Qw.webp",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1600&q=80&auto=format&fit=crop",
     tags: ["couples fitness miami", "couples personal training miami", "partner workout miami", "train together miami", "longevity duo miami"],
     content: `<p>There's a reason most New Year's resolutions fail by February: accountability. When you're training alone, it's easy to skip a session, push back a workout, or quietly abandon a nutrition plan. But when your partner is standing next to you — expecting you to show up — everything changes.</p>
 
@@ -850,7 +850,7 @@ export const ARTICLES: Article[] = [
 
 <p>If you and your partner are ready to train together with a program that's actually designed for two people with different bodies and different goals, the <a href="/longevity-duo">Longevity Duo</a> is the most comprehensive option available in Miami. It includes dual DEXA scans, dual VO2 Max tests, individualized programming, and shared coaching sessions — all at a per-person rate that's lower than most solo personal training programs in Brickell.</p>
 
-<p><a href="https://q5lhjxf6lyg.typeform.com/to/fe89pL85" target="_blank" rel="noopener noreferrer">Apply for the Longevity Duo here</a> — the next cohort starts soon and spots are limited to 5 couples per quarter.</p>`,
+<p><a href="/contact?program=Custom-Made%20Protocol">Inquire about a Custom-Made Protocol for couples here</a> — spots are limited to 5 couples per quarter.</p>`,
   },
   {
     slug: "women-over-40-fitness-miami",
@@ -864,7 +864,7 @@ export const ARTICLES: Article[] = [
     readTime: 10,
     publishDate: "2025-04-22",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-coconut-grove-5gCHpDXMEFXfxZiXSKRqkT.webp",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80&auto=format&fit=crop",
     tags: ["women over 40 fitness miami", "female personal trainer miami", "menopause fitness miami", "strength training women miami", "vitality reset miami"],
     content: `<p>Something shifts after 40. The workouts that used to work stop producing results. The weight that used to come off easily now clings stubbornly to your midsection. Your energy dips in the afternoon. Recovery takes longer. And the advice you find online — written mostly by 25-year-old fitness influencers — feels increasingly irrelevant to your reality.</p>
 
@@ -927,7 +927,7 @@ export const ARTICLES: Article[] = [
 
 <p>The first step is understanding where your body is right now. A DEXA scan and VO2 Max test give you the objective baseline that makes everything else possible. The <a href="/programs">Vitality Reset</a> includes both assessments as part of the program, and the initial consultation is designed to understand your specific goals, challenges, and lifestyle.</p>
 
-<p><a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">Apply for the Vitality Reset here</a> — the program accepts a limited number of women per quarter to maintain coaching quality and attention.</p>`,
+<p><a href="/contact?program=Custom-Made%20Protocol">Inquire about a Custom-Made Protocol here</a> — we accept a limited number of women per quarter to maintain coaching quality and attention.</p>`,
   },
   {
     slug: "eating-for-longevity",
@@ -941,8 +941,8 @@ export const ARTICLES: Article[] = [
     readTime: 12,
     publishDate: "2026-04-09",
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
-    tags: ["eating for longevity", "longevity diet", "Blue Zones diet", "anti-aging nutrition", "foods for longer life", "longevity coaching Miami", "intermittent fasting longevity", "healthspan"],
+      "https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=1600&q=80&auto=format&fit=crop",
+    tags: ["longevity nutrition", "longevity diet", "Blue Zones diet", "anti-aging nutrition", "foods for longer life", "longevity coaching Miami", "intermittent fasting longevity", "healthspan"],
     content: `<p>Cardiovascular disease claims nearly 18 million lives every year worldwide. Over half of the U.S. population is living with some form of chronic disease — diabetes, heart disease, or obesity. Yet scattered across five regions of the globe, something extraordinary is happening: people are routinely living past 100, mostly free of the diseases that define modern aging.</p>
 
 <p>What's their secret? It isn't genetics. It isn't cutting-edge pharmaceuticals. And it isn't a brutal calorie-restriction protocol that strips joy from every meal. It's something far simpler — and far more powerful. <strong>It's what they eat.</strong></p>
@@ -1017,7 +1017,7 @@ export const ARTICLES: Article[] = [
 
 <p>The goal isn't a diet. It's a permanent upgrade to how your body ages. And the data shows it works: our clients average a 2.8-year reduction in biological age over their first 90 days — measured by validated biomarker panels, not subjective self-report.</p>
 
-<p>If you're ready to take a data-driven approach to longevity nutrition, <a href="https://q5lhjxf6lyg.typeform.com/to/mUElqlHh" target="_blank" rel="noopener noreferrer">apply for a free biological assessment here</a>. We'll review your current biomarkers, identify your highest-leverage nutritional interventions, and show you exactly what eating for longevity looks like for your specific biology.</p>`,
+<p>If you're ready to take a data-driven approach to longevity nutrition, <a href="/contact?program=Assessment">book a Baseline Assessment here</a>. We'll review your current biomarkers, identify your highest-leverage nutritional interventions, and show you exactly what eating for longevity looks like for your specific biology.</p>`,
   },
   {
     slug: "biohacking-miami-summer-longevity",
@@ -1028,7 +1028,7 @@ export const ARTICLES: Article[] = [
     category: "longevity",
     readTime: 11,
     publishDate: "2026-04-09",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
+    image: "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=1600&q=80&auto=format&fit=crop",
     tags: ["biohacking miami", "florida summer health", "longevity miami", "tropical climate hydration", "UV protection aging", "heat stress biohacking", "miami elite coaching", "metabolic health florida", "south florida wellness"],
     content: `<p>This article has a dedicated page with full interactive layout. <a href="/articles/biohacking-miami-summer-longevity">Read the full article here.</a></p>`,
   },
@@ -1041,7 +1041,7 @@ export const ARTICLES: Article[] = [
     category: "training",
     readTime: 12,
     publishDate: "2026-04-21",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663459681691/83tywCBKrbukToGzWmD9PC/hero-brickell-PeJffJYKH7YsRmJxS5GutR.webp",
+    image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1600&q=80&auto=format&fit=crop",
     tags: ["golf strength training", "health benefits of golf", "TPI assessment", "golf fitness", "VO2 max", "longevity", "Miami golf coach"],
     content: `<h2>The Question Every Golfer's Been Asked at a Dinner Party</h2>
 
@@ -1087,7 +1087,7 @@ export const ARTICLES: Article[] = [
 
 <div style=\"background: #f8fafc; border-left: 4px solid #0f766e; padding: 1.5rem 1.75rem; margin: 2rem 0; border-radius: 6px;\">
   <p>Curious where your own VO2 max actually stands? Stop guessing and get a real baseline number.</p>
-  <p><a href=\"https://q5lhjxf6lyg.typeform.com/to/VTNFhNhR\" target=\"_blank\" rel=\"noopener\" style=\"display: inline-block; background: #0f766e; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; margin: 0.5rem 0; border: none; transition: background 0.2s ease;\">Book Your VO2 Max Test →</a></p>
+  <p><a href=\"/contact?program=Assessment\" style=\"display: inline-block; background: #0f766e; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; margin: 0.5rem 0; border: none; transition: background 0.2s ease;\">Book an Assessment →</a></p>
 </div>
 
 <p>A long-term Swedish study that followed more than 300,000 golfers found regular players had a <strong>40% lower mortality rate</strong> than non-golfers of the same age and sex — translating to roughly <strong>5 additional years of life expectancy</strong>. Even after controlling for income and socioeconomic factors, the effect remained significant.</p>
@@ -1196,7 +1196,7 @@ export const ARTICLES: Article[] = [
 <div style=\"background: #0f172a; color: #f1f5f9; padding: 2.5rem 2rem; border-radius: 12px; margin: 3rem 0 2rem 0; text-align: center;\">
   <h3 style=\"color: #ffffff; margin-top: 0; font-size: 1.5rem;\">Book Your Consultation</h3>
   <p>Curious how your body is affecting your swing — and what a real plan for golf strength training, fitness, and TPI-guided performance work looks like? The first step is a conversation.</p>
-  <p><a href=\"https://q5lhjxf6lyg.typeform.com/to/VTNFhNhR\" target=\"_blank\" rel=\"noopener\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 18px 36px; border-radius: 10px; font-weight: 800; font-size: 1.15rem; margin: 1rem 0; border: none; letter-spacing: 0.3px;\">Book a Consultation →</a></p>
+  <p><a href=\"/contact?program=Assessment\" style=\"display: inline-block; background: #0f172a; color: #ffffff; text-decoration: none; padding: 18px 36px; border-radius: 10px; font-weight: 800; font-size: 1.15rem; margin: 1rem 0; border: none; letter-spacing: 0.3px;\">Book an Assessment →</a></p>
   <p style=\"font-size: 0.9rem; color: #94a3b8; margin-top: 1rem;\">Serving Miami, FL and surrounding areas including Brickell and Coconut Grove.</p>
 </div>`,
   },

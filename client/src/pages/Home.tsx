@@ -115,9 +115,9 @@ export default function Home() {
                   Miami Elite Coaching
                 </span>
               </Link>
-              <Link href="/contact?program=Biological%20Assessment">
+              <Link href="/contact?program=Assessment">
                 <span className="btn-gold text-sm px-6 py-3 shadow-lg">
-                  Book Free Assessment
+                  Book an Assessment
                 </span>
               </Link>
             </div>
@@ -134,9 +134,9 @@ export default function Home() {
             Miami's only data-driven longevity practice built for high performers. We combine elite coaching, precision medicine, and cutting-edge biological protocols to extend healthspan and make every year count.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Link href="/contact?program=Biological%20Assessment">
+              <Link href="/contact?program=Assessment">
               <span className="btn-gold text-base px-8 py-4 shadow-lg">
-                Book Your Biological Assessment
+                Book an Assessment
               </span>
             </Link>
             <Link href="/programs">
@@ -346,9 +346,9 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <Link href="/longevity-blueprint">
+            <Link href="/contact?program=Assessment">
               <span className="btn-gold text-sm px-8 py-4">
-                Start With a Free Assessment
+                Book an Assessment
               </span>
             </Link>
           </div>
@@ -497,9 +497,9 @@ export default function Home() {
           <p className="text-[oklch(0.45_0.01_75)] text-sm mb-10">
             Metabolic Health Miami · Biohacking South Florida · Precision Medicine Miami
           </p>
-          <Link href="/longevity-blueprint">
+          <Link href="/contact?program=Assessment">
             <span className="btn-gold text-base px-8 py-4">
-              Claim Your Free Longevity Assessment
+              Book an Assessment
             </span>
           </Link>
         </div>

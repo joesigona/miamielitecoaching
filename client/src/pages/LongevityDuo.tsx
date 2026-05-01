@@ -13,7 +13,7 @@ import biometricImage from "@/assets/longevity-biometric.jpg";
 
 const HERO_IMAGE = heroImage;
 
-const TYPEFORM_URL = "https://q5lhjxf6lyg.typeform.com/to/fe89pL85";
+const ASSESSMENT_URL = "/contact?program=Assessment";
 
 const INCLUDES = [
   {
@@ -77,14 +77,14 @@ function BuyNowButton({ size = "default" }: { size?: "default" | "large" }) {
   );
 }
 
-function CtaButton({ size = "default", label = "Have Questions? Apply First →" }: { size?: "default" | "large"; label?: string }) {
+function CtaButton({ size = "default", label = "Book an Assessment →" }: { size?: "default" | "large"; label?: string }) {
   const cls = size === "large"
     ? "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-sm uppercase tracking-widest px-10 py-5 hover:bg-white/5 transition-colors cursor-pointer"
     : "inline-flex items-center gap-2 border border-white/20 text-white font-['Barlow_Condensed'] font-700 text-xs uppercase tracking-widest px-6 py-3 hover:bg-white/5 transition-colors cursor-pointer";
   return (
-    <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className={cls}>
-      {label}
-    </a>
+    <Link href={ASSESSMENT_URL}>
+      <span className={cls} role="button">{label}</span>
+    </Link>
   );
 }
 

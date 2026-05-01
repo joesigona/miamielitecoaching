@@ -10,10 +10,9 @@ import { Card } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 
 const PROGRAMS = [
-  { value: "CEO Performance Protocol", label: "CEO Performance Protocol" },
-  { value: "Vitality Reset", label: "Vitality Reset" },
-  { value: "Longevity Duo — Couples Session", label: "Longevity Duo — Couples Session" },
-  { value: "Longevity Blueprint (Free Assessment)", label: "Longevity Blueprint (Free Assessment)" },
+  { value: "Assessment", label: "Baseline Assessment" },
+  { value: "Custom-Made Protocol", label: "Custom-Made Protocol" },
+  { value: "General Inquiry", label: "General Inquiry" },
 ];
 
 export default function Contact() {

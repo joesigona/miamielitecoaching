@@ -1,5 +1,5 @@
 // Navigation — Miami Elite Coaching
-// Clean nav: Home | Programs | About | Articles | Book Assessment CTA
+// Clean nav: Home | Programs | About | Articles | Book an Assessment CTA
 // No dropdown, no prices, no landing page links
 
 import { useState, useEffect } from "react";
@@ -67,10 +67,10 @@ export default function Navigation() {
             ))}
 
             <Link
-              href="/longevity-blueprint"
+              href="/contact?program=Assessment"
               className="ml-3 px-4 py-2 rounded bg-[oklch(0.72_0.12_75)] text-black font-['Barlow_Condensed'] font-bold text-sm tracking-wider uppercase hover:bg-[oklch(0.78_0.14_75)] transition-colors"
             >
-              Book Assessment
+              Book an Assessment
             </Link>
           </div>
 
@@ -105,10 +105,10 @@ export default function Navigation() {
 
             <div className="pt-2">
               <Link
-                href="/longevity-blueprint"
+                href="/contact?program=Assessment"
                 className="block text-center px-4 py-3 rounded bg-[oklch(0.72_0.12_75)] text-black font-['Barlow_Condensed'] font-bold text-sm tracking-wider uppercase hover:bg-[oklch(0.78_0.14_75)] transition-colors"
               >
-                Book Assessment
+                Book an Assessment
               </Link>
             </div>
           </div>
