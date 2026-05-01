@@ -24,13 +24,14 @@ import ArticlePage from "./pages/Article";
 import ProgramsPage from "./pages/Programs";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import LongevityDuoPage from "./pages/LongevityDuo";
+import AssessmentLandingPage from "./pages/AssessmentLandingPage";
+import AdminLeads from "./pages/AdminLeads";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BiohackingMiamiSummer from "./pages/BiohackingMiamiSummer";
 import CheckoutSuccess from "./pages/CheckoutSuccess";
 import CheckoutCancel from "./pages/CheckoutCancel";
-import ProtectedRoute from "./components/ProtectedRoute";
 
 function Router() {
   return (
@@ -49,23 +50,18 @@ function Router() {
       <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
 
+      {/* Generic brand-wide assessment landing page — partner QR codes, Google Ads, direct prospects */}
+      <Route path="/assessment" component={AssessmentLandingPage} />
+
       {/* Individual article pages with custom layout */}
       <Route path="/articles/biohacking-miami-summer-longevity" component={BiohackingMiamiSummer} />
 
       <Route path="/checkout/success" component={CheckoutSuccess} />
       <Route path="/checkout/cancel" component={CheckoutCancel} />
 
-      {/* Admin routes — protected by Clerk */}
-      <Route path="/admin">
-        <ProtectedRoute>
-          <div className="min-h-screen bg-[oklch(0.08_0.005_285)] flex items-center justify-center">
-            <div className="text-white text-center">
-              <h1 className="font-['Barlow_Condensed'] text-4xl font-bold text-[oklch(0.72_0.12_75)] mb-4">Admin Dashboard</h1>
-              <p className="text-gray-400">Coming soon — leads, analytics, and order management.</p>
-            </div>
-          </div>
-        </ProtectedRoute>
-      </Route>
+      {/* Admin routes — gated server-side via adminProcedure (Manus OAuth + role) */}
+      <Route path="/admin/leads" component={AdminLeads} />
+      <Route path="/admin" component={AdminLeads} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
