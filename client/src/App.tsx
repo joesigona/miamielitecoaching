@@ -24,6 +24,7 @@ import ArticlePage from "./pages/Article";
 import ProgramsPage from "./pages/Programs";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import LongevityDuoPage from "./pages/LongevityDuo";
+import AssessmentLandingPage from "./pages/AssessmentLandingPage";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -48,6 +49,9 @@ function Router() {
       {/* Individual program pages — hidden from nav, used as lead landing pages */}
       <Route path="/longevity-blueprint" component={LongevityBlueprintPage} />
       <Route path="/longevity-duo" component={LongevityDuoPage} />
+
+      {/* Generic brand-wide assessment landing page — partner QR codes, Google Ads, direct prospects */}
+      <Route path="/assessment" component={AssessmentLandingPage} />
 
       {/* Individual article pages with custom layout */}
       <Route path="/articles/biohacking-miami-summer-longevity" component={BiohackingMiamiSummer} />
