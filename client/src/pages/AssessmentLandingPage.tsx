@@ -3,18 +3,129 @@
 // Destination for Core Health partnership flyer QR code, Google Ads,
 // Brickell-area searches, partner referrals, and direct prospects.
 //
-// Design: Self-contained scoped CSS using brand tokens (Navy/Gold/Rose/Ivory).
-// Fonts (Barlow Condensed + Source Serif 4) are already loaded site-wide.
-// Wrapped in LandingPageLayout (no main nav, noindex, minimal header/footer).
+// Lead capture is fully native: an inline modal intake form posts to the
+// tRPC `assessment.create` endpoint which (1) stores the lead in MySQL,
+// (2) sends a Manus owner notification, and (3) emails the owner.
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import LandingPageLayout from "@/components/LandingPageLayout";
+import { trpc } from "@/lib/trpc";
 
-// ⚠️  REPLACE WITH THE LIVE TYPEFORM URL
-const BOOKING_URL = "https://form.typeform.com/to/REPLACE_ME";
+const PHONE_DISPLAY = "(732) 618-3056";
+const PHONE_HREF = "tel:+17326183056";
+
+const AGE_RANGES = ["25-34", "35-44", "45-54", "55-64", "65+"] as const;
+const PRIMARY_GOALS = [
+  "Longevity / Anti-Aging",
+  "Fat Loss",
+  "Muscle Building",
+  "Energy & Performance",
+  "General Health",
+] as const;
+const ACTIVITY_LEVELS = [
+  "Sedentary",
+  "1-2x per week",
+  "3-4x per week",
+  "5+ per week",
+] as const;
+const REFERRAL_SOURCES = [
+  "Core Health Partnership",
+  "Google Search",
+  "Google Ads",
+  "Friend / Word of Mouth",
+  "Social Media",
+  "Other",
+] as const;
+
+type FormState = {
+  name: string;
+  email: string;
+  phone: string;
+  ageRange: string;
+  primaryGoal: string;
+  activityLevel: string;
+  referralSource: string;
+  message: string;
+};
+
+const EMPTY_FORM: FormState = {
+  name: "",
+  email: "",
+  phone: "",
+  ageRange: "",
+  primaryGoal: "",
+  activityLevel: "",
+  referralSource: "",
+  message: "",
+};
 
 const AssessmentLandingPage: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const [form, setForm] = useState<FormState>(EMPTY_FORM);
+  const [submitted, setSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  const createLead = trpc.assessment.create.useMutation({
+    onSuccess: () => {
+      setSubmitted(true);
+      setErrorMsg(null);
+    },
+    onError: (err) => {
+      setErrorMsg(err.message || "Something went wrong. Please try again.");
+    },
+  });
+
+  // Lock body scroll while modal is open.
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    if (open) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = prev;
+      };
+    }
+  }, [open]);
+
+  const openForm = () => {
+    setSubmitted(false);
+    setErrorMsg(null);
+    setOpen(true);
+  };
+  const closeForm = () => {
+    setOpen(false);
+    // Reset shortly after the close animation feels finished.
+    setTimeout(() => {
+      setForm(EMPTY_FORM);
+      setSubmitted(false);
+      setErrorMsg(null);
+    }, 200);
+  };
+
+  const update = <K extends keyof FormState>(key: K, value: FormState[K]) =>
+    setForm((prev) => ({ ...prev, [key]: value }));
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setErrorMsg(null);
+    if (!form.name.trim() || !form.email.trim() || !form.phone.trim()) {
+      setErrorMsg("Name, email, and phone are required.");
+      return;
+    }
+    createLead.mutate({
+      name: form.name.trim(),
+      email: form.email.trim(),
+      phone: form.phone.trim(),
+      ageRange: form.ageRange || undefined,
+      primaryGoal: form.primaryGoal || undefined,
+      activityLevel: form.activityLevel || undefined,
+      referralSource: form.referralSource || undefined,
+      message: form.message.trim() || undefined,
+      source: "assessment-page",
+    });
+  };
+
   return (
     <LandingPageLayout>
       <Helmet>
@@ -452,6 +563,172 @@ const AssessmentLandingPage: React.FC = () => {
             text-transform: uppercase;
             color: var(--muted-on-dark);
           }
+
+          /* ---------- INTAKE MODAL ---------- */
+          .mec-assessment .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(6, 19, 37, 0.78);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 60px 16px 40px;
+            overflow-y: auto;
+            animation: mec-fade 0.2s ease-out;
+          }
+          @keyframes mec-fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          .mec-assessment .modal {
+            background: var(--ivory);
+            color: var(--ink);
+            border-top: 4px solid var(--gold);
+            max-width: 580px;
+            width: 100%;
+            padding: 40px clamp(20px, 5vw, 48px) 36px;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+          }
+          .mec-assessment .modal .close {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 28px;
+            line-height: 1;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 6px 10px;
+          }
+          .mec-assessment .modal .close:hover { color: var(--rose); }
+          .mec-assessment .modal h3 {
+            font-size: clamp(26px, 3vw, 32px);
+            color: var(--navy);
+            margin-bottom: 8px;
+          }
+          .mec-assessment .modal .modal-sub {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 24px;
+          }
+          .mec-assessment .modal .field {
+            margin-bottom: 16px;
+          }
+          .mec-assessment .modal label {
+            display: block;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 6px;
+          }
+          .mec-assessment .modal label .req { color: var(--rose); margin-left: 3px; }
+          .mec-assessment .modal input,
+          .mec-assessment .modal select,
+          .mec-assessment .modal textarea {
+            width: 100%;
+            font-family: 'Source Serif 4', serif;
+            font-size: 16px;
+            padding: 12px 14px;
+            border: 1px solid var(--rule);
+            background: #FFFFFF;
+            color: var(--ink);
+            border-radius: 0;
+            -webkit-appearance: none;
+            appearance: none;
+          }
+          .mec-assessment .modal select {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%235C5C5C' d='M6 8L0 0h12z'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 36px;
+          }
+          .mec-assessment .modal input:focus,
+          .mec-assessment .modal select:focus,
+          .mec-assessment .modal textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 2px rgba(201, 163, 82, 0.18);
+          }
+          .mec-assessment .modal textarea {
+            min-height: 88px;
+            resize: vertical;
+          }
+          .mec-assessment .modal .row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+          }
+          @media (max-width: 520px) {
+            .mec-assessment .modal .row-2 { grid-template-columns: 1fr; }
+          }
+          .mec-assessment .modal .submit {
+            width: 100%;
+            margin-top: 8px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 16px 28px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.15s ease, transform 0.15s ease;
+          }
+          .mec-assessment .modal .submit:hover:not(:disabled) {
+            background: var(--gold-light);
+            transform: translateY(-1px);
+          }
+          .mec-assessment .modal .submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+          .mec-assessment .modal .err {
+            color: var(--rose);
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          .mec-assessment .modal .privacy {
+            margin-top: 14px;
+            font-size: 12px;
+            color: var(--muted);
+            text-align: center;
+          }
+
+          /* Success state */
+          .mec-assessment .modal .success {
+            text-align: center;
+            padding: 12px 0 8px;
+          }
+          .mec-assessment .modal .success .check {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: var(--navy-deep);
+            font-size: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+          }
+          .mec-assessment .modal .success h3 { margin-bottom: 12px; }
+          .mec-assessment .modal .success p {
+            color: var(--muted);
+            font-size: 16px;
+            margin-bottom: 26px;
+          }
         `}</style>
 
         {/* ============== HERO ============== */}
@@ -467,16 +744,11 @@ const AssessmentLandingPage: React.FC = () => {
               expert analysis, and a custom plan — engineered by <strong>Sports Scientists</strong>.
             </p>
             <div className="cta-row">
-              <a
-                className="btn-primary"
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <button type="button" className="btn-primary" onClick={openForm}>
                 Book Your Assessment
-              </a>
-              <a className="btn-secondary" href="tel:+17326183056">
-                Or call <b>(732) 618-3056</b>
+              </button>
+              <a className="btn-secondary" href={PHONE_HREF}>
+                Or call <b>{PHONE_DISPLAY}</b>
               </a>
             </div>
           </div>
@@ -662,21 +934,194 @@ const AssessmentLandingPage: React.FC = () => {
               </span>
             </div>
             <div className="cta-row">
-              <a
-                className="btn-primary"
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <button type="button" className="btn-primary" onClick={openForm}>
                 Book Your Assessment
-              </a>
-              <a className="btn-secondary" href="tel:+17326183056">
-                Or call <b>(732) 618-3056</b>
+              </button>
+              <a className="btn-secondary" href={PHONE_HREF}>
+                Or call <b>{PHONE_DISPLAY}</b>
               </a>
             </div>
             <div className="fine-print">MIAMIELITECOACHING.COM</div>
           </div>
         </section>
+
+        {/* ============== INTAKE MODAL ============== */}
+        {open && (
+          <div
+            className="modal-backdrop"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) closeForm();
+            }}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Book your MEC Assessment"
+          >
+            <div className="modal">
+              <button
+                type="button"
+                className="close"
+                onClick={closeForm}
+                aria-label="Close"
+              >
+                ×
+              </button>
+
+              {submitted ? (
+                <div className="success">
+                  <div className="check">✓</div>
+                  <h3>You&apos;re on the list.</h3>
+                  <p>
+                    Thanks, {form.name.split(" ")[0] || "—"}. A Miami Elite Coaching
+                    advisor will reach out within 24 hours to confirm your assessment.
+                  </p>
+                  <button
+                    type="button"
+                    className="submit"
+                    onClick={closeForm}
+                  >
+                    Close
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <h3>Book Your Assessment</h3>
+                  <p className="modal-sub">
+                    Tell us a bit about yourself — we&apos;ll reach out within 24 hours
+                    to confirm your appointment.
+                  </p>
+
+                  <form onSubmit={handleSubmit} noValidate>
+                    {errorMsg && <div className="err">{errorMsg}</div>}
+
+                    <div className="field">
+                      <label htmlFor="mec-name">
+                        Full Name<span className="req">*</span>
+                      </label>
+                      <input
+                        id="mec-name"
+                        type="text"
+                        autoComplete="name"
+                        required
+                        value={form.name}
+                        onChange={(e) => update("name", e.target.value)}
+                      />
+                    </div>
+
+                    <div className="row-2">
+                      <div className="field">
+                        <label htmlFor="mec-email">
+                          Email<span className="req">*</span>
+                        </label>
+                        <input
+                          id="mec-email"
+                          type="email"
+                          autoComplete="email"
+                          required
+                          value={form.email}
+                          onChange={(e) => update("email", e.target.value)}
+                        />
+                      </div>
+                      <div className="field">
+                        <label htmlFor="mec-phone">
+                          Phone<span className="req">*</span>
+                        </label>
+                        <input
+                          id="mec-phone"
+                          type="tel"
+                          autoComplete="tel"
+                          required
+                          placeholder="(305) 555-0000"
+                          value={form.phone}
+                          onChange={(e) => update("phone", e.target.value)}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row-2">
+                      <div className="field">
+                        <label htmlFor="mec-age">Age Range</label>
+                        <select
+                          id="mec-age"
+                          value={form.ageRange}
+                          onChange={(e) => update("ageRange", e.target.value)}
+                        >
+                          <option value="">Select…</option>
+                          {AGE_RANGES.map((v) => (
+                            <option key={v} value={v}>{v}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="field">
+                        <label htmlFor="mec-activity">Activity Level</label>
+                        <select
+                          id="mec-activity"
+                          value={form.activityLevel}
+                          onChange={(e) => update("activityLevel", e.target.value)}
+                        >
+                          <option value="">Select…</option>
+                          {ACTIVITY_LEVELS.map((v) => (
+                            <option key={v} value={v}>{v}</option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="field">
+                      <label htmlFor="mec-goal">Primary Goal</label>
+                      <select
+                        id="mec-goal"
+                        value={form.primaryGoal}
+                        onChange={(e) => update("primaryGoal", e.target.value)}
+                      >
+                        <option value="">Select…</option>
+                        {PRIMARY_GOALS.map((v) => (
+                          <option key={v} value={v}>{v}</option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="field">
+                      <label htmlFor="mec-source">How did you hear about us?</label>
+                      <select
+                        id="mec-source"
+                        value={form.referralSource}
+                        onChange={(e) => update("referralSource", e.target.value)}
+                      >
+                        <option value="">Select…</option>
+                        {REFERRAL_SOURCES.map((v) => (
+                          <option key={v} value={v}>{v}</option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="field">
+                      <label htmlFor="mec-msg">Anything we should know? (optional)</label>
+                      <textarea
+                        id="mec-msg"
+                        value={form.message}
+                        onChange={(e) => update("message", e.target.value)}
+                        placeholder="Goals, injuries, scheduling preferences…"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="submit"
+                      disabled={createLead.isPending}
+                    >
+                      {createLead.isPending ? "Submitting…" : "Submit"}
+                    </button>
+
+                    <div className="privacy">
+                      Your information is private. We&apos;ll only use it to contact you
+                      about your assessment.
+                    </div>
+                  </form>
+                </>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </LandingPageLayout>
   );
