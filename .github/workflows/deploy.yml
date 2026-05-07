@@ -50,6 +50,23 @@ jobs:
             git log --oneline -1
             echo "=== Installing dependencies ==="
             pnpm install
+            echo "=== Exporting Vite build env from PM2 dump ==="
+            # Vite only inlines VITE_* vars present at build time. The runtime
+            # values live in /root/.pm2/dump.pm2 (set when PM2 was first started),
+            # so we extract them here and export them for `pnpm build`.
+            if [ -f /root/.pm2/dump.pm2 ]; then
+              while IFS='=' read -r key val; do
+                [ -n "$key" ] && export "$key=$val"
+              done < <(grep -oE '"VITE_[A-Z_]+":\s*"[^"]+"' /root/.pm2/dump.pm2 \
+                | sort -u \
+                | sed -E 's/"(VITE_[A-Z_]+)":\s*"([^"]+)"/\1=\2/')
+            fi
+            # Hard fallbacks so the OAuth login URL is never "undefined/app-auth".
+            : "${VITE_OAUTH_PORTAL_URL:=https://manus.im}"
+            : "${VITE_APP_ID:=83tywCBKrbukToGzWmD9PC}"
+            export VITE_OAUTH_PORTAL_URL VITE_APP_ID
+            echo "VITE_OAUTH_PORTAL_URL=$VITE_OAUTH_PORTAL_URL"
+            echo "VITE_APP_ID=$VITE_APP_ID"
             echo "=== Building project ==="
             pnpm build
             echo "=== Restarting PM2 ==="
