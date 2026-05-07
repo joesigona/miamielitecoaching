@@ -25,6 +25,7 @@ import ProgramsPage from "./pages/Programs";
 import LongevityBlueprintPage from "./pages/LongevityBlueprint";
 import LongevityDuoPage from "./pages/LongevityDuo";
 import AssessmentLandingPage from "./pages/AssessmentLandingPage";
+import CoreHealth from "./pages/CoreHealth";
 import AdminLeads from "./pages/AdminLeads";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
@@ -52,6 +53,9 @@ function Router() {
 
       {/* Generic brand-wide assessment landing page — partner QR codes, Google Ads, direct prospects */}
       <Route path="/assessment" component={AssessmentLandingPage} />
+
+      {/* Core Health partnership landing page — destination of flyer QR code */}
+      <Route path="/corehealth" component={CoreHealth} />
 
       {/* Individual article pages with custom layout */}
       <Route path="/articles/biohacking-miami-summer-longevity" component={BiohackingMiamiSummer} />
